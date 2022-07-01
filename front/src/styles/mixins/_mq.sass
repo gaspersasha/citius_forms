@@ -1,0 +1,20 @@
+@import 'variables'
+
+// temp. breakpoints for sass-mq lib
+
+/* stylelint-disable */
+$mq-breakpoints: (mobile: $bp-mobile, mobileLandscape: $bp-mobileLandscape, tablet: $bp-tablet, desktop: $bp-desktop, wide: $bp-wide)
+/* stylelint-enable */
+
+// importing lib with params
+@import '~sass-mq'
+
+// testing version of the custom mixins
+@mixin mq-desktop
+  @media screen and (min-width: $bp-desktop)
+    @content
+
+@mixin mq-tablet
+  @media screen and (min-width: $bp-tablet)
+    @content
+

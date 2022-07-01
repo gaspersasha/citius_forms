@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OffersListItem /> rendered without errors 1`] = `
+<div
+  className="pxOfferListItem"
+>
+  <div>
+    <Typography
+      align="left"
+      className="paragraph"
+      color="dark"
+      type="p"
+    >
+      <b>
+        Your Car
+      </b>
+    </Typography>
+    <Typography
+      align="left"
+      className="paragraph"
+      color="dark"
+      type="p"
+    >
+      WE33ADT, 12000 miles
+    </Typography>
+  </div>
+  <div>
+    <Typography
+      align="left"
+      className="paragraph"
+      color="dark"
+      type="p"
+    >
+      <b>
+        Your online offer
+      </b>
+    </Typography>
+    <Typography
+      align="left"
+      className="paragraph"
+      color="dark"
+      data-id="valuation"
+      type="p"
+    >
+      £2,020
+    </Typography>
+  </div>
+  <Button
+    className="button"
+    disabled={false}
+    href="/account/part-exchange/quote?2"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+  >
+    View offer
+  </Button>
+</div>
+`;

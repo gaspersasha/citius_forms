@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginGateway /> renders children in logged in user case 1`] = `
+<div>
+  Test
+</div>
+`;
+
+exports[`<LoginGateway /> renders without errors 1`] = `
+<Fragment>
+  <div
+    className="wrapper"
+  >
+    <Typography
+      align="left"
+      className=""
+      color="dark"
+      type="h2"
+    >
+      Please log in
+    </Typography>
+    <Typography
+      align="left"
+      className="msg"
+      color="dark"
+      type="p"
+    >
+      You need to be logged in to access this page, please log in via the link below
+    </Typography>
+    <Button
+      className=""
+      disabled={false}
+      href=""
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+    >
+      Log in
+    </Button>
+  </div>
+</Fragment>
+`;

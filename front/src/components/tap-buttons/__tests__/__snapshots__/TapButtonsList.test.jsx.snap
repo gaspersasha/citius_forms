@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TapButtonsList /> renders without errors 1`] = `
+<Fragment>
+  <div
+    className="item"
+    key="TEST0"
+  >
+    <label
+      className="label"
+      htmlFor="Test0"
+    >
+      <span
+        className="labelText"
+      >
+        Test0
+      </span>
+      <input
+        checked={false}
+        className="input"
+        data-id="Test0"
+        name=""
+        onChange={[Function]}
+        type="radio"
+        value="TEST0"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+    <Component />
+  </div>
+  <div
+    className="item"
+    key="TEST1"
+  >
+    <label
+      className="label"
+      htmlFor="Test1"
+    >
+      <span
+        className="labelText"
+      >
+        Test1
+      </span>
+      <input
+        checked={false}
+        className="input"
+        data-id="Test1"
+        name=""
+        onChange={[Function]}
+        type="radio"
+        value="TEST1"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+  </div>
+</Fragment>
+`;

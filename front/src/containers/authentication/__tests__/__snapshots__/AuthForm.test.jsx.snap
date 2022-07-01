@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AuthForm /> should match snapshots 1`] = `
+<AuthForm
+  activeForm="login"
+  emailValue="test@email.com"
+  errorMessage=""
+  firstNameValue=""
+  isUserRemembered={true}
+  lastNameValue=""
+  onSubmit={[MockFunction]}
+  setFieldValue={[MockFunction]}
+  subTitle="Test Sub Title"
+  title="Test Title"
+>
+  <h6
+    className="typo title"
+  >
+    Test Title
+  </h6>
+  <span
+    className="typo typo__small subTitle"
+  >
+    Test Sub Title
+  </span>
+  <div
+    className="row"
+  >
+    <div
+      className="email"
+    >
+      <InputEmail
+        autoFocus={true}
+        className="typo input"
+        customClasses="auth"
+        errorMessage="The email address you entered is not valid, please try again"
+        id="authEmail"
+        label={false}
+        name="email"
+        onChange={[Function]}
+        placeholder="Email Address"
+        required={false}
+        status=""
+        subTitle=""
+        useErrorBorder={true}
+        value="test@email.com"
+      >
+        <Label
+          customClasses="auth"
+          name="email"
+          required={false}
+          status=""
+          title={false}
+          withSub={false}
+        >
+          <div
+            className="label auth"
+          >
+            <label
+              data-id={false}
+              htmlFor="email"
+            >
+              <span
+                className="title"
+                data-id="label-title"
+              />
+              <input
+                autoFocus={true}
+                className="typo input"
+                id="authEmail"
+                name="email"
+                onChange={[Function]}
+                placeholder="Email Address"
+                type="email"
+                value="test@email.com"
+              />
+            </label>
+          </div>
+        </Label>
+      </InputEmail>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="password"
+    >
+      <InputPassword
+        className="typo input"
+        customClasses="auth"
+        id="userPassword"
+        label={false}
+        name="password"
+        onChange={[Function]}
+        required={false}
+        status=""
+        subTitle=""
+        type="password"
+        value=""
+      >
+        <Label
+          customClasses="auth"
+          name="password"
+          required={false}
+          status=""
+          title={false}
+          withSub={false}
+        >
+          <div
+            className="label auth"
+          >
+            <label
+              data-id={false}
+              htmlFor="password"
+            >
+              <span
+                className="title"
+                data-id="label-title"
+              />
+              <input
+                className="typo input"
+                data-id="password-input"
+                defaultValue=""
+                id="userPassword"
+                name="password"
+                onChange={[Function]}
+                placeholder="Enter your password"
+                type="password"
+              />
+            </label>
+          </div>
+        </Label>
+      </InputPassword>
+    </div>
+  </div>
+  <div
+    className="row row__largeBottomSpace"
+  >
+    <InputCheckbox
+      checked={true}
+      className="checkbox"
+      customClasses="auth"
+      id="authRememberMe"
+      label="Remember me"
+      name=""
+      onChange={[Function]}
+      status=""
+    >
+      <div
+        className="wrapper auth"
+      >
+        <input
+          checked={true}
+          className="checkbox"
+          id="authRememberMe"
+          name=""
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <Label
+          customClasses="auth"
+          name=""
+          status=""
+          title="Remember me"
+          withSub={false}
+        >
+          <div
+            className="label auth"
+          >
+            <label
+              data-id={false}
+              htmlFor=""
+            >
+              <span
+                className="title"
+                data-id="label-title"
+              >
+                Remember me
+              </span>
+            </label>
+          </div>
+        </Label>
+      </div>
+    </InputCheckbox>
+    <span
+      className="typo typo__small typo__pointer"
+      data-id="toggle-pass"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Show password
+    </span>
+  </div>
+  <div
+    className="row row__middleBottomSpace"
+  >
+    <Button
+      className="typo submit"
+      data-id="login"
+      disabled={false}
+      href=""
+      onClick={[MockFunction]}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      <button
+        className="buttonComponent primary typo submit"
+        data-id="login"
+        disabled={false}
+        href={null}
+        onClick={[MockFunction]}
+        type="submit"
+      >
+        Login
+      </button>
+    </Button>
+  </div>
+</AuthForm>
+`;

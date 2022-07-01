@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoqateAddress /> handles manual fields case (empty response) 1`] = `
+<Fragment>
+  <div
+    className="form-input"
+  >
+    <Postcode
+      errorMessage=""
+      formName=""
+      loqateHealthCheck={[Function]}
+      selectHandler={[MockFunction]}
+      selectedAddress={
+        Object {
+          "postCode": "test postCode",
+          "street": "test street",
+          "town": "test town",
+        }
+      }
+      statuses={
+        Object {
+          "postCode": "valid",
+          "street": "invalid",
+          "town": "valid",
+        }
+      }
+      styleType="loqate-address"
+      subTitle=""
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`<LoqateAddress /> renders without errors 1`] = `
+<Fragment>
+  <div
+    className="form-input"
+    key="postCode"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="postCode label"
+      name="postCode"
+      onChange={[MockFunction]}
+      placeholder=""
+      required={false}
+      status="valid"
+      subTitle=""
+      validationType=""
+      value="test postCode"
+    />
+  </div>
+  <div
+    className="form-input"
+    key="town"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="town label"
+      name="town"
+      onChange={[MockFunction]}
+      placeholder=""
+      required={false}
+      status="valid"
+      subTitle=""
+      validationType=""
+      value="test town"
+    />
+  </div>
+  <div
+    className="form-input"
+    key="street"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="street label"
+      name="street"
+      onChange={[MockFunction]}
+      placeholder=""
+      required={false}
+      status="invalid"
+      subTitle=""
+      validationType=""
+      value="test street"
+    />
+    <p
+      className="warning"
+      data-id="manual-field-warn"
+    >
+      Warning
+    </p>
+  </div>
+</Fragment>
+`;

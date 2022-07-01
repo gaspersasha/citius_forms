@@ -1,0 +1,51 @@
+@import 'variables'
+@import 'mixins'
+
+.pxOfferListItem
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  padding: 25px
+  margin-top: 20px
+  box-shadow: 0 0 8px 4px rgba($color-black, .07)
+  +mq($from: tablet)
+    height: 120px
+    flex-direction: row
+    padding: 0 30px
+
+.paragraph
+  margin-bottom: 10px
+  +mq($until: tablet)
+    text-align: center !important
+
+  &:last-child
+    margin-bottom: 0
+    +mq($until: tablet)
+      margin-bottom: 30px
+
+.button
+  width: 100%
+  margin-top: 20px
+  cursor: pointer
+  color: $purple-primary
+  transition: all .2s ease-in-out
+  border: 1px solid $purple-primary
+  background-color: transparent
+  +mq($from: tablet)
+    width: 290px
+    margin-top: 0
+
+  &:visited
+    color: $purple-primary
+
+  +mq($from: desktop)
+    &:hover:not( :disabled )
+      border-left: 1px solid $purple-primary
+      color: $color-white
+
+  +mq($until: desktop)
+    &:active:not( :disabled )
+      border-left: 1px solid $purple-primary
+      color: $color-white

@@ -1,0 +1,220 @@
+@import 'variables'
+@import 'mixins'
+
+.controls
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin-bottom: 40px
+
+  p
+    margin-top: 10px
+    font-size: 14px
+    letter-spacing: .3px
+    line-height: 22px
+    display: flex
+    justify-content: center
+
+.back
+  @include button-back(#{$text-dark}, rgba(0, 0, 0, 0))
+    font-family: $base-font-family
+    font-weight: 700
+    border: none
+    margin-bottom: 10px
+
+.progress
+  margin-bottom: 10px
+  font-size: $small-font-size
+
+.heading
+  color: $purple-primary
+  font-size: 25px
+  font-weight: 700
+  letter-spacing: .54px !important // stylelint-disable-line
+  line-height: 39px !important // stylelint-disable-line
+  margin-bottom: 20px
+
+.description
+  color: $purple-primary
+  letter-spacing: .34px
+  line-height: $base-line-height
+  margin-bottom: 20px
+
+.descriptionResult
+  color: $purple-primary
+  letter-spacing: .34px
+  line-height: $base-line-height
+  margin-bottom: 40px
+
+.plate
+  margin-bottom: 20px
+
+.milegeFormPlate
+  margin-bottom: 20px
+  border: 1px solid $blue-primary !important // stylelint-disable-line
+
+.infoBox
+  color: $grey
+  font-size: 14px
+  font-weight: 500
+  letter-spacing: .34px
+  line-height: $base-line-height
+  margin-bottom: 40px
+
+.alignCenter
+  display: flex
+  justify-content: center
+  flex-direction: column
+  margin-bottom: 20px
+  cursor: pointer
+
+  a[name='partex__submit-btn']
+    padding-top: 15px
+
+.icon
+  margin-top: -20px
+
+  &::before
+    content: ''
+    display: block
+    height: 18px
+    z-index: 1
+    left: calc(50% - 30px)
+    position: relative
+    top: 35px
+    background-image: url('../../../assets/svg/check.svg')
+    background-position: center
+    background-repeat: no-repeat
+
+.skipPX
+  text-decoration: underline !important // stylelint-disable-line
+  font-size: 14px
+  letter-spacing: .3px
+  line-height: $base-line-height
+  color: $purple-primary
+  text-align: center
+  margin-top: 20px
+
+.regDetails
+  border-left: 1px solid
+  padding-left: 10px
+  margin-bottom: 40px
+  font-size: $base-font-size
+  font-weight: 500
+  letter-spacing: .34px
+  line-height: $base-line-height
+
+.row
+  font-size: 14px
+
+.descriptionReg
+  margin-bottom: 15px
+
+.descriptionMileage
+  margin-bottom: 10px
+  font-size: $base-font-size
+  letter-spacing: .34px
+  line-height: 24px
+
+.formInput
+  margin-bottom: 20px
+
+  input[type='number']
+    margin-top: 10px
+    margin-bottom: 20px
+    padding-left: 20px
+
+  select[data-id='input-select']
+    height: 40px
+    width: 100%
+    margin-top: 5px
+    margin-bottom: 20px
+    padding: 0 35px 0 20px
+    border-radius: 3px
+    -webkit-appearance: none
+    -moz-appearance: none
+    background-image: url('../../../assets/svg/arrow-down-blue.svg')
+    background-size: 12px 10px
+    background-repeat: no-repeat
+    background-position: calc(100% - 20px) 15px
+    background-color: $color-white
+
+.benefits
+  border-left: 1px solid
+  padding-left: 10px
+  margin: 20px 0 35px
+  font-size: 14px
+
+.tickGreen
+  height: 10px
+  width: 13px
+  content: url('../../../assets/svg/check.svg')
+  margin-right: 10px
+
+.valuationPrivacy
+  display: flex
+  font-size: $base-font-size
+  font-weight: 500
+  letter-spacing: 0
+  line-height: 20px
+  margin-bottom: 40px
+
+  a
+    margin-left: 5px
+
+.warning
+  color: $color-pink-darker
+  font-size: 14px
+  border: 1px solid$color-pink-darker
+  padding: 5px
+  margin: 15px 0
+
+.image
+  min-height: 78px
+  min-width: 78px
+  background-size: 78px
+  background-image: url('../../../assets/png/thecarbuyinggroup.png')
+  background-position: center center
+  background-repeat: no-repeat
+  margin-right: 10px
+
+.result
+  min-height: 105px
+  border: 1px solid $blue-primary
+  text-align: center
+  font-size: 40px
+  font-weight: 600
+  letter-spacing: .86px
+  padding: 35px
+  margin-bottom: 20px
+  color: $blue-primary
+
+.valuationError
+  margin-bottom: 20px
+
+  h1
+    margin-bottom: 10px
+    line-height: 35px
+
+  p
+    font-size: 18px
+
+.carBuyingGroup
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-size: 20px
+  font-weight: 600
+  letter-spacing: .43px
+  line-height: 31px
+  margin-bottom: 20px
+
+.privacyNotice
+  margin-top: 150px
+
+.errorText
+  color: $color-pink-darker
+  border: 1px solid $color-pink-darker
+  padding: 5px 10px
+  margin: 15px 0
+  font-size: 14px

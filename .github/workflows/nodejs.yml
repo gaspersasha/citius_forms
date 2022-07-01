@@ -1,0 +1,31 @@
+name: Front-end Linting and Testing
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v2
+    - name: "Node setup"
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: "Install dependencies"
+      working-directory: ./front
+      run: npm install
+    - name: "Lint styles"
+      working-directory: ./front
+      run: npm run lint:css
+    - name: "Lint javascript"
+      working-directory: ./front
+      run: npm run lint:js
+    - name: "Unit testing"
+      working-directory: ./front
+      run: npm run test:coverage

@@ -1,0 +1,116 @@
+@import 'variables'
+@import 'keyframes'
+
+.overlay
+  position: fixed
+  z-index: 11
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  background-color: rgba(255, 255, 255, .8)
+  animation-duration: .2s
+  animation-fill-mode: forwards
+
+  /* stylelint-disable-next-line */
+  animation-name: finance_existing_user_modal
+
+.container
+  position: fixed
+  width: 100%
+  padding: 1.5em 5%
+  bottom: 0
+  left: 0
+  margin: auto
+  display: flex
+  justify-content: center
+  border-top: 2px solid $dark
+  text-align: left
+  font-weight: 700
+  background-color: rgba($color-white, .95)
+  transition: transform .2s linear
+  overflow: hidden
+  z-index: 12
+
+  h4
+    margin: 0
+
+  h5
+    margin: 1.4em 0
+    font-size: 19px
+
+.form
+
+  input
+    margin-top: 5px
+    margin-bottom: 10px
+
+  button
+    width: 100%
+    margin-top: -1em
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+
+.modal
+  max-width: 600px
+
+  label
+    text-align: left
+
+  a
+    margin-top: -.5em
+    display: block
+    text-align: center
+    text-decoration: none
+    color: $blue-primary
+    font-weight: 400
+
+.footer
+  margin: 1.5em 0
+  text-align: center
+
+.button
+  font-family: $base-font-family
+  font-size: 1em
+  border-radius: $button-border-radius
+  padding: 0 1em
+  min-height: 42px
+  border: none
+  cursor: pointer
+  -webkit-appearance: none
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
+.cancel
+  margin-right: .6em
+  margin-left: -.6em
+  color: $color-red-razzmatazz
+  border: 2px solid $color-red-razzmatazz
+  background: $color-white
+
+.forward
+  background: $color-red-razzmatazz
+  color: $color-white
+
+  &::after
+    font-family: $icon-font-family
+    content: '\E823'
+    margin-left: .75em
+
+.label
+  text-align: left
+
+.buttonSkip
+  margin: 20px auto 0
+
+.errorMessage
+  margin-top: 10px
+  padding: 5px 10px
+  color: $tertiary
+  text-align: left
+  border: 1px solid $tertiary

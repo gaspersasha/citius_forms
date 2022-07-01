@@ -1,0 +1,70 @@
+@import 'variables'
+
+.result
+  padding: 5px 16px
+  padding-left: 0
+
+.wrapper
+  position: relative
+  outline: none
+
+.listWrapper
+  width: 100%
+  position: absolute
+  z-index: 10
+  background: $color-white
+  border-radius: $zen-gutter-one-eighth
+  border: 1px solid $dark
+  overflow-x: hidden
+  max-height: 300px
+
+.listItem
+  cursor: pointer
+  padding: 8px 16px
+
+  &:hover
+    cursor: pointer
+    background-color: $dark
+    color: $color-white
+
+.listItemError:hover
+  cursor: default
+  background-color: $color-white
+  color: $color-grey-nightrider
+
+.listItemCode
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+
+.listItemText
+  margin-bottom: 0
+
+.listItemArrow
+  margin-bottom: 0
+
+  &::after
+    content: '>'
+    position: absolute
+    right: 16px
+    top: 50%
+    transform: translateY(-50%)
+
+.spinner
+  width: 50px
+  height: 50px
+  background-size: 50px 50px
+
+.link
+  display: flex
+  margin-top: 10px
+  cursor: pointer
+  font-weight: 400
+
+  div
+    text-decoration: underline
+
+.border
+  padding-left: 8px
+  border-left: 1px solid $purple-darker

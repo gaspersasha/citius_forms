@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationLink /> renders without errors 1`] = `
+<Link
+  href="/"
+>
+  <a
+    className={null}
+    href={null}
+    onClick={null}
+    role="link"
+    tabIndex={0}
+  >
+    Test
+  </a>
+</Link>
+`;

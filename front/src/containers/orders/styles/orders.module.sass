@@ -1,0 +1,67 @@
+@import 'mixins'
+@import 'variables'
+
+.accountWithOrders
+  min-height: 80vh
+
+.pageTitleWrapper
+  padding-top: 50px  // this tmp for compensation space for breadcrumb
+  margin-bottom: 20px
+
+  .pageTitle
+    text-align: center
+    font-weight: 700
+    line-height: 1.2em
+    +mq($until: tablet)
+      font-size: 26px
+
+.ordersPage
+  +mq($from: tablet)
+    margin-top: 85px
+
+.title
+  margin-top: 40px
+
+.userName
+  font-weight: 700
+  margin-bottom: 10px
+
+.userName,
+.userExplanation
+  font-family: $base-font-family
+  font-size: 18px
+  text-align: center
+  +mq($from: tablet)
+    text-align: left
+    height: 40%
+
+.balance
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding: 20px
+  margin: 40px 0
+  background-color: $color-green-cosmiclatte
+  @include mq($from: 650px)
+    flex-direction: row
+    line-height: normal
+
+.balanceTitle
+  font-family: $base-font-family
+  font-weight: 700
+
+.explanation
+  margin: 100px 0 50px
+
+.expTitle
+  font-family: $base-font-family
+  font-size: 25px
+  font-weight: 700
+  line-height: normal
+  padding-bottom: 20px
+
+.expTxt
+  font-family: $base-font-family
+  font-size: 18px

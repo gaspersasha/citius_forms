@@ -1,0 +1,171 @@
+@import 'mixins'
+@import 'variables'
+
+.accountCards
+  display: flex
+  flex-wrap: wrap
+  margin: 0 2%
+
+  +mq($from: tablet)
+    margin: 0 1% 40px
+
+.accountCard
+  width: 100%
+  position: relative
+  color: $color-grey-mine-shaft
+  margin: 10px 1%
+  box-shadow: 2px 2px 14px 0 $color-grey-mercury
+  border-radius: 8px
+
+  +mq($from: tablet)
+    width: 48%
+    margin: 10px 1%
+
+  +mq($from: desktop)
+    width: 31.3%
+
+  +mq($from: wide)
+    width: 23%
+
+
+  &_empty
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: none
+    border-radius: 0
+
+    +mq($until: tablet)
+      border-bottom: 1px solid $color-grey-mercury
+      padding-bottom: 19px
+
+.loadMore
+  color: $color-grey-tundora
+  font-size: $base-font-size
+  letter-spacing: .34px
+  line-height: 22px
+  text-decoration: underline
+  cursor: pointer
+  border: none
+  background: none
+
+.media
+  border-radius: 10px 10px 0 0
+  background-size: cover
+  background-position: center center
+  position: relative
+  height: 220px
+
+  +mq($until: desktop)
+    height: 255px
+
+.close
+  width: 30px
+  height: 30px
+  padding: 5px
+  border-radius: 50%
+  position: absolute
+  top: 10px
+  right: 10px
+  cursor: pointer
+  z-index: 1
+
+.status
+  position: absolute
+  top: 0
+  background: rgba(255, 255, 255, .76)
+  bottom: 0
+  width: 100%
+  border-radius: 10px 10px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 40px
+  font-weight: 700
+
+.content
+  padding: 10px
+
+.carTitle
+  font-size: 18px
+  line-height: 22px
+  margin-bottom: 2px
+  font-weight: 700
+
+.carDetails
+  font-size: $base-font-size
+  line-height: 33px
+  margin-bottom: 7px
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.priceWrapper
+  min-height: 26px
+  margin-bottom: 14px
+
+.priceContent
+  display: flex
+  justify-content: space-between
+
+.pricePerMonth
+  font-weight: 700
+
+.tags
+  font-size: 14px
+  margin-bottom: 26px
+
+.tag
+  padding: 2px 4px
+  background-color: $color-grey-whisper
+  border-radius: 3px
+  margin-right: 5px
+
+.action
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 19px
+  margin-bottom: 9px
+
+.icon
+  margin-right: 9px
+
+.reservationLink
+  text-align: center
+  display: block
+  text-decoration: underline
+  margin-bottom: 14px
+  line-height: 22px
+  padding: 9px 0
+  border-radius: 5px
+  width: 100%
+  font-size: 12px
+  background-color: rgba(241, 251, 255, .64)
+
+  a
+    color: $color-grey-mine-shaft
+
+.cta
+  display: block
+  text-align: center
+  padding: 10px
+  line-height: 22px
+  color: $color-white
+  width: 100%
+  background-color: $blue-primary
+  border-left: 15px solid $blue-lighter
+  margin-bottom: 20px
+
+  &:hover
+    background-color: $purple-primary
+    border-color: $purple-primary
+
+.linkWrapper
+  color: $color-grey-mine-shaft
+
+.spinner
+  height: 20px
+  width: 20px
+  margin: 0 auto
+  background-size: 80px 80px

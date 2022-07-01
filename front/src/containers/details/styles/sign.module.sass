@@ -1,0 +1,27 @@
+@import 'mixins'
+@import 'variables'
+
+.signin
+  width: calc(100% + 168px)
+  margin: 0 -84px 130px
+  padding: 40px 0
+  border-radius: 8px
+  box-shadow: 0 2px 20px 5px rgba($color-black, .08)
+  background-color: lighten($color-white-whitesmoke, 1%)
+
+  +mq($until: tablet)
+    width: calc(100% + 40px)
+    margin: 0 -20px 80px
+    padding: 20px 20px 35px
+    border-radius: 0
+
+.signinInner
+  max-width: 600px
+  margin: auto
+
+.signinHead
+  margin-bottom: 48px
+
+.signinHint
+  margin: 48px 0
+  font-size: 18px

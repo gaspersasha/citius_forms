@@ -1,0 +1,54 @@
+version: '3'
+services:
+  cms:
+    build: ./mocks/cms
+    volumes:
+      - ./mocks/cms/src:/build/src
+    command: npm start
+    ports:
+      - 3001:3001
+
+  api:
+    build: ./mocks/api
+    volumes:
+      - ./mocks/api/src:/build/src
+    command: npm start
+
+  front:
+    depends_on:
+      - cms
+    ports:
+      - 3000:3000
+    environment:
+      - VIRTUAL_HOST=next.localhost
+      - NEXT_PUBLIC_DEVELOPMENT=true
+      - NEXT_PUBLIC_PRODUCTION=false
+      - NEXT_PUBLIC_ENV=local
+      - NEXT_PUBLIC_HOST=localhost
+
+    # development
+    build:
+      context: ./front
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./front/src:/build/src
+    command: npm run dev
+
+  # onload:
+  #   image: jordi/ab
+  #   depends_on:
+  #     - front
+  #   command: -n 100 -c 10 https://website/reservation?productAdvertId=3093813
+
+  nginx:
+    build: ./mocks/nginx
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - front
+      - cms
+      - api
+    environment:
+      PRODUCTION: 1
+

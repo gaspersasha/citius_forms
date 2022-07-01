@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Verify /> should match snapshot (condition report case) 1`] = `
+<ConditionReportSubStep
+  typoProps={
+    Object {
+      "text": Object {
+        "align": "left",
+        "className": "",
+        "type": "p",
+      },
+      "title": Object {
+        "align": "left",
+        "className": "",
+        "type": "h3",
+      },
+    }
+  }
+/>
+`;
+
+exports[`<Verify /> should match snapshot (docs sent case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance agreement
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    You will receive your finance agreement via email.
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    This email will contain instructions on to complete this part of the process and information on the next steps required to complete your purchase
+  </Typography>
+</Fragment>
+`;
+
+exports[`<Verify /> should match snapshot (get. requirements case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Proof of address
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    You will receive an email requesting proof of address, please check your emails and share a copy of the requested documents.
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    This will usually be a drivers licence with your current address along with any other documentation requested by the lender, such as payslips or a utility bill
+  </Typography>
+</Fragment>
+`;
+
+exports[`<Verify /> should match snapshot (link sent case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your security check
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    We've sent you an email with a link where you can complete a security check.
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    This email will contain instructions on to complete this part of the process and information on the next steps required to complete your purchase
+  </Typography>
+</Fragment>
+`;

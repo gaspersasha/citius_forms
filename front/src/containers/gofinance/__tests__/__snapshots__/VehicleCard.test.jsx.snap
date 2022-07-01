@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VehicleCard /> renders without errors 1`] = `
+<div>
+  <div
+    className="card"
+  >
+    <div
+      className="left"
+    >
+      <img
+        alt="Car finance"
+        className="img"
+        src="https://images.buyacar.co.uk/image/opel"
+      />
+    </div>
+    <div
+      className="right"
+    >
+      <h3
+        className="title"
+      >
+        vaxhaul corsa hatchback special eds
+      </h3>
+      <ul
+        className="list"
+      >
+        <li>
+          Fuel type: 
+          <span>
+            petrol
+          </span>
+        </li>
+        <li>
+          Mileage: 
+          <span>
+            94356
+          </span>
+        </li>
+        <li>
+          Trans: 
+          <span>
+            auto
+          </span>
+        </li>
+      </ul>
+      <div
+        className="price"
+      >
+        £5,990
+      </div>
+      <Button
+        className="btn"
+        data-id="vehicle-card-action-button"
+        disabled={false}
+        href=""
+        onClick={[MockFunction]}
+        selected={false}
+        styleType="primary"
+        type="button"
+      >
+        Apply
+      </Button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,87 @@
+extends:
+  - airbnb
+parser: babel-eslint
+plugins: [react-hooks, react]
+
+settings:
+  import/ignore:
+    - node_modules
+  import/resolver:
+    babel-module:
+      config: ./babelrc
+  react:
+    version: detect
+
+rules:
+  padding-line-between-statements:
+    [
+      error,
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var'],
+      },
+      { blankLine: 'always', prev: '*', next: 'block' },
+      { blankLine: 'always', prev: 'block', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+    ]
+  no-unused-expressions:
+    [error, { allowShortCircuit: true, allowTernary: true }]
+  arrow-parens: off
+  operator-linebreak: off
+  implicit-arrow-linebreak: off
+  import/prefer-default-export: off
+  react/jsx-curly-newline: off
+  react/jsx-props-no-spreading: off
+  react/forbid-prop-types: off
+  react/jsx-indent: off
+  react/jsx-indent-props: off
+  react/jsx-one-expression-per-line: off
+  react/jsx-closing-tag-location: off
+  react/jsx-wrap-multilines: off
+  react/jsx-curly-brace-presence: off
+  curly: off
+  object-curly-newline: off
+  nonblock-statement-body-position: off
+  max-len: off
+  comma-dangle: off
+  function-paren-newline: off
+  no-unexpected-multiline: off
+  no-confusing-arrow: off
+
+  # temp
+  import/no-cycle: off # Atoms have cycle deps
+  import/no-unresolved: off # next/head
+  react/destructuring-assignment: off
+  consistent-return: warn
+  guard-for-in: warn
+  no-prototype-builtins: warn
+  valid-typeof: warn
+  jsx-a11y/click-events-have-key-events: warn
+  jsx-a11y/no-noninteractive-element-interactions: warn
+  jsx-a11y/label-has-associated-control: warn
+  no-restricted-syntax: warn
+  jsx-a11y/anchor-is-valid: warn
+  react/state-in-constructor: off
+  react/static-property-placement: off
+
+  # TODO: Remove when is https://github.com/babel/babel-eslint/issues/530 fixed
+  template-curly-spacing: off
+  indent: off
+  camelcase: off
+
+globals:
+  history: writable
+  ENV: false
+  mount: false
+  shallow: false
+  render: false
+  mockUseUserContext: false
+
+env:
+  es6: true
+  browser: true
+  jest: true

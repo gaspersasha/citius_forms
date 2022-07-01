@@ -1,0 +1,52 @@
+@import 'variables'
+
+input
+  display: inline-block
+  margin: 0
+  padding: 1px 2px
+  border-width: 2px
+  border-style: inset
+  font-size: 1em
+  text-rendering: auto
+  letter-spacing: normal
+  word-spacing: normal
+  text-transform: none
+  text-shadow: none
+  text-indent: 0
+  text-align: start
+  color: -internal-light-dark-color($color-black, $color-white)
+  -webkit-appearance: textfield
+  -webkit-writing-mode: horizontal-tb !important // stylelint-disable-line
+  -webkit-rtl-ordering: logical
+  cursor: text
+  background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59))
+  border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195))
+  border-image: initial
+
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+input[type='password'],
+input[type='email'],
+input[type='date'],
+input[name='dateOfBirth'],
+textarea
+  display: block
+  width: 100%
+  height: $input-height
+  padding: 0 20px
+  border: 1px solid $dark
+  border-radius: $input-border-radius
+  font-family: $base-font-family
+  color: $text-dark
+  outline: none
+
+  &:focus
+    border: 2px solid $secondary
+    color: $secondary
+
+*::placeholder
+  color: $color-grey-dark
+  font-size: 14px
+  letter-spacing: .34px
+  line-height: 24px

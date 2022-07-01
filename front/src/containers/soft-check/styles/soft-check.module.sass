@@ -1,0 +1,86 @@
+@import 'variables'
+@import 'mixins'
+
+.wait
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 80px 35px
+  text-align: center
+  line-height: 30px
+
+  h4
+    letter-spacing: .47px
+    font-weight: 700
+
+  p
+    font-size: 18px
+    letter-spacing: .39px
+
+  [class^='spinner_container']
+    width: 100px
+    height: 100px
+
+  @include mq($from: tablet)
+    max-width: 265px
+    margin-top: 160px
+
+.title
+  margin-top: 20px
+  line-height: 52px
+  font-size: 34px
+  font-weight: 700
+  letter-spacing: .73px
+  text-align: center
+
+  @include mq($from: tablet)
+    margin-top: 40px
+
+.titleCampaign
+  margin-top: 22px
+  margin-bottom: 22px
+  line-height: 30px
+  font-size: 24px
+  font-weight: 700
+  letter-spacing: .73px
+  text-align: left
+
+.listCampaign
+  font-size: 16px
+  letter-spacing: .73px
+  text-align: left
+
+  li::before
+    content: url('../../../assets/svg/checkmark.svg')
+    display: inline-block
+    position: relative
+    top: 8px
+    width: 30px
+    height: 30px
+    margin-right: 8px
+
+.subtitle
+  margin-top: 15px
+  margin-bottom: 40px
+
+  a
+    color: $blue-azure
+
+  @include mq($from: tablet)
+    margin-top: 20px
+
+.ps
+  display: block
+  margin-top: 20px
+  text-align: center
+
+.label
+
+  & div[data-id='input-text-sub']
+    border: 1px solid $blue-azure
+    color: $blue-azure
+    padding: 0 12px
+    margin-bottom: 10px
+
+  & input[type='text']
+    border: 1px solid $blue-azure

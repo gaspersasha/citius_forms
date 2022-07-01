@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionGuide /> renders without errors 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="wrapper"
+  >
+    <h4
+      className="heading"
+    >
+      What happens next?
+    </h4>
+    <ul
+      className="list"
+    >
+      <li
+        className="listItem"
+      >
+        <a
+          className="actionLink"
+          data-id="guide-action-link"
+          href="/action"
+        >
+          action link
+        </a>
+         - 
+        click me
+      </li>
+      <li
+        className="listItem"
+      >
+        <b>
+          Arrange finance
+        </b>
+         - We will contact you to discusss your finance and send your application to a lender for approval
+      </li>
+      <li
+        className="listItem"
+      >
+        <b>
+          Proof of ID and address
+        </b>
+         - You'll need to have your driving licence and possibly one of the following handy; utility bill, bank statement or council tax bill from the last 3 months
+      </li>
+      <li
+        className="listItem"
+      >
+        <b>
+          ID verification
+        </b>
+         - All you need to do is take a selfie and provide a picture of your driving licence to prove your identity
+      </li>
+      <li
+        className="listItem"
+      >
+        <b>
+          Delivery
+        </b>
+         - All that is left is to agree a delivery date for your new car that suits you
+      </li>
+    </ul>
+  </div>
+</div>
+`;

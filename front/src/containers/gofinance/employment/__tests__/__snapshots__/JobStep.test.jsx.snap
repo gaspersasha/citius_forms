@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobStep /> renders without errors 1`] = `
+<div
+  className="jobFormWrapper"
+>
+  <div
+    className="jobInputWrapper"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="Who is your employer?"
+      name="employer"
+      onChange={[MockFunction]}
+      placeholder="Employer"
+      required={true}
+      status="valid"
+      subTitle="Please provide your employer below"
+      value="Qwerty"
+    />
+  </div>
+  <InputText
+    className=""
+    customClasses=""
+    errorMessage=""
+    label="What is your job title?"
+    name="jobTitle"
+    onChange={[MockFunction]}
+    placeholder="Job title"
+    required={true}
+    status="valid"
+    subTitle="Please provide your job title below"
+    value="Qwerty"
+  />
+</div>
+`;

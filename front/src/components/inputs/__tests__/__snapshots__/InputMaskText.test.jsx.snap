@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputMaskText /> renders without errors 1`] = `
+<InputMaskText
+  className=""
+  data-id="testid123"
+  id="Fake"
+  label="Fake"
+  mask={
+    Array [
+      /\\\\d/,
+      /\\\\d/,
+      "-",
+      /\\\\d/,
+      /\\\\d/,
+      "-",
+      /\\\\d/,
+      /\\\\d/,
+    ]
+  }
+  name="Fake"
+  onBlur={[MockFunction]}
+  onChange={[MockFunction]}
+  placeholder="Fake"
+  required={false}
+  status="valid"
+  subTitle=""
+  type="tel"
+  value="Fake"
+>
+  <Label
+    customClasses=""
+    name="Fake"
+    required={false}
+    status="valid"
+    title="Fake"
+    withSub={false}
+  >
+    <div
+      className="label"
+    >
+      <label
+        data-id={false}
+        htmlFor="Fake"
+      >
+        <span
+          className="title"
+          data-id="label-title"
+        >
+          Fake
+        </span>
+        <t
+          className=""
+          data-id="testid123"
+          guide={false}
+          id="Fake"
+          mask={
+            Array [
+              /\\\\d/,
+              /\\\\d/,
+              "-",
+              /\\\\d/,
+              /\\\\d/,
+              "-",
+              /\\\\d/,
+              /\\\\d/,
+            ]
+          }
+          name="Fake"
+          onBlur={[MockFunction]}
+          onChange={[MockFunction]}
+          placeholder="Fake"
+          render={[Function]}
+          type="tel"
+          value="Fake"
+        >
+          <input
+            className=""
+            data-id="testid123"
+            defaultValue="Fake"
+            id="Fake"
+            name="Fake"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Fake"
+            type="tel"
+          />
+        </t>
+      </label>
+    </div>
+  </Label>
+</InputMaskText>
+`;

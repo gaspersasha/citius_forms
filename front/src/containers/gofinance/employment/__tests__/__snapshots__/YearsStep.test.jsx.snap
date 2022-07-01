@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<YearsStep /> renders without errors 1`] = `
+<YearsStep
+  employmentStatus="employed"
+  employmentType={
+    Object {
+      "value": "FULL_TIME_PERMANENT",
+    }
+  }
+  months={
+    Object {
+      "isActive": true,
+      "status": "valid",
+      "value": "1",
+    }
+  }
+  onMonthsChange={[MockFunction]}
+  onYearsChange={[MockFunction]}
+  years={
+    Object {
+      "status": "valid",
+      "value": "1",
+    }
+  }
+>
+  <div
+    className="yearsFormWrapper"
+  >
+    <div
+      className="yearsInputWrapper"
+    >
+      <InputSelect
+        className="inputSelect"
+        data-id="How many years have you been working at this address?"
+        label="How many years have you been working at this address?"
+        name="yearsAtJob"
+        onChange={[MockFunction]}
+        options={
+          Array [
+            Object {
+              "option": "0 Years",
+              "value": "0",
+            },
+            Object {
+              "option": "1 Year",
+              "value": "1",
+            },
+            Object {
+              "option": "2 Years",
+              "value": "2",
+            },
+            Object {
+              "option": "3+ Years",
+              "value": "3",
+            },
+          ]
+        }
+        placeholder=""
+        required={true}
+        status="valid"
+        subTitle="Please provide your employment information below"
+        value="1"
+      >
+        <Label
+          customClasses=""
+          name="yearsAtJob"
+          required={true}
+          status="valid"
+          title="How many years have you been working at this address?"
+          withSub={true}
+        >
+          <div
+            className="label"
+          >
+            <label
+              data-id={false}
+              htmlFor="yearsAtJob"
+            >
+              <span
+                className="title halfMargin"
+                data-id="label-title"
+              >
+                How many years have you been working at this address?
+              </span>
+              <span
+                className="label-sub-title"
+              >
+                Please provide your employment information below
+              </span>
+              <select
+                className="success-input-border inputSelect"
+                data-id="How many years have you been working at this address?"
+                name="yearsAtJob"
+                onChange={[MockFunction]}
+                value="1"
+              >
+                <option
+                  key="0"
+                  value="0"
+                >
+                  0 Years
+                </option>
+                <option
+                  key="1"
+                  value="1"
+                >
+                  1 Year
+                </option>
+                <option
+                  key="2"
+                  value="2"
+                >
+                  2 Years
+                </option>
+                <option
+                  key="3"
+                  value="3"
+                >
+                  3+ Years
+                </option>
+              </select>
+            </label>
+          </div>
+        </Label>
+      </InputSelect>
+    </div>
+    <InputSelect
+      className="inputSelect"
+      data-id="How many months have you been working at this address?"
+      label="How many months have you been working at this address?"
+      name="monthsAtJob"
+      onChange={[MockFunction]}
+      options={
+        Array [
+          Object {
+            "option": "0 Months",
+            "value": "0",
+          },
+          Object {
+            "option": "1 Month",
+            "value": "1",
+          },
+          Object {
+            "option": "2 Months",
+            "value": "2",
+          },
+          Object {
+            "option": "3 Months",
+            "value": "3",
+          },
+          Object {
+            "option": "4 Months",
+            "value": "4",
+          },
+          Object {
+            "option": "5 Months",
+            "value": "5",
+          },
+          Object {
+            "option": "6 Months",
+            "value": "6",
+          },
+          Object {
+            "option": "7 Months",
+            "value": "7",
+          },
+          Object {
+            "option": "8 Months",
+            "value": "8",
+          },
+          Object {
+            "option": "9 Months",
+            "value": "9",
+          },
+          Object {
+            "option": "10 Months",
+            "value": "10",
+          },
+          Object {
+            "option": "11 Months",
+            "value": "11",
+          },
+        ]
+      }
+      placeholder="-- Months worked --"
+      required={true}
+      status="valid"
+      subTitle="Please select the amount of months you have spent at this job?"
+      value="1"
+    >
+      <Label
+        customClasses=""
+        name="monthsAtJob"
+        required={true}
+        status="valid"
+        title="How many months have you been working at this address?"
+        withSub={true}
+      >
+        <div
+          className="label"
+        >
+          <label
+            data-id={false}
+            htmlFor="monthsAtJob"
+          >
+            <span
+              className="title halfMargin"
+              data-id="label-title"
+            >
+              How many months have you been working at this address?
+            </span>
+            <span
+              className="label-sub-title"
+            >
+              Please select the amount of months you have spent at this job?
+            </span>
+            <select
+              className="success-input-border inputSelect"
+              data-id="How many months have you been working at this address?"
+              name="monthsAtJob"
+              onChange={[MockFunction]}
+              value="1"
+            >
+              <option
+                disabled={true}
+                key="un1quekey123"
+                value="-- Months worked --"
+              >
+                -- Months worked --
+              </option>
+              <option
+                key="0"
+                value="0"
+              >
+                0 Months
+              </option>
+              <option
+                key="1"
+                value="1"
+              >
+                1 Month
+              </option>
+              <option
+                key="2"
+                value="2"
+              >
+                2 Months
+              </option>
+              <option
+                key="3"
+                value="3"
+              >
+                3 Months
+              </option>
+              <option
+                key="4"
+                value="4"
+              >
+                4 Months
+              </option>
+              <option
+                key="5"
+                value="5"
+              >
+                5 Months
+              </option>
+              <option
+                key="6"
+                value="6"
+              >
+                6 Months
+              </option>
+              <option
+                key="7"
+                value="7"
+              >
+                7 Months
+              </option>
+              <option
+                key="8"
+                value="8"
+              >
+                8 Months
+              </option>
+              <option
+                key="9"
+                value="9"
+              >
+                9 Months
+              </option>
+              <option
+                key="10"
+                value="10"
+              >
+                10 Months
+              </option>
+              <option
+                key="11"
+                value="11"
+              >
+                11 Months
+              </option>
+            </select>
+          </label>
+        </div>
+      </Label>
+    </InputSelect>
+  </div>
+</YearsStep>
+`;

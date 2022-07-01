@@ -1,0 +1,146 @@
+@import 'variables'
+@import 'mixins'
+
+.buttonComponent
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $base-font-family
+  font-weight: 400
+  outline-color: transparent
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  min-height: 42px
+  letter-spacing: normal
+  overflow: hidden
+  text-overflow: ellipsis
+  user-select: none
+  border: 0
+  font-size: 16px
+  line-height: 1
+  padding: 10px
+
+  +mq($from: tablet)
+    min-height: 44px
+    font-size: 18px
+    &-link
+      padding-left: 0
+      padding-right: 0
+
+  +mq($from: desktop)
+    min-height: 49px
+    font-size: 24px
+    &-link
+      padding-left: 0
+      padding-right: 0
+
+  &:disabled
+    background-color: $color-white-quartz
+    border: 1px solid $color-white-quartz
+    color: $color-violet-marguerite
+    border-left: 15px solid $color-blue-hawkes
+
+    &:hover
+      cursor: not-allowed
+
+.primary
+  color: $color-white
+  background-color: $secondary
+  transition: all .2s ease-in-out
+  border-left: 15px solid $blue-lighter
+
+  +mq($from: desktop)
+    border-left: 15px solid $blue-lighter
+
+    &:hover:not( :disabled )
+      background-color: $dark
+      border-left: 15px solid $dark
+
+  +mq($until: desktop)
+    &:active:not( :disabled )
+      background-color: $dark
+      border-left: 15px solid $dark
+
+.secondary
+  color: $dark
+  background-color: $color-white
+  border: 1px solid $dark
+  transition: all .2s ease-in-out
+
+  +mq($from: desktop)
+    &:hover:not( :disabled )
+      color: $color-white
+      background-color: $dark
+
+  +mq($until: desktop)
+    &:active:not( :disabled )
+      color: $color-white
+      background-color: $dark
+
+  &-selected
+    color: $color-white
+    background-color: $dark
+    border: none
+
+    +mq($from: desktop)
+      &:hover:not( :disabled )
+        border: none
+
+    +mq($until: desktop)
+      &:active:not( :disabled )
+        border: none
+
+.like
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 40px
+  width: 40px
+  background-color: $color-white
+  border: 1px solid $tertiary
+  padding: 0
+  transition: background-color .2s ease-in-out
+
+  & > *
+    transition: all .2s ease-in-out
+    width: 24px
+    height: 24px
+
+  &:not( &-selected ):hover
+    background-color: $tertiary
+
+    & > *
+      fill: $tertiary
+      stroke: $color-white
+
+  &-selected
+    background-color: $tertiary
+
+    & > *
+      fill: $tertiary
+      stroke: $color-white
+
+.cancel
+  display: flex
+  font-weight: 300
+  font-size: 14px
+  color: $color-violet-chatelle
+  border: none
+  text-decoration: underline
+  background: none
+
+/* workaround of link's disabled attribute absence */
+
+a.buttonComponent[disabled]
+  background-color: $color-white-quartz
+  border: 1px solid $color-white-quartz
+  color: $color-violet-marguerite
+  border-left: 15px solid $color-blue-hawkes
+
+  &:hover
+    cursor: not-allowed
+    background-color: $color-white-quartz
+    border: 1px solid $color-white-quartz
+    color: $color-violet-marguerite
+    border-left: 15px solid $color-blue-hawkes

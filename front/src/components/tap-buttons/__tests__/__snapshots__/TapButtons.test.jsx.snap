@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TapButtons /> renders without errors 1`] = `
+<div
+  className="container"
+  data-id="options"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="tap-buttons-title__text"
+    >
+      Label
+    </div>
+  </div>
+  <div
+    className="list"
+  >
+    <TapButtonsList
+      defaultVal=""
+      onChange={[MockFunction]}
+      options={Array []}
+      sectionName=""
+      status="default"
+      value=""
+    />
+  </div>
+</div>
+`;

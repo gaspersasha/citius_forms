@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSelect /> renders without errors 1`] = `
+<Label
+  customClasses=""
+  name=""
+  required={false}
+  status=""
+  title=""
+  withSub={false}
+>
+  <select
+    className="select-placeholder"
+    name=""
+    onChange={[MockFunction]}
+    value=""
+  />
+</Label>
+`;

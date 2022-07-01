@@ -1,0 +1,289 @@
+#Blueconic-Exit-Survey-Form {
+  box-sizing: border-box;
+  font-family: "sofia-pro", sans-serif !important;
+  font-size: 16px;
+  color: #1C1836;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.fancybox-skin{
+    padding: 0!important;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.bc-BCform-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bc-BCform-form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bc-BCform-form-header {
+  display: block;
+  background-color: #04BF82;
+  background: linear-gradient(to right, #04BF82 50%, #18CE96 50%);
+  position: relative;
+  flex-direction: column;
+}
+
+.bc-BCform-header-image img {
+    display: none;
+}
+
+.bc-BCform-header {
+  background-color: #04BF82;
+  background: linear-gradient(to right, #04BF82 50%, #18CE96 50%);
+  display: block;
+  flex-direction: column;
+}
+
+.bc-BCform-header__heading {
+  font-size: 30px !important;
+  text-align: left;
+  line-height: 41px !important;
+  max-width: 250px;
+  margin: 0 auto 20px 15px !important;
+  padding: 20px 0 0 15px !important;
+  font-weight: bold !important;
+  color: #1C1836 !important;
+}
+
+.bc-BCform-header__heading span {
+  color: rgb(0, 71, 149) !important;
+}
+
+.bc-BCform-header__description {
+  padding: 0 30px 20px!important;
+  text-align: left;
+  line-height: 22px !important;
+  letter-spacing: 0;
+}
+
+.bc-BCform-list {
+  padding: 20px 40px 40px!important;
+  background: rgb(255, 255, 255);
+}
+
+.bc-BCform-label {
+  color: #1C1836 !important;
+  line-height: 20px !important;
+  margin-bottom: 10px !important;
+  letter-spacing: 0.3px;
+}
+
+.bc-BCform-input {
+  height: 41px;
+  width: 100%;
+  border: 1px solid #1C1836;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 3px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  transition: border 0.2s ease;
+}
+
+.bc-BCform-input::placeholder {
+  color: #6D7278;
+  letter-spacing: 0.3px;
+}
+
+#dateOfPurchaseBC {
+   text-transform: uppercase;
+   background: rgb(255, 255, 255) !important;
+   -webkit-appearance: none;
+}
+
+
+  #dateOfPurchaseBC::-webkit-inner-spin-button,
+  #dateOfPurchaseBC::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
+  }
+
+.bc-BCform-input.invalid {
+  border: 1px solid #FF3774;
+}
+
+.bc-BCform-input .date #picker {
+  display: none;
+}
+
+.bc-BCform-list__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto !important;
+}
+
+.bc-BCform-button {
+  display: block;
+  width: 100% !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+  height: 58px;
+  transition: all .2s ease-in-out;
+  border: none !important;
+  border-left: 15px solid #3694f2 !important;
+  font-size: 24px !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: #1872f3 !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+
+.bc-BCform-button:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.bc-BCform-button:hover {
+    background-color: #1C1836 !important;
+    border-left: 15px solid #1C1836 !important;
+ }
+
+.bc-BCform-unsubscribe {
+  position: absolute;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  background: #14D69E;
+  padding: 30px 40px 20px !important;
+  top: 100%;
+}
+
+.bc-BCform-unsubscribe h3 {
+  font-weight: bold;
+}
+
+.bc-BCform-unsubscribe a {
+  font-weight: bold !important;
+  text-decoration: underline;
+}
+
+.bc-BCform-unsubscribe p {
+  margin-bottom: 15px;
+}
+
+.bc-BCform-privacy-notice-header {
+  margin-bottom: 10px;
+  line-height: 15px !important;
+}
+
+.bc-BCform-privacy-notice-header span {
+  font-weight: bold;
+}
+
+.bc-BCform-privacy-notice-header span,
+.bc-BCform-privacy-notice-paragraph span,
+.bc-BCform-privacy-notice-header a,
+.bc-BCform-privacy-notice-paragraph a{
+    font-weight: bold !important;
+}
+
+.bc-BCform-privacy-notice-paragraph {
+    margin-top: 13px !important;
+    line-height: 15px !important;
+}
+
+@media all and (min-width: 320px) and  (max-width: 400px) {
+    .bc-BCform-header__description {
+        padding: 0 15px 20px !important;
+    }
+
+    .bc-BCform-list {
+        padding: 20px 20px 40px !important;
+    }
+
+    .bc-BCform-unsubscribe {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+      .bc-BCform-header__heading {
+          margin: 0 auto 20px 0 !important;
+      }
+}
+
+@media all and (min-width: 986px) {
+  .bc-BCform-wrapper {
+    flex-direction: row;
+  }
+
+  .bc-BCform-list {
+    padding: 30px 50px 0 50px !important;
+    width: 100%;
+  }
+
+  .bc-BCform-button {
+      height: 67px;
+  }
+
+  .bc-BCform-header, .bc-BCform-unsubscribe {
+    width: 375px;
+  }
+
+  .bc-BCform-unsubscribe {
+    position: static;
+    padding: 20px 20px 30px !important;
+  }
+
+  .bc-BCform-unsubscribe {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .bc-BCform-header__heading {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    max-width: 300px;
+    padding: 40px 0 0 0 !important;
+    margin-left: 20px !important;
+  }
+
+  .bc-BCform-header-image {
+      width: 216px !important;
+      height: 230px !important;
+      margin: 0 20px 0 auto !important;
+  }
+
+  .bc-BCform-header-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto !important;
+    }
+
+  .bc-BCform-header__description {
+    background-color: #04BF82;
+    background: linear-gradient(to right, #04BF82 50%, #18CE96 50%);
+    padding: 0 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .bc-BCform-header__heading, .bc-BCform-header__description {
+    display: block
+  }
+
+  .bc-BCform-unsubscribe {
+    order: 0;
+  }
+}

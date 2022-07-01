@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Confirm /> orders snapshot 1`] = `
+<Confirm
+  handleChange={[MockFunction]}
+  handlePromoCodeChange={[MockFunction]}
+  handleSubmit={[MockFunction]}
+  isDataSending={false}
+  isLeadgen={false}
+  isLoading={false}
+  toggleModal={[MockFunction]}
+>
+  <div
+    className="formFinance"
+  >
+    <div
+      className="confirmationBlock"
+    >
+      <h3
+        className="header"
+      >
+        Almost done!
+      </h3>
+      <img
+        alt="almost_done"
+        src="/images/almost_done_image.svg"
+      />
+    </div>
+    <div
+      className="lender"
+    >
+      <form
+        className="formConfirm"
+        onSubmit={[Function]}
+      >
+        <div
+          className="optionOne"
+        >
+          <input
+            className="confirmCheckbox"
+            data-id="Find me my best available rate"
+            id="send-to-lender"
+            name="consent"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            htmlFor="send-to-lender"
+          >
+            <p>
+              <b>
+                Find me my best available rate
+              </b>
+            </p>
+            <p>
+              I consent to my application being sent to the lender and understand that this may result in one or more credit searches being registered
+            </p>
+          </label>
+        </div>
+        <Button
+          className="confirm confirm_margin"
+          disabled={false}
+          href=""
+          onClick={null}
+          selected={false}
+          styleType="primary"
+          type="submit"
+        >
+          <button
+            className="buttonComponent primary confirm confirm_margin"
+            disabled={false}
+            href={null}
+            onClick={null}
+            type="submit"
+          >
+            Submit my application
+          </button>
+        </Button>
+      </form>
+      <p
+        className="submitting"
+      >
+        By Submitting your application, you are agreeing with our 
+        <a
+          href="#"
+          onClick={[MockFunction]}
+          role="button"
+        >
+          Application Terms
+        </a>
+      </p>
+    </div>
+  </div>
+</Confirm>
+`;

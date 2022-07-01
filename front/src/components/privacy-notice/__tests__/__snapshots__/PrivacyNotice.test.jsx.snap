@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrivacyNotice /> renders without errors 1`] = `
+<div
+  className="container"
+>
+  <h2>
+    Privacy Notice
+  </h2>
+  <div>
+    We will use the details you have shared to manage your car purchase. You agree to the processing, storage,  sharing and use of this information for the purpose of managing your car purchase as described in our 
+    <a
+      href="https://www.autovia.co.uk/privacy-policy/#vehicle-purchase-or-enquiry"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Privacy Policy
+    </a>
+    .
+  </div>
+  <div>
+    We believe that based on this purchase you may be interested in other related products and services we  offer. As described in our
+     
+    <a
+      href="https://www.autovia.co.uk/privacy-policy/#vehicle-purchase-or-enquiry"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Privacy Policy
+    </a>
+     we will use  the information you have shared to send you communications about such products and services. If you do not  wish to receive these communications from us then please check here and you will be unsubscribed  from this activity.
+     
+    <InputCheckbox
+      checked={false}
+      className=""
+      customClasses=""
+      label=""
+      name=""
+      onChange={[MockFunction]}
+      status=""
+      value={false}
+    />
+  </div>
+  <div>
+    'We' includes BuyaCar, AutoExpress, Carbuyer, evo and other Autovia Group brands as 
+    <a
+      href="https://www.autovia.co.uk/brands"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      detailed here
+    </a>
+    .
+  </div>
+</div>
+`;

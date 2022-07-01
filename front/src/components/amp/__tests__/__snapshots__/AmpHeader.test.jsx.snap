@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AmpHeader /> render without errors 1`] = `
+<header
+  aria-hidden="true"
+  className="page-header"
+>
+  <div
+    className="menu-toggle"
+    on="tap:sidebar.toggle"
+    role="button"
+    tabIndex="-1"
+  >
+    <span />
+    <span />
+    <span />
+  </div>
+  <div
+    className="logo-wrapper"
+  >
+    <a
+      className="site-logo"
+      href="/"
+      tabIndex="-1"
+      title="BuyaCar"
+    >
+      <Logo
+        height="40"
+        viewBox="0 0 195 57.1"
+        width="152"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </a>
+  </div>
+</header>
+`;

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> renders without errors 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className="subheading subheadMargin"
+    color="dark"
+    type="p"
+  >
+    1. About you
+  </Typography>
+  <InputSelect
+    className="input select"
+    id="title"
+    label="Title"
+    name="title"
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Mr",
+          "value": "MR",
+        },
+        Object {
+          "option": "Mrs",
+          "value": "MRS",
+        },
+        Object {
+          "option": "Dr",
+          "value": "DR",
+        },
+        Object {
+          "option": "Ms",
+          "value": "MS",
+        },
+        Object {
+          "option": "Miss",
+          "value": "MISS",
+        },
+      ]
+    }
+    placeholder="Choose from the dropdown"
+    required={true}
+    status="default"
+    subTitle=""
+    value="MR"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="firstName"
+    label="First name"
+    name="firstName"
+    onChange={[MockFunction]}
+    placeholder="As on your driving license"
+    required={true}
+    status="default"
+    subTitle=""
+    value="first"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="middleName"
+    label="Middle name"
+    name="middleName"
+    onChange={[MockFunction]}
+    placeholder="As on your driving license"
+    required={false}
+    status="default"
+    subTitle=""
+    value="mid"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="lastName"
+    label="Last name"
+    name="lastName"
+    onChange={[MockFunction]}
+    placeholder="As on your driving license"
+    required={true}
+    status="default"
+    subTitle=""
+    value="last"
+  />
+</Fragment>
+`;

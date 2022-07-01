@@ -1,0 +1,8 @@
+{
+  "src/**/*.{js,jsx}": [
+    "npm run lint:js:fix"
+  ],
+  "src/**/*.sass": [
+    "npm run lint:css"
+  ]
+}

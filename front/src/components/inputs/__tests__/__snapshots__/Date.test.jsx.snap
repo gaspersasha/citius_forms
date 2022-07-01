@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputDate /> renders without errors 1`] = `
+<Label
+  customClasses=""
+  name="datepicker"
+  required={false}
+  status="default"
+  title="Date of birth"
+  withSub={false}
+>
+  <t
+    className=""
+    guide={true}
+    mask={[Function]}
+    name="datepicker"
+    onChange={[MockFunction]}
+    pipe={[Function]}
+    placeholder="DD/MM/YYYY"
+    render={[Function]}
+  />
+</Label>
+`;

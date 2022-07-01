@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IncomeStep /> renders without errors 1`] = `
+<div
+  className="incomeFormWrapper"
+>
+  <InputNumber
+    className="inputNumber"
+    label="Annual income"
+    name="salary"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    onKeyPress={null}
+    placeholder="per year"
+    required={true}
+    status="valid"
+    subTitle="Please enter your annual income before tax and including commission. This needs to be over £2,000 to continue"
+    value="12345"
+  />
+</div>
+`;

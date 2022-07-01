@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FinanceThankYou /> renders without errors 1`] = `
+<FinanceThankYou>
+  <div
+    className="spinner"
+  >
+    <Spinner
+      className=""
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="loader"
+        />
+      </div>
+    </Spinner>
+  </div>
+</FinanceThankYou>
+`;

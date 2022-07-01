@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AmpSideBar /> render without errors 1`] = `
+<amp-sidebar
+  id="sidebar"
+  layout="nodisplay"
+  role="menu"
+  side="left"
+  tabindex="-1"
+>
+  <amp-accordion
+    i-amphtml-layout="container"
+  >
+    <section>
+      <header
+        aria-controls="56_AMP_content_0"
+        aria-expanded="false"
+        className="menu i-amp-html-accordion-header"
+        id="amp-header"
+        role="button"
+        tabIndex="0"
+      >
+        <span>
+          Cars
+        </span>
+      </header>
+      <ul
+        className="menu"
+        role="region"
+      >
+        <li
+          className="child-element"
+        >
+          <a
+            href="/cars"
+          >
+            Used Cars
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/cars/new-cars"
+          >
+            New Cars in Stock
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/part-ex"
+          >
+            Sell my car
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <a
+          href="/vans"
+        >
+          Vans
+        </a>
+      </header>
+      <ul
+        aria-labelledby="56_AMP_header_1"
+        className="menu"
+        role="region"
+      />
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <a
+          href="/leasing"
+        >
+          Leasing
+        </a>
+      </header>
+      <ul
+        aria-labelledby="56_AMP_header_2"
+        className="menu i-amp-html-accordion-header i-amphtml-accordion-content"
+        role="region"
+      />
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <a
+          href="/motoring-services"
+        >
+          Motoring Services
+        </a>
+      </header>
+      <ul
+        aria-labelledby="56_AMP_header_3"
+        className="menu i-amp-html-accordion-header i-amphtml-accordion-content"
+        role="region"
+      />
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <span>
+          How It Works
+        </span>
+      </header>
+      <ul
+        className="menu"
+        role="region"
+      >
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works"
+          >
+            How It Works
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/finance-options"
+          >
+            Finance Options
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/warranty-insurance"
+          >
+            Warranty & Insurance
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/part-exchange"
+          >
+            Part Exchange
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/cancellation-returns"
+          >
+            Cancellations & Returns
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/faq"
+          >
+            FAQ
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/about"
+          >
+            About Us
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/how-it-works/contact-us"
+          >
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <a
+          href="tel:666"
+        >
+          666-999-1032
+        </a>
+      </header>
+      <ul
+        aria-labelledby="56_AMP_header_5"
+        className="menu"
+        role="region"
+      />
+    </section>
+    <section>
+      <header
+        className="menu i-amp-html-accordion-header"
+        role="button"
+      >
+        <span>
+          My Account
+        </span>
+      </header>
+      <ul
+        aria-labelledby="56_AMP_header_6"
+        className="menu"
+        role="region"
+      >
+        <li
+          className="child-element"
+        >
+          <a
+            href="/account"
+          >
+            My Cars
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/account/details"
+          >
+            My Details
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/account/orders"
+          >
+            My Orders
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="/account/part-exchange"
+          >
+            My Part-exchange
+          </a>
+        </li>
+        <li
+          className="child-element"
+        >
+          <a
+            href="https://website/mybuyacar/Logout.jhtml?partnerName=buyacar"
+          >
+            Sign Out
+          </a>
+        </li>
+      </ul>
+    </section>
+  </amp-accordion>
+  <div
+    className="separator"
+  />
+</amp-sidebar>
+`;

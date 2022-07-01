@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchSelect> basic render 1`] = `
+<SearchSelect
+  autoFocus={false}
+  classNames={
+    Array [
+      "Fake",
+    ]
+  }
+  customClasses=""
+  id="Fake"
+  label="Fake"
+  name="Fake"
+  onChange={[Function]}
+  options={Array []}
+  placeholder="Fake"
+  required={true}
+  status=""
+  subTitle=""
+  value="Fake"
+>
+  <div
+    className="wrapper"
+  >
+    <Label
+      customClasses=""
+      name="Fake"
+      required={true}
+      status=""
+      title="Fake"
+      withSub={false}
+    >
+      <div
+        className="label"
+      >
+        <label
+          data-id={false}
+          htmlFor="Fake"
+        >
+          <span
+            className="title"
+            data-id="label-title"
+          >
+            Fake
+          </span>
+          <input
+            autoFocus={false}
+            className=""
+            id="Fake"
+            name="Fake"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Fake"
+            type="text"
+            value="Fake"
+          />
+        </label>
+      </div>
+    </Label>
+  </div>
+</SearchSelect>
+`;

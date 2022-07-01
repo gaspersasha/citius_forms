@@ -1,0 +1,1120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExpandingWrapper/> render without errors 1`] = `
+<div
+  className="orderSummary"
+  data-id="expanding-wrapper"
+>
+  <div
+    className="container"
+    style={null}
+  >
+    <div
+      className="smView smViewActive"
+      role="button"
+      tabIndex={0}
+    >
+      <img
+        alt="small-car"
+        className="thumbnail"
+        src="https://d13fze08x8d2oj.cloudfront.nethttps://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg"
+      />
+      <div
+        className="smContent"
+      >
+        <span
+          className="smText"
+        >
+          Show order summary
+        </span>
+        <div
+          className="arrowWrapper"
+        >
+          <div
+            className="arrow"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="flView"
+    >
+      <div
+        className="flContainer"
+      >
+        <Cross
+          className="close"
+          data-id="close-button"
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        <Contents
+          WITH_PX_CTA={true}
+          className=""
+          data={
+            Object {
+              "default": Object {
+                "quoteDetails": Object {
+                  "VAP": Object {
+                    "paintProtection": 340,
+                  },
+                  "customerFinanceTerms": Object {
+                    "amountFinanced": 9016.8,
+                    "annualMileage": 8000,
+                    "apr": 8.9,
+                    "basicPrice": 10018.8,
+                    "contractLength": 48,
+                    "depositAmount": 1002,
+                    "finalPayment": 3373.93,
+                    "financeType": "PCP",
+                    "lender": "ALPHERA",
+                    "monthlyPayment": 166.21,
+                    "rateOfInterest": 4.61,
+                    "totalPayable": 12187.8,
+                  },
+                  "delivery": Object {
+                    "actualDate": null,
+                    "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+                    "deliveryCost": 238.8,
+                    "deliveryMethodId": 18,
+                    "description": "Driven delivery within England and Wales",
+                    "status": "delivery booked",
+                  },
+                  "financeApplication": Object {
+                    "approved": false,
+                    "financeApplied": true,
+                    "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+                    "lender": "Alphera",
+                    "sccCompleted": true,
+                    "status": "in progress",
+                  },
+                  "lenderFinanceTerms": Object {
+                    "amountFinanced": 9016.8,
+                    "annualMileage": 10000,
+                    "apr": 9.9,
+                    "basicPrice": 10018.8,
+                    "contractLength": 48,
+                    "depositAmount": 1000,
+                    "finalPayment": 1234,
+                    "financeType": "HP",
+                    "lender": "ALPHERA",
+                    "monthlyPayment": 167.88,
+                    "rateOfInterest": 4.61,
+                    "totalPayable": 12187.8,
+                  },
+                  "order": Object {
+                    "accountId": 424424,
+                    "buyingStatus": "check availability",
+                    "orderId": 123456,
+                    "signed": false,
+                    "signedDate": null,
+                    "status": "Sent to recipient",
+                  },
+                  "partex": Array [
+                    Object {
+                      "addedToQuote": true,
+                      "body": "Coupe",
+                      "buyacarStatus": "Urgent",
+                      "colour": "GREY",
+                      "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+                      "customerStatus": "Customer accepted offer",
+                      "engineSize": "2979",
+                      "fuel": "Petrol",
+                      "manufacturer": "BMW",
+                      "mileage": 36000,
+                      "model": "640I M SPORT AUTO",
+                      "registration": "WR65XOD",
+                      "tcbgStatus": "Collection Agreed",
+                      "transmission": "6 Speed Auto Petrol",
+                      "valuation": 15807,
+                      "year": 2015,
+                    },
+                    Object {
+                      "addedToQuote": false,
+                      "body": "Hatchback",
+                      "buyacarStatus": "Urgent",
+                      "colour": "RED",
+                      "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+                      "customerStatus": "Customer accepted offer",
+                      "engineSize": "898",
+                      "fuel": "Petrol",
+                      "manufacturer": "RENAULT",
+                      "mileage": 23000,
+                      "model": "CLIO DYNAMIQUE NAV TCE",
+                      "registration": "LV67XOR",
+                      "tcbgStatus": "Collection Agreed",
+                      "transmission": "5 Speed Manual Petrol",
+                      "valuation": 6090,
+                      "year": 2018,
+                    },
+                  ],
+                  "quote": Object {
+                    "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+                    "depositAmount": 199,
+                    "paymentMethod": "finance",
+                    "productDefinitionId": 3595188,
+                    "quoteId": 987367,
+                    "quoteItemId": 1010427,
+                    "quotePrice": 25237.8,
+                    "sold": false,
+                    "status": "Reservation",
+                  },
+                  "reservation": Object {
+                    "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+                    "depositPaid": 199,
+                    "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+                  },
+                  "softCreditSearch": Object {
+                    "band": "B",
+                    "message": "You have an good credit profile and are likely to be accepted",
+                    "name": "Good",
+                    "score": 420,
+                  },
+                  "step": "search",
+                  "subStep": "start",
+                  "vehicle": Object {
+                    "advertId": 3332415,
+                    "advertUrl": "/deal-1569916",
+                    "bodyStyle": "hatchback",
+                    "cashPrice": 24999,
+                    "financeDepositContribution": 300,
+                    "financePrice": 24699,
+                    "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+                    "fuelType": "petrol/electric hybrid",
+                    "make": "hyundai",
+                    "mileage": 100,
+                    "model": "IONIQ",
+                    "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+                    "range": "ioniq",
+                    "registrationDate": "2017-09-01",
+                    "showNetPrice": false,
+                    "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+                    "trimName": "Premium SE",
+                    "van": false,
+                    "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+                    "year": 2017,
+                  },
+                  "verification": Object {
+                    "completed": false,
+                    "completedDate": null,
+                    "status": "sent to customer",
+                  },
+                },
+              },
+              "quoteDetails": Object {
+                "VAP": Object {
+                  "paintProtection": 340,
+                },
+                "customerFinanceTerms": Object {
+                  "amountFinanced": 9016.8,
+                  "annualMileage": 8000,
+                  "apr": 8.9,
+                  "basicPrice": 10018.8,
+                  "contractLength": 48,
+                  "depositAmount": 1002,
+                  "finalPayment": 3373.93,
+                  "financeType": "PCP",
+                  "lender": "ALPHERA",
+                  "monthlyPayment": 166.21,
+                  "rateOfInterest": 4.61,
+                  "totalPayable": 12187.8,
+                },
+                "delivery": Object {
+                  "actualDate": null,
+                  "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+                  "deliveryCost": 238.8,
+                  "deliveryMethodId": 18,
+                  "description": "Driven delivery within England and Wales",
+                  "status": "delivery booked",
+                },
+                "financeApplication": Object {
+                  "approved": false,
+                  "financeApplied": true,
+                  "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+                  "lender": "Alphera",
+                  "sccCompleted": true,
+                  "status": "in progress",
+                },
+                "lenderFinanceTerms": Object {
+                  "amountFinanced": 9016.8,
+                  "annualMileage": 10000,
+                  "apr": 9.9,
+                  "basicPrice": 10018.8,
+                  "contractLength": 48,
+                  "depositAmount": 1000,
+                  "finalPayment": 1234,
+                  "financeType": "HP",
+                  "lender": "ALPHERA",
+                  "monthlyPayment": 167.88,
+                  "rateOfInterest": 4.61,
+                  "totalPayable": 12187.8,
+                },
+                "order": Object {
+                  "accountId": 424424,
+                  "buyingStatus": "check availability",
+                  "orderId": 123456,
+                  "signed": false,
+                  "signedDate": null,
+                  "status": "Sent to recipient",
+                },
+                "partex": Array [
+                  Object {
+                    "addedToQuote": true,
+                    "body": "Coupe",
+                    "buyacarStatus": "Urgent",
+                    "colour": "GREY",
+                    "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+                    "customerStatus": "Customer accepted offer",
+                    "engineSize": "2979",
+                    "fuel": "Petrol",
+                    "manufacturer": "BMW",
+                    "mileage": 36000,
+                    "model": "640I M SPORT AUTO",
+                    "registration": "WR65XOD",
+                    "tcbgStatus": "Collection Agreed",
+                    "transmission": "6 Speed Auto Petrol",
+                    "valuation": 15807,
+                    "year": 2015,
+                  },
+                  Object {
+                    "addedToQuote": false,
+                    "body": "Hatchback",
+                    "buyacarStatus": "Urgent",
+                    "colour": "RED",
+                    "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+                    "customerStatus": "Customer accepted offer",
+                    "engineSize": "898",
+                    "fuel": "Petrol",
+                    "manufacturer": "RENAULT",
+                    "mileage": 23000,
+                    "model": "CLIO DYNAMIQUE NAV TCE",
+                    "registration": "LV67XOR",
+                    "tcbgStatus": "Collection Agreed",
+                    "transmission": "5 Speed Manual Petrol",
+                    "valuation": 6090,
+                    "year": 2018,
+                  },
+                ],
+                "quote": Object {
+                  "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+                  "depositAmount": 199,
+                  "paymentMethod": "finance",
+                  "productDefinitionId": 3595188,
+                  "quoteId": 987367,
+                  "quoteItemId": 1010427,
+                  "quotePrice": 25237.8,
+                  "sold": false,
+                  "status": "Reservation",
+                },
+                "reservation": Object {
+                  "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+                  "depositPaid": 199,
+                  "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+                },
+                "softCreditSearch": Object {
+                  "band": "B",
+                  "message": "You have an good credit profile and are likely to be accepted",
+                  "name": "Good",
+                  "score": 420,
+                },
+                "step": "search",
+                "subStep": "start",
+                "vehicle": Object {
+                  "advertId": 3332415,
+                  "advertUrl": "/deal-1569916",
+                  "bodyStyle": "hatchback",
+                  "cashPrice": 24999,
+                  "financeDepositContribution": 300,
+                  "financePrice": 24699,
+                  "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+                  "fuelType": "petrol/electric hybrid",
+                  "make": "hyundai",
+                  "mileage": 100,
+                  "model": "IONIQ",
+                  "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+                  "range": "ioniq",
+                  "registrationDate": "2017-09-01",
+                  "showNetPrice": false,
+                  "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+                  "trimName": "Premium SE",
+                  "van": false,
+                  "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+                  "year": 2017,
+                },
+                "verification": Object {
+                  "completed": false,
+                  "completedDate": null,
+                  "status": "sent to customer",
+                },
+              },
+            }
+          }
+          isDesktopOnly={false}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="falseSpace"
+  />
+</div>
+`;
+
+exports[`OrderSummary render without errors 1`] = `
+<OrderSummary
+  WITH_PX_CTA={true}
+  carDetails={
+    Object {
+      "name": null,
+      "price": null,
+      "year": null,
+    }
+  }
+  data={
+    Object {
+      "default": Object {
+        "quoteDetails": Object {
+          "VAP": Object {
+            "paintProtection": 340,
+          },
+          "customerFinanceTerms": Object {
+            "amountFinanced": 9016.8,
+            "annualMileage": 8000,
+            "apr": 8.9,
+            "basicPrice": 10018.8,
+            "contractLength": 48,
+            "depositAmount": 1002,
+            "finalPayment": 3373.93,
+            "financeType": "PCP",
+            "lender": "ALPHERA",
+            "monthlyPayment": 166.21,
+            "rateOfInterest": 4.61,
+            "totalPayable": 12187.8,
+          },
+          "delivery": Object {
+            "actualDate": null,
+            "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+            "status": "delivery booked",
+          },
+          "financeApplication": Object {
+            "approved": false,
+            "financeApplied": true,
+            "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+            "lender": "Alphera",
+            "sccCompleted": true,
+            "status": "in progress",
+          },
+          "lenderFinanceTerms": Object {
+            "amountFinanced": 9016.8,
+            "annualMileage": 10000,
+            "apr": 9.9,
+            "basicPrice": 10018.8,
+            "contractLength": 48,
+            "depositAmount": 1000,
+            "finalPayment": 1234,
+            "financeType": "HP",
+            "lender": "ALPHERA",
+            "monthlyPayment": 167.88,
+            "rateOfInterest": 4.61,
+            "totalPayable": 12187.8,
+          },
+          "order": Object {
+            "accountId": 424424,
+            "buyingStatus": "check availability",
+            "orderId": 123456,
+            "signed": false,
+            "signedDate": null,
+            "status": "Sent to recipient",
+          },
+          "partex": Array [
+            Object {
+              "addedToQuote": true,
+              "body": "Coupe",
+              "buyacarStatus": "Urgent",
+              "colour": "GREY",
+              "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+              "customerStatus": "Customer accepted offer",
+              "engineSize": "2979",
+              "fuel": "Petrol",
+              "manufacturer": "BMW",
+              "mileage": 36000,
+              "model": "640I M SPORT AUTO",
+              "registration": "WR65XOD",
+              "tcbgStatus": "Collection Agreed",
+              "transmission": "6 Speed Auto Petrol",
+              "valuation": 15807,
+              "year": 2015,
+            },
+            Object {
+              "addedToQuote": false,
+              "body": "Hatchback",
+              "buyacarStatus": "Urgent",
+              "colour": "RED",
+              "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+              "customerStatus": "Customer accepted offer",
+              "engineSize": "898",
+              "fuel": "Petrol",
+              "manufacturer": "RENAULT",
+              "mileage": 23000,
+              "model": "CLIO DYNAMIQUE NAV TCE",
+              "registration": "LV67XOR",
+              "tcbgStatus": "Collection Agreed",
+              "transmission": "5 Speed Manual Petrol",
+              "valuation": 6090,
+              "year": 2018,
+            },
+          ],
+          "quote": Object {
+            "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+            "depositAmount": 199,
+            "paymentMethod": "finance",
+            "productDefinitionId": 3595188,
+            "quoteId": 987367,
+            "quoteItemId": 1010427,
+            "quotePrice": 25237.8,
+            "sold": false,
+            "status": "Reservation",
+          },
+          "reservation": Object {
+            "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+            "depositPaid": 199,
+            "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+          },
+          "softCreditSearch": Object {
+            "band": "B",
+            "message": "You have an good credit profile and are likely to be accepted",
+            "name": "Good",
+            "score": 420,
+          },
+          "step": "search",
+          "subStep": "start",
+          "vehicle": Object {
+            "advertId": 3332415,
+            "advertUrl": "/deal-1569916",
+            "bodyStyle": "hatchback",
+            "cashPrice": 24999,
+            "financeDepositContribution": 300,
+            "financePrice": 24699,
+            "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+            "fuelType": "petrol/electric hybrid",
+            "make": "hyundai",
+            "mileage": 100,
+            "model": "IONIQ",
+            "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+            "range": "ioniq",
+            "registrationDate": "2017-09-01",
+            "showNetPrice": false,
+            "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+            "trimName": "Premium SE",
+            "van": false,
+            "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+            "year": 2017,
+          },
+          "verification": Object {
+            "completed": false,
+            "completedDate": null,
+            "status": "sent to customer",
+          },
+        },
+      },
+      "quoteDetails": Object {
+        "VAP": Object {
+          "paintProtection": 340,
+        },
+        "customerFinanceTerms": Object {
+          "amountFinanced": 9016.8,
+          "annualMileage": 8000,
+          "apr": 8.9,
+          "basicPrice": 10018.8,
+          "contractLength": 48,
+          "depositAmount": 1002,
+          "finalPayment": 3373.93,
+          "financeType": "PCP",
+          "lender": "ALPHERA",
+          "monthlyPayment": 166.21,
+          "rateOfInterest": 4.61,
+          "totalPayable": 12187.8,
+        },
+        "delivery": Object {
+          "actualDate": null,
+          "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+          "status": "delivery booked",
+        },
+        "financeApplication": Object {
+          "approved": false,
+          "financeApplied": true,
+          "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+          "lender": "Alphera",
+          "sccCompleted": true,
+          "status": "in progress",
+        },
+        "lenderFinanceTerms": Object {
+          "amountFinanced": 9016.8,
+          "annualMileage": 10000,
+          "apr": 9.9,
+          "basicPrice": 10018.8,
+          "contractLength": 48,
+          "depositAmount": 1000,
+          "finalPayment": 1234,
+          "financeType": "HP",
+          "lender": "ALPHERA",
+          "monthlyPayment": 167.88,
+          "rateOfInterest": 4.61,
+          "totalPayable": 12187.8,
+        },
+        "order": Object {
+          "accountId": 424424,
+          "buyingStatus": "check availability",
+          "orderId": 123456,
+          "signed": false,
+          "signedDate": null,
+          "status": "Sent to recipient",
+        },
+        "partex": Array [
+          Object {
+            "addedToQuote": true,
+            "body": "Coupe",
+            "buyacarStatus": "Urgent",
+            "colour": "GREY",
+            "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+            "customerStatus": "Customer accepted offer",
+            "engineSize": "2979",
+            "fuel": "Petrol",
+            "manufacturer": "BMW",
+            "mileage": 36000,
+            "model": "640I M SPORT AUTO",
+            "registration": "WR65XOD",
+            "tcbgStatus": "Collection Agreed",
+            "transmission": "6 Speed Auto Petrol",
+            "valuation": 15807,
+            "year": 2015,
+          },
+          Object {
+            "addedToQuote": false,
+            "body": "Hatchback",
+            "buyacarStatus": "Urgent",
+            "colour": "RED",
+            "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+            "customerStatus": "Customer accepted offer",
+            "engineSize": "898",
+            "fuel": "Petrol",
+            "manufacturer": "RENAULT",
+            "mileage": 23000,
+            "model": "CLIO DYNAMIQUE NAV TCE",
+            "registration": "LV67XOR",
+            "tcbgStatus": "Collection Agreed",
+            "transmission": "5 Speed Manual Petrol",
+            "valuation": 6090,
+            "year": 2018,
+          },
+        ],
+        "quote": Object {
+          "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+          "depositAmount": 199,
+          "paymentMethod": "finance",
+          "productDefinitionId": 3595188,
+          "quoteId": 987367,
+          "quoteItemId": 1010427,
+          "quotePrice": 25237.8,
+          "sold": false,
+          "status": "Reservation",
+        },
+        "reservation": Object {
+          "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+          "depositPaid": 199,
+          "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+        },
+        "softCreditSearch": Object {
+          "band": "B",
+          "message": "You have an good credit profile and are likely to be accepted",
+          "name": "Good",
+          "score": 420,
+        },
+        "step": "search",
+        "subStep": "start",
+        "vehicle": Object {
+          "advertId": 3332415,
+          "advertUrl": "/deal-1569916",
+          "bodyStyle": "hatchback",
+          "cashPrice": 24999,
+          "financeDepositContribution": 300,
+          "financePrice": 24699,
+          "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+          "fuelType": "petrol/electric hybrid",
+          "make": "hyundai",
+          "mileage": 100,
+          "model": "IONIQ",
+          "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+          "range": "ioniq",
+          "registrationDate": "2017-09-01",
+          "showNetPrice": false,
+          "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+          "trimName": "Premium SE",
+          "van": false,
+          "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+          "year": 2017,
+        },
+        "verification": Object {
+          "completed": false,
+          "completedDate": null,
+          "status": "sent to customer",
+        },
+      },
+    }
+  }
+  withExpandingWrapper={false}
+>
+  <Contents
+    WITH_PX_CTA={true}
+    carDetails={
+      Object {
+        "name": null,
+        "price": null,
+        "year": null,
+      }
+    }
+    className="order-summary"
+    data={
+      Object {
+        "default": Object {
+          "quoteDetails": Object {
+            "VAP": Object {
+              "paintProtection": 340,
+            },
+            "customerFinanceTerms": Object {
+              "amountFinanced": 9016.8,
+              "annualMileage": 8000,
+              "apr": 8.9,
+              "basicPrice": 10018.8,
+              "contractLength": 48,
+              "depositAmount": 1002,
+              "finalPayment": 3373.93,
+              "financeType": "PCP",
+              "lender": "ALPHERA",
+              "monthlyPayment": 166.21,
+              "rateOfInterest": 4.61,
+              "totalPayable": 12187.8,
+            },
+            "delivery": Object {
+              "actualDate": null,
+              "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+              "deliveryCost": 238.8,
+              "deliveryMethodId": 18,
+              "description": "Driven delivery within England and Wales",
+              "status": "delivery booked",
+            },
+            "financeApplication": Object {
+              "approved": false,
+              "financeApplied": true,
+              "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+              "lender": "Alphera",
+              "sccCompleted": true,
+              "status": "in progress",
+            },
+            "lenderFinanceTerms": Object {
+              "amountFinanced": 9016.8,
+              "annualMileage": 10000,
+              "apr": 9.9,
+              "basicPrice": 10018.8,
+              "contractLength": 48,
+              "depositAmount": 1000,
+              "finalPayment": 1234,
+              "financeType": "HP",
+              "lender": "ALPHERA",
+              "monthlyPayment": 167.88,
+              "rateOfInterest": 4.61,
+              "totalPayable": 12187.8,
+            },
+            "order": Object {
+              "accountId": 424424,
+              "buyingStatus": "check availability",
+              "orderId": 123456,
+              "signed": false,
+              "signedDate": null,
+              "status": "Sent to recipient",
+            },
+            "partex": Array [
+              Object {
+                "addedToQuote": true,
+                "body": "Coupe",
+                "buyacarStatus": "Urgent",
+                "colour": "GREY",
+                "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+                "customerStatus": "Customer accepted offer",
+                "engineSize": "2979",
+                "fuel": "Petrol",
+                "manufacturer": "BMW",
+                "mileage": 36000,
+                "model": "640I M SPORT AUTO",
+                "registration": "WR65XOD",
+                "tcbgStatus": "Collection Agreed",
+                "transmission": "6 Speed Auto Petrol",
+                "valuation": 15807,
+                "year": 2015,
+              },
+              Object {
+                "addedToQuote": false,
+                "body": "Hatchback",
+                "buyacarStatus": "Urgent",
+                "colour": "RED",
+                "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+                "customerStatus": "Customer accepted offer",
+                "engineSize": "898",
+                "fuel": "Petrol",
+                "manufacturer": "RENAULT",
+                "mileage": 23000,
+                "model": "CLIO DYNAMIQUE NAV TCE",
+                "registration": "LV67XOR",
+                "tcbgStatus": "Collection Agreed",
+                "transmission": "5 Speed Manual Petrol",
+                "valuation": 6090,
+                "year": 2018,
+              },
+            ],
+            "quote": Object {
+              "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+              "depositAmount": 199,
+              "paymentMethod": "finance",
+              "productDefinitionId": 3595188,
+              "quoteId": 987367,
+              "quoteItemId": 1010427,
+              "quotePrice": 25237.8,
+              "sold": false,
+              "status": "Reservation",
+            },
+            "reservation": Object {
+              "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+              "depositPaid": 199,
+              "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+            },
+            "softCreditSearch": Object {
+              "band": "B",
+              "message": "You have an good credit profile and are likely to be accepted",
+              "name": "Good",
+              "score": 420,
+            },
+            "step": "search",
+            "subStep": "start",
+            "vehicle": Object {
+              "advertId": 3332415,
+              "advertUrl": "/deal-1569916",
+              "bodyStyle": "hatchback",
+              "cashPrice": 24999,
+              "financeDepositContribution": 300,
+              "financePrice": 24699,
+              "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+              "fuelType": "petrol/electric hybrid",
+              "make": "hyundai",
+              "mileage": 100,
+              "model": "IONIQ",
+              "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+              "range": "ioniq",
+              "registrationDate": "2017-09-01",
+              "showNetPrice": false,
+              "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+              "trimName": "Premium SE",
+              "van": false,
+              "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+              "year": 2017,
+            },
+            "verification": Object {
+              "completed": false,
+              "completedDate": null,
+              "status": "sent to customer",
+            },
+          },
+        },
+        "quoteDetails": Object {
+          "VAP": Object {
+            "paintProtection": 340,
+          },
+          "customerFinanceTerms": Object {
+            "amountFinanced": 9016.8,
+            "annualMileage": 8000,
+            "apr": 8.9,
+            "basicPrice": 10018.8,
+            "contractLength": 48,
+            "depositAmount": 1002,
+            "finalPayment": 3373.93,
+            "financeType": "PCP",
+            "lender": "ALPHERA",
+            "monthlyPayment": 166.21,
+            "rateOfInterest": 4.61,
+            "totalPayable": 12187.8,
+          },
+          "delivery": Object {
+            "actualDate": null,
+            "bookedDate": "Tue Apr 16 13:33:50 BST 2021",
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+            "status": "delivery booked",
+          },
+          "financeApplication": Object {
+            "approved": false,
+            "financeApplied": true,
+            "financeAppliedDate": "Tue Apr 13 13:33:50 BST 2021",
+            "lender": "Alphera",
+            "sccCompleted": true,
+            "status": "in progress",
+          },
+          "lenderFinanceTerms": Object {
+            "amountFinanced": 9016.8,
+            "annualMileage": 10000,
+            "apr": 9.9,
+            "basicPrice": 10018.8,
+            "contractLength": 48,
+            "depositAmount": 1000,
+            "finalPayment": 1234,
+            "financeType": "HP",
+            "lender": "ALPHERA",
+            "monthlyPayment": 167.88,
+            "rateOfInterest": 4.61,
+            "totalPayable": 12187.8,
+          },
+          "order": Object {
+            "accountId": 424424,
+            "buyingStatus": "check availability",
+            "orderId": 123456,
+            "signed": false,
+            "signedDate": null,
+            "status": "Sent to recipient",
+          },
+          "partex": Array [
+            Object {
+              "addedToQuote": true,
+              "body": "Coupe",
+              "buyacarStatus": "Urgent",
+              "colour": "GREY",
+              "createdDate": "Tue Apr 13 02:03:04 BST 2021",
+              "customerStatus": "Customer accepted offer",
+              "engineSize": "2979",
+              "fuel": "Petrol",
+              "manufacturer": "BMW",
+              "mileage": 36000,
+              "model": "640I M SPORT AUTO",
+              "registration": "WR65XOD",
+              "tcbgStatus": "Collection Agreed",
+              "transmission": "6 Speed Auto Petrol",
+              "valuation": 15807,
+              "year": 2015,
+            },
+            Object {
+              "addedToQuote": false,
+              "body": "Hatchback",
+              "buyacarStatus": "Urgent",
+              "colour": "RED",
+              "createdDate": "Tue Apr 13 10:20:30 BST 2021",
+              "customerStatus": "Customer accepted offer",
+              "engineSize": "898",
+              "fuel": "Petrol",
+              "manufacturer": "RENAULT",
+              "mileage": 23000,
+              "model": "CLIO DYNAMIQUE NAV TCE",
+              "registration": "LV67XOR",
+              "tcbgStatus": "Collection Agreed",
+              "transmission": "5 Speed Manual Petrol",
+              "valuation": 6090,
+              "year": 2018,
+            },
+          ],
+          "quote": Object {
+            "createdDate": "Tue Apr 13 00:00:00 BST 2021",
+            "depositAmount": 199,
+            "paymentMethod": "finance",
+            "productDefinitionId": 3595188,
+            "quoteId": 987367,
+            "quoteItemId": 1010427,
+            "quotePrice": 25237.8,
+            "sold": false,
+            "status": "Reservation",
+          },
+          "reservation": Object {
+            "dateOfPayment": "Tue Apr 13 13:33:50 BST 2021",
+            "depositPaid": 199,
+            "paymentReferenceNumber": "ch_1IflQzFavS6s0pX9q292m4lZ",
+          },
+          "softCreditSearch": Object {
+            "band": "B",
+            "message": "You have an good credit profile and are likely to be accepted",
+            "name": "Good",
+            "score": 420,
+          },
+          "step": "search",
+          "subStep": "start",
+          "vehicle": Object {
+            "advertId": 3332415,
+            "advertUrl": "/deal-1569916",
+            "bodyStyle": "hatchback",
+            "cashPrice": 24999,
+            "financeDepositContribution": 300,
+            "financePrice": 24699,
+            "firstImageUrl": "https://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg",
+            "fuelType": "petrol/electric hybrid",
+            "make": "hyundai",
+            "mileage": 100,
+            "model": "IONIQ",
+            "options": "Leather Upholstery, Anti Lock Brakes, Driver Airbag, Electronic Stability Programme (ESP), Air Conditioning, Climate Control, Keyless Central Locking, Alloy Wheels, Power Assisted Steering (PAS), Front & Rear Electric Windows, Adaptive Cruise Control, Bluetooth Preparation (Phone), Electric Seat Adjustment, Heated Front Seats, Heated Rear Seats, Front Parking Sensor, Rain Sensitive Wipers, Front Fog Lights, Auto On Headlights, USB and AUX, Lumbar Support, Rear View Auto Dimming Mirror, Split Rear Seats, Leather Steering Wheel, 12v Socket, Cupholders, Solid Paint, Front Armrest, Reference number : BAC1569916, Engine size : 1.6, Four wheel drive : false.",
+            "range": "ioniq",
+            "registrationDate": "2017-09-01",
+            "showNetPrice": false,
+            "similarCarsUrl": "/volkswagen_tiguan_diesel_estate/car_2_0_tdi_150_4motion_match_5dr_dsg_196646.jhtml",
+            "trimName": "Premium SE",
+            "van": false,
+            "vehicleFullName": "HYUNDAI IONIQ PREMIUM SE 5 door hatchback",
+            "year": 2017,
+          },
+          "verification": Object {
+            "completed": false,
+            "completedDate": null,
+            "status": "sent to customer",
+          },
+        },
+      }
+    }
+    isDesktopOnly={true}
+  >
+    <div
+      className="flSummary desktopOnly order-summary"
+    >
+      <div
+        className="mainTitle"
+      >
+        Order summary
+      </div>
+      <div
+        className="vehicleDetailsBlock"
+      >
+        <img
+          alt="full-car"
+          className="image"
+          src="https://d13fze08x8d2oj.cloudfront.nethttps://images.buyacar.co.uk/img/med/porsche_cayman_718_gt4_4_0_2dr_48186199.jpg"
+        />
+        <div
+          className="vehicleDetails"
+        >
+          <span
+            className="make"
+          >
+            hyundai IONIQ
+          </span>
+          <span
+            className="year"
+          >
+            2017
+          </span>
+          <span
+            className="cashPrice"
+          >
+            cash price £24,999
+          </span>
+        </div>
+      </div>
+      <a
+        className="advert"
+        href="deal-1"
+        rel="noreferrer"
+        target="_blank"
+      >
+        View advert
+      </a>
+      <div
+        className="separator"
+      />
+      <div
+        className="partExchange"
+        data-id="order-summary-part-exchange"
+      >
+        <div
+          className="pxExist"
+        >
+          <div>
+            Part exchange valuation from The CarBuying Group
+          </div>
+          <div>
+            £15,807
+          </div>
+        </div>
+        <div
+          className="note"
+        >
+          <b>
+            Please note
+          </b>
+          : This is an estimate price and may vary slightly dependant on the condition of the vehicle
+        </div>
+      </div>
+      <div
+        className="separator"
+      />
+      <div
+        className="lenderOffer"
+        data-id="order-summary-lender-offer"
+      >
+        <div
+          className="financeTermHeader"
+        >
+          Hire Purchase (HP)
+        </div>
+        <div
+          className="financeTerm"
+        >
+          <div
+            className="perMonth"
+          >
+            48 monthly
+            <br />
+            payments of
+          </div>
+          <div
+            className="price"
+          >
+            £168
+          </div>
+        </div>
+      </div>
+      <div
+        className="aprSeparator"
+      />
+      <div
+        className="description"
+      >
+        <div
+          className="apr"
+        >
+          APR 9.9%
+        </div>
+        <div
+          className="delivery"
+        >
+          Driven delivery within England and Wales
+        </div>
+      </div>
+      <div
+        className="separator"
+      />
+      <div
+        className="vap"
+        data-id="order-summary-vap"
+      >
+        <div
+          className="title"
+        >
+          Paint protection
+        </div>
+        <div
+          className="price"
+        >
+          £340
+        </div>
+      </div>
+    </div>
+  </Contents>
+</OrderSummary>
+`;

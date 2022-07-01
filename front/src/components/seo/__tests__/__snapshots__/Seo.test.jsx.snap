@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Seo /> render partly passed props 1`] = `
+<NextSeo
+  canonical="https://www.test.buyacar.co.uk"
+  description="Buyacar online with test"
+  rights="Autovia Group Limited, licensed by Test"
+  title="BuyaCar: the easy way to get a great car deal"
+  twitter={
+    Object {
+      "cardType": "photo",
+      "site": "@buy_a_car",
+      "title": "BuyaCar: the easy way to get a great car deal",
+      "url": "https://website",
+    }
+  }
+/>
+`;
+
+exports[`<Seo /> render with no props passed 1`] = `
+<NextSeo
+  canonical="https://www.test.buyacar.co.uk"
+  description="Buyacar online with no hussle"
+  rights="Autovia Group Limited, licensed by Felden"
+  title="BuyaCar: the easy way to get a great car deal"
+  twitter={
+    Object {
+      "cardType": "photo",
+      "site": "@buy_a_car",
+      "title": "BuyaCar: the easy way to get a great car deal",
+      "url": "https://website",
+    }
+  }
+/>
+`;
+
+exports[`<Seo /> render with props 1`] = `
+<NextSeo
+  canonical="https://www.test.buyacar.co.uk"
+  description="Buyacar online with test"
+  rights="Autovia Group Limited, licensed by Test"
+  title="BAC UNIT TEST"
+  twitter={
+    Object {
+      "cardType": "photo_test",
+      "site": "@buy_a_car_test",
+      "title": "BAC UNIT TEST",
+      "url": "https://www.test.buyacar.co.uk",
+    }
+  }
+/>
+`;

@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<YearsAtBankStep /> renders without errors 1`] = `
+<div
+  className="yearsFormWrapper"
+>
+  <div
+    className="yearsInputWrapper"
+  >
+    <InputSelect
+      className="inputSelect"
+      data-id="How many years have you been a member of this bank?"
+      label="How many years have you been a member of this bank?"
+      name="yearsAtBank"
+      onChange={[MockFunction]}
+      options={
+        Array [
+          Object {
+            "option": "0 Year(s)",
+            "value": "0",
+          },
+          Object {
+            "option": "1 Year(s)",
+            "value": "1",
+          },
+          Object {
+            "option": "2 Year(s)",
+            "value": "2",
+          },
+          Object {
+            "option": "3 Year(s)",
+            "value": "3",
+          },
+          Object {
+            "option": "4+ Year(s)",
+            "value": "4",
+          },
+        ]
+      }
+      placeholder=""
+      required={false}
+      status="valid"
+      subTitle="Please provide how many years you have had an account with this bank"
+      value="2"
+    />
+  </div>
+  <div>
+    <InputSelect
+      className="inputSelect"
+      data-id="How many months have you been a member of this bank?"
+      disabled={false}
+      label="How many months have you been a member of this bank?"
+      name="monthAtBank"
+      onChange={[MockFunction]}
+      options={
+        Array [
+          Object {
+            "option": "0 Month(s)",
+            "value": "0",
+          },
+          Object {
+            "option": "1 Month(s)",
+            "value": "1",
+          },
+          Object {
+            "option": "2 Month(s)",
+            "value": "2",
+          },
+          Object {
+            "option": "3 Month(s)",
+            "value": "3",
+          },
+          Object {
+            "option": "4 Month(s)",
+            "value": "4",
+          },
+          Object {
+            "option": "5 Month(s)",
+            "value": "5",
+          },
+          Object {
+            "option": "6 Month(s)",
+            "value": "6",
+          },
+          Object {
+            "option": "7 Month(s)",
+            "value": "7",
+          },
+          Object {
+            "option": "8 Month(s)",
+            "value": "8",
+          },
+          Object {
+            "option": "9 Month(s)",
+            "value": "9",
+          },
+          Object {
+            "option": "10 Month(s)",
+            "value": "10",
+          },
+          Object {
+            "option": "11 Month(s)",
+            "value": "11",
+          },
+        ]
+      }
+      placeholder="-- Months at bank --"
+      required={false}
+      status="valid"
+      subTitle="Please provide how many months you have had an account with this bank"
+      value="3"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputNumber /> renders without errors 1`] = `
+<Label
+  customClasses=""
+  name=""
+  required={false}
+  status=""
+  title=""
+  withSub={false}
+>
+  <input
+    className=""
+    name=""
+    onChange={[MockFunction]}
+    onKeyPress={[MockFunction]}
+    placeholder=""
+    type="number"
+  />
+</Label>
+`;

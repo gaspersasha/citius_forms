@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormResetPass /> component renders properly 1`] = `
+<FormReset
+  emailValue=""
+  errorMessage=""
+  extendedActiveForm={[MockFunction]}
+  onSubmit={[MockFunction]}
+  setEmail={[MockFunction]}
+  setFieldValue={[MockFunction]}
+  success={false}
+>
+  <form
+    onSubmit={[MockFunction]}
+  >
+    <div
+      className="reset"
+    >
+      <h6
+        className="typo title"
+      >
+        Reset password
+      </h6>
+      <span
+        className="typo typo__small subTitle"
+      >
+        Enter the email address associated with your account, and we'll email you a link to reset your password.
+      </span>
+      <div
+        className="row"
+      >
+        <div
+          className="email"
+        >
+          <InputEmail
+            autoFocus={true}
+            className="typo input"
+            customClasses="auth"
+            errorMessage="The email address you entered is not valid, please try again"
+            label=""
+            name="email"
+            onChange={[Function]}
+            placeholder="Email Address"
+            required={false}
+            status=""
+            subTitle=""
+            useErrorBorder={true}
+            value=""
+          >
+            <Label
+              customClasses="auth"
+              name="email"
+              required={false}
+              status=""
+              title=""
+              withSub={false}
+            >
+              <div
+                className="label auth"
+              >
+                <label
+                  data-id={false}
+                  htmlFor="email"
+                >
+                  <span
+                    className="title"
+                    data-id="label-title"
+                  />
+                  <input
+                    autoFocus={true}
+                    className="typo input"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Email Address"
+                    type="email"
+                    value=""
+                  />
+                </label>
+              </div>
+            </Label>
+          </InputEmail>
+        </div>
+      </div>
+      <div
+        className="action"
+      >
+        <div
+          className="action__back"
+        >
+          <span
+            className="typo typo__small back"
+            id="authBack"
+            onClick={[Function]}
+            role="dialog"
+          >
+            Back to login
+          </span>
+        </div>
+        <div
+          className="row row__half row__withoutBottomSpace"
+        >
+          <Button
+            className="typo submit"
+            disabled={false}
+            href=""
+            onClick={[MockFunction]}
+            selected={false}
+            styleType="primary"
+            type="submit"
+          >
+            <button
+              className="buttonComponent primary typo submit"
+              disabled={false}
+              href={null}
+              onClick={[MockFunction]}
+              type="submit"
+            >
+              Send reset link
+            </button>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </form>
+</FormReset>
+`;

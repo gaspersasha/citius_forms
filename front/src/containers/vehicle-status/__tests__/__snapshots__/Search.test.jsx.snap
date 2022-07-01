@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> should match snapshot 1`] = `
+<Fragment>
+  <p
+    className="pretitle"
+  >
+    Let's get started!
+  </p>
+  <Typography
+    align="left"
+    className="title subStepTitleMargin"
+    color="dark"
+    type="h3"
+  >
+    How do you intend to purchase your
+     Hyundai IONIQ
+    ?
+  </Typography>
+  <div
+    className="block"
+  >
+    <Typography
+      align="center"
+      className=""
+      color="dark"
+      type="h3"
+    >
+      I want to purchase with finance
+    </Typography>
+    <Typography
+      align="center"
+      className=""
+      color="dark"
+      type="p"
+    >
+      Pay for the car in monthly installments with a finance deal from one of the lenders on our panel.
+    </Typography>
+    <Typography
+      align="center"
+      className=""
+      color="dark"
+      type="p"
+    >
+      Find out more about 
+      <a
+        className="link"
+        href="/car-finance/198/buying-a-car-on-finance"
+        target="_blank"
+      >
+        car finance
+      </a>
+    </Typography>
+    <Button
+      className="btn"
+      disabled={false}
+      href="/finance-eligibility?productAdvertId=3332415&financeQuoteId=3735215"
+      onClick={null}
+      selected={false}
+      styleType="primary"
+      target="_blank"
+      type="submit"
+    >
+      Pay monthly
+    </Button>
+  </div>
+  <div
+    className="block"
+  >
+    <Typography
+      align="center"
+      className=""
+      color="dark"
+      type="h3"
+    >
+      I want to buy outright
+    </Typography>
+    <Typography
+      align="center"
+      className=""
+      color="dark"
+      type="p"
+    >
+      Pay for the car upfront in full.
+      <br />
+      <br />
+      To begin, reserve your car for just
+       £199 
+      and we'll get to work securing it for you. You will pay the remaining balance before delivery.
+    </Typography>
+    <Button
+      className="btn"
+      disabled={false}
+      href="/reservation?productAdvertId=3332415&financeQuoteId=3735215"
+      onClick={null}
+      selected={false}
+      styleType="primary"
+      target="_blank"
+    >
+      Buy outright
+    </Button>
+  </div>
+</Fragment>
+`;

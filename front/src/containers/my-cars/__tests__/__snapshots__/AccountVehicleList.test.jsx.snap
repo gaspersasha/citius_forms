@@ -1,0 +1,2300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountVehicleList /> should match snapshots 1`] = `
+<Component
+  allVehicles={false}
+  items={
+    Array [
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166667,
+        "productDefinitionId": 10001,
+        "quotePrice": 7937.8,
+        "reserved": false,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": false,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166668,
+        "productDefinitionId": 10002,
+        "quotePrice": 7937.8,
+        "reserved": false,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": false,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166669,
+        "productDefinitionId": 10003,
+        "quotePrice": 7937.8,
+        "reserved": false,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": true,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166670,
+        "productDefinitionId": 10004,
+        "quotePrice": 7937.8,
+        "reserved": true,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": false,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166671,
+        "productDefinitionId": 10005,
+        "quotePrice": 7937.8,
+        "reserved": false,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": false,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+      Object {
+        "cashPrice": 7699,
+        "confirmationStatus": false,
+        "dealerFormFilled": false,
+        "deliveryMethod": Object {
+          "deliveryCost": 238.8,
+          "deliveryMethodId": 18,
+          "description": "Driven delivery within England and Wales",
+        },
+        "depositAmount": 199,
+        "depositPaid": false,
+        "derivative": "1.2 Pop 3dr",
+        "exchangeStatus": false,
+        "financeDepositContribution": 300,
+        "financePrice": 7399,
+        "financeQuote": Object {
+          "financeQuoteId": 9648602,
+          "financeType": "PCP",
+          "priceMonthly": 144,
+          "priceTotal": 7637,
+        },
+        "imageUrls_S": "/images/default_car.jpg",
+        "leadgen": false,
+        "make": "Mitsubishi",
+        "mileageInMiles": "2300",
+        "model": "Outlander",
+        "modelYear": 2016,
+        "prodAdvertUrl_S": "/deal-3241202",
+        "productAdvertId": 166672,
+        "productDefinitionId": 10006,
+        "quotePrice": 7937.8,
+        "reserved": false,
+        "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+        "sold": true,
+        "userActivity": Object {
+          "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+          "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+          "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+        },
+        "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+        "vehicleQuotes": Array [
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974707,
+            "quoteItemId": 1002792,
+            "status": "CUSTOMER_SAVED",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974706,
+            "quoteItemId": 1002791,
+            "status": "CUSTOMER_RESERVATION",
+          },
+          Object {
+            "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+            "quoteId": 974674,
+            "quoteItemId": 1002773,
+            "status": "CUSTOMER_HAS_QUESTION",
+          },
+        ],
+        "vehicleType": "CAR",
+      },
+    ]
+  }
+>
+  <div
+    className="accountCards"
+  >
+    <Memo()
+      index={0}
+      key="166667"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166667,
+          "productDefinitionId": 10001,
+          "quotePrice": 7937.8,
+          "reserved": false,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": false,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166667&quoteId=974706"
+          status=""
+        >
+          <a
+            className="linkWrapper"
+            href="/account/vehicle-status?productAdvertId=166667&quoteId=974706"
+          >
+            <div
+              className="media"
+              style={
+                Object {
+                  "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+                }
+              }
+            />
+          </a>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166667&quoteId=974706"
+            status=""
+          >
+            <a
+              className="linkWrapper"
+              href="/account/vehicle-status?productAdvertId=166667&quoteId=974706"
+            >
+              <p
+                className="carTitle"
+              >
+                Mitsubishi
+                 
+                Outlander
+              </p>
+            </a>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-vehicle-status-button"
+            data-id="CTA"
+            href="/account/vehicle-status?productAdvertId=166667&quoteId=974706"
+          >
+            Next steps
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <Memo()
+      index={1}
+      key="166668"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166668,
+          "productDefinitionId": 10002,
+          "quotePrice": 7937.8,
+          "reserved": false,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": false,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166668&quoteId=974706"
+          status=""
+        >
+          <a
+            className="linkWrapper"
+            href="/account/vehicle-status?productAdvertId=166668&quoteId=974706"
+          >
+            <div
+              className="media"
+              style={
+                Object {
+                  "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+                }
+              }
+            />
+          </a>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166668&quoteId=974706"
+            status=""
+          >
+            <a
+              className="linkWrapper"
+              href="/account/vehicle-status?productAdvertId=166668&quoteId=974706"
+            >
+              <p
+                className="carTitle"
+              >
+                Mitsubishi
+                 
+                Outlander
+              </p>
+            </a>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-vehicle-status-button"
+            data-id="CTA"
+            href="/account/vehicle-status?productAdvertId=166668&quoteId=974706"
+          >
+            Next steps
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <Memo()
+      index={2}
+      key="166669"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166669,
+          "productDefinitionId": 10003,
+          "quotePrice": 7937.8,
+          "reserved": false,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": true,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166669&quoteId=974706"
+          status="SOLD"
+        >
+          <div
+            className="media"
+            style={
+              Object {
+                "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+              }
+            }
+          >
+            <div
+              className="status"
+            >
+              SOLD
+            </div>
+          </div>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166669&quoteId=974706"
+            status="SOLD"
+          >
+            <p
+              className="carTitle"
+            >
+              Mitsubishi
+               
+              Outlander
+            </p>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-see-similar-cars-button"
+            data-id="CTA"
+            href="/fiat/500/500-hatchback/1-2-pop-3dr-71784"
+          >
+            See similar cars
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <Memo()
+      index={3}
+      key="166670"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166670,
+          "productDefinitionId": 10004,
+          "quotePrice": 7937.8,
+          "reserved": true,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": false,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166670&quoteId=974706"
+          status=""
+        >
+          <a
+            className="linkWrapper"
+            href="/account/vehicle-status?productAdvertId=166670&quoteId=974706"
+          >
+            <div
+              className="media"
+              style={
+                Object {
+                  "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+                }
+              }
+            />
+          </a>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166670&quoteId=974706"
+            status=""
+          >
+            <a
+              className="linkWrapper"
+              href="/account/vehicle-status?productAdvertId=166670&quoteId=974706"
+            >
+              <p
+                className="carTitle"
+              >
+                Mitsubishi
+                 
+                Outlander
+              </p>
+            </a>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-vehicle-status-button"
+            data-id="CTA"
+            href="/account/vehicle-status?productAdvertId=166670&quoteId=974706"
+          >
+            Next steps
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <Memo()
+      index={4}
+      key="166671"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166671,
+          "productDefinitionId": 10005,
+          "quotePrice": 7937.8,
+          "reserved": false,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": false,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166671&quoteId=974706"
+          status=""
+        >
+          <a
+            className="linkWrapper"
+            href="/account/vehicle-status?productAdvertId=166671&quoteId=974706"
+          >
+            <div
+              className="media"
+              style={
+                Object {
+                  "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+                }
+              }
+            />
+          </a>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166671&quoteId=974706"
+            status=""
+          >
+            <a
+              className="linkWrapper"
+              href="/account/vehicle-status?productAdvertId=166671&quoteId=974706"
+            >
+              <p
+                className="carTitle"
+              >
+                Mitsubishi
+                 
+                Outlander
+              </p>
+            </a>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-vehicle-status-button"
+            data-id="CTA"
+            href="/account/vehicle-status?productAdvertId=166671&quoteId=974706"
+          >
+            Next steps
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <Memo()
+      index={5}
+      key="166672"
+      updateVehiclesList={[Function]}
+      vehicle={
+        Object {
+          "cashPrice": 7699,
+          "confirmationStatus": false,
+          "dealerFormFilled": false,
+          "deliveryMethod": Object {
+            "deliveryCost": 238.8,
+            "deliveryMethodId": 18,
+            "description": "Driven delivery within England and Wales",
+          },
+          "depositAmount": 199,
+          "depositPaid": false,
+          "derivative": "1.2 Pop 3dr",
+          "exchangeStatus": false,
+          "financeDepositContribution": 300,
+          "financePrice": 7399,
+          "financeQuote": Object {
+            "financeQuoteId": 9648602,
+            "financeType": "PCP",
+            "priceMonthly": 144,
+            "priceTotal": 7637,
+          },
+          "imageUrls_S": "/images/default_car.jpg",
+          "leadgen": false,
+          "make": "Mitsubishi",
+          "mileageInMiles": "2300",
+          "model": "Outlander",
+          "modelYear": 2016,
+          "prodAdvertUrl_S": "/deal-3241202",
+          "productAdvertId": 166672,
+          "productDefinitionId": 10006,
+          "quotePrice": 7937.8,
+          "reserved": false,
+          "similarCarsUrl": "/fiat/500/500-hatchback/1-2-pop-3dr-71784",
+          "sold": true,
+          "userActivity": Object {
+            "CUSTOMER_RESERVATION": "Wed Oct 21 00:00:00 BST 2020",
+            "CUSTOMER_SAVED": "Wed Oct 21 00:00:00 BST 2020",
+            "FINANCE_APP_COMPLETE": "Wed Oct 21 00:00:00 BST 2020",
+          },
+          "vehicleFullName_S": "RENAULT ZOE 0.0 DYNAMIQUE NAV 5d hatchback",
+          "vehicleQuotes": Array [
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974707,
+              "quoteItemId": 1002792,
+              "status": "CUSTOMER_SAVED",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974706,
+              "quoteItemId": 1002791,
+              "status": "CUSTOMER_RESERVATION",
+            },
+            Object {
+              "createdDate": "Mon Nov 09 00:00:00 GMT 2020",
+              "quoteId": 974674,
+              "quoteItemId": 1002773,
+              "status": "CUSTOMER_HAS_QUESTION",
+            },
+          ],
+          "vehicleType": "CAR",
+        }
+      }
+    >
+      <div
+        className="accountCard"
+        data-id="account-card"
+      >
+        <span
+          data-id="delete-card"
+        >
+          <CloseButton
+            className="close"
+            height="20"
+            onClick={[Function]}
+            viewBox="0 0 21 20"
+            width="21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              className="close"
+              height="20"
+              onClick={[Function]}
+              viewBox="0 0 21 20"
+              width="21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(.95)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  fill="#FFF"
+                  fillOpacity=".776"
+                  r="10"
+                />
+                <path
+                  d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+                  stroke="#000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </g>
+            </svg>
+          </CloseButton>
+        </span>
+        <MaybeLink
+          leadgen={false}
+          path="/account/vehicle-status?productAdvertId=166672&quoteId=974706"
+          status="SOLD"
+        >
+          <div
+            className="media"
+            style={
+              Object {
+                "backgroundImage": "url(https://d13fze08x8d2oj.cloudfront.net/images/default_car.jpg)",
+              }
+            }
+          >
+            <div
+              className="status"
+            >
+              SOLD
+            </div>
+          </div>
+        </MaybeLink>
+        <div
+          className="content"
+        >
+          <MaybeLink
+            leadgen={false}
+            path="/account/vehicle-status?productAdvertId=166672&quoteId=974706"
+            status="SOLD"
+          >
+            <p
+              className="carTitle"
+            >
+              Mitsubishi
+               
+              Outlander
+            </p>
+          </MaybeLink>
+          <p
+            className="carDetails"
+          >
+            1.2 Pop 3dr
+          </p>
+          <div
+            className="tags"
+          >
+            <span
+              className="tag"
+            >
+              <b>
+                2016
+              </b>
+            </span>
+            <span
+              className="tag"
+            >
+              <b>
+                2,300
+              </b>
+              <span>
+                 miles
+              </span>
+            </span>
+          </div>
+          <div
+            className="priceWrapper"
+          >
+            <div
+              className="priceContent"
+            >
+              <span
+                className="price"
+              >
+                £7,637
+              </span>
+              <span
+                className="pricePerMonth"
+              >
+                £144
+                <span>
+                   per month | 
+                </span>
+                PCP
+              </span>
+            </div>
+          </div>
+          <a
+            className="cta"
+            data-gtm-id="my-cars-see-similar-cars-button"
+            data-id="CTA"
+            href="/fiat/500/500-hatchback/1-2-pop-3dr-71784"
+          >
+            See similar cars
+          </a>
+          <ul
+            className="actions"
+          >
+            <li
+              className="action"
+              key="0"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              Finance application submitted on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="1"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You saved this car on 21.10.20
+            </li>
+            <li
+              className="action"
+              key="2"
+            >
+              <Check
+                className="icon"
+                height="13"
+                viewBox="0 0 18 13"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="icon"
+                  height="13"
+                  viewBox="0 0 18 13"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    check
+                  </title>
+                  <path
+                    d="M17 1L6 12 1 7"
+                    fill="none"
+                    fillRule="evenodd"
+                    stroke="#2FAF7B"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Check>
+              You reserved this car on 21.10.20
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Memo()>
+    <div
+      className="accountCard accountCard_empty"
+    >
+      <button
+        className="loadMore"
+        data-id="load-more"
+        onClick={[Function]}
+        type="button"
+      >
+        View all saved cars
+      </button>
+    </div>
+  </div>
+</Component>
+`;

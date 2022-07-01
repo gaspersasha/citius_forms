@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputPostcode /> renders without errors 1`] = `
+<InputPostcode
+  className=""
+  name="InputPostcode"
+  onChange={[MockFunction]}
+  required={false}
+  status=""
+  value=""
+>
+  <div
+    className="postcode"
+  >
+    <InputText
+      className="input"
+      customClasses="noMargin"
+      errorMessage=""
+      label="Postcode"
+      name="InputPostcode"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Enter Postcode"
+      required={false}
+      status=""
+      subTitle=""
+      value=""
+    >
+      <Label
+        customClasses="noMargin"
+        name="InputPostcode"
+        required={false}
+        status=""
+        title="Postcode"
+        withSub={false}
+      >
+        <div
+          className="label noMargin"
+        >
+          <label
+            data-id={false}
+            htmlFor="InputPostcode"
+          >
+            <span
+              className="title"
+              data-id="label-title"
+            >
+              Postcode
+            </span>
+            <input
+              className="input"
+              name="InputPostcode"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="Enter Postcode"
+              type="text"
+              value=""
+            />
+            <Button
+              className="btn"
+              disabled={true}
+              href=""
+              onClick={[Function]}
+              selected={false}
+              styleType="secondary"
+            >
+              <button
+                className="buttonComponent secondary btn"
+                disabled={true}
+                href={null}
+                onClick={[Function]}
+              >
+                Find Address
+              </button>
+            </Button>
+          </label>
+        </div>
+      </Label>
+    </InputText>
+  </div>
+</InputPostcode>
+`;

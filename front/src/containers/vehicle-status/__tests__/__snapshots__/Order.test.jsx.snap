@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Order /> should match snapshot (approved no paid case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance application
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your finance application has been approved by the lender! Check your order summary to view your finance terms
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/reservation?productAdvertId=3332415&financeQuoteId=3735215"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Reserve your
+     car
+  </Button>
+</Fragment>
+`;
+
+exports[`<Order /> should match snapshot (approved paid case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance application
+  </Typography>
+  <Typography
+    align="left"
+    className="subBlock"
+    color="dark"
+    type="p"
+  >
+    Your finance application has been approved by the lender! Check your 
+    <span
+      className="pseudoLink"
+      role="button"
+      tabIndex="-1"
+    >
+      Order summary
+    </span>
+     to view your finance terms
+  </Typography>
+  <b
+    className="heading"
+  >
+    Next: Proof of address
+  </b>
+  <div>
+    We'll send you email requesting proof of address, please follow the instructions given within the email
+  </div>
+</Fragment>
+`;
+
+exports[`<Order /> should match snapshot (pending no paid case & isVan) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance application
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your finance application is currently with the lender for approval, this can take from a few minutes up to 24 hours. While you are waiting reserve your
+     van
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/reservation?productAdvertId=3332415&financeQuoteId=3735215"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Reserve your
+     van
+  </Button>
+</Fragment>
+`;
+
+exports[`<Order /> should match snapshot (pending no paid case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance application
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your finance application is currently with the lender for approval, this can take from a few minutes up to 24 hours. While you are waiting reserve your
+     car
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/reservation?productAdvertId=3332415&financeQuoteId=3735215"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Reserve your
+     car
+  </Button>
+</Fragment>
+`;
+
+exports[`<Order /> should match snapshot (pending paid case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance application
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Thank you for your reservation payment, our team are working on securing the vehicle for you.
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your finance application is currently with the lender for approval, this can take from a few minutes up to 24 hours
+  </Typography>
+</Fragment>
+`;
+
+exports[`<Order /> should match snapshot (secci sent case) 1`] = `
+<SecciSentSubStep
+  isVan={false}
+  typoProps={
+    Object {
+      "text": Object {
+        "align": "left",
+        "className": "",
+        "type": "p",
+      },
+      "title": Object {
+        "align": "left",
+        "className": "",
+        "type": "h3",
+      },
+    }
+  }
+/>
+`;
+
+exports[`<Order /> should match snapshot 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your reservation payment has been received!
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Our team are confirming this vehicles availability with the dealer. This usually takes three to four hours, once confirmed we will send you an email with details on the next steps
+  </Typography>
+</Fragment>
+`;

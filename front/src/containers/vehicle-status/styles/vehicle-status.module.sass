@@ -1,0 +1,114 @@
+@import '../../../styles/variables'
+@import '../../../styles/mixins'
+
+$subStepMaxWidth: 540px
+
+.wrapper
+  margin: 20px auto 65px
+  max-width: 100%
+
+  +mq($until: desktop)
+    margin-bottom: 20px
+
+  .container
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: center
+    margin: 60px 0 0
+
+    +mq($until: desktop)
+      text-align: center
+
+    +mq($until: tablet)
+      margin-top: 40px
+
+    & > .subStep
+      max-width: 100%
+      flex: 1
+
+      +mq($from: $subStepMaxWidth)
+        max-width: $subStepMaxWidth
+
+.progressBar
+  max-width: 386px
+  margin: auto
+
+.pretitle
+  font-size: 18px
+  line-height: 26px
+  margin-bottom: 20px
+
+.title
+  font-size: 18px
+  line-height: 26px
+  margin-bottom: 20px
+  font-weight: 700
+  +mq($until: desktop)
+    padding: 0 15px
+
+.subBlock
+  margin-bottom: 60px
+
+.capitalized
+  text-transform: capitalize
+
+.heading
+  font-size: 18px
+
+.subStepTitleMargin
+  margin-bottom: 40px
+
+.text, .subTitle
+  font-size: 16px
+  line-height: 26px
+  margin-bottom: 20px
+
+.subTitle
+  margin-bottom: 40px
+
+.block
+  text-align: center
+  border: 1px solid $purple-primary
+  padding: 20px
+  border-radius: 8px
+  background-color: $color-promo-background
+
+  &:not( :last-child )
+    margin-bottom: 20px
+
+  .btn
+    margin: 20px auto 0
+
+  .subStepTitle
+    margin-bottom: 20px
+
+.pseudoLink
+  text-decoration: underline
+  color: $color-light-blue
+  cursor: pointer
+
+.link,
+.link:link
+  text-decoration: underline
+  color: $color-light-blue
+
+.btn
+  max-width: 335px
+  width: 100%
+  font-size: 24px
+  line-height: 38px
+
+  +mq($until: desktop)
+    margin: auto
+
+.lowScoreTitle
+  font-size: 25px
+  margin: 40px 0 20px
+
+.timer
+  text-align: center
+
+.orderSummaryWrapper
+  +mq($from: desktop)
+    margin-left: 60px

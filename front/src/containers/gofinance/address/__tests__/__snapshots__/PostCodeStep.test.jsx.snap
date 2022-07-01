@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostCodeStep /> renders without errors 1`] = `
+<div
+  className="addressFormWrapper"
+>
+  <LoqateAddress
+    errorMessage=""
+    formName="address"
+    manualFields={
+      Array [
+        Object {
+          "label": "Postcode",
+          "name": "postCode",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+          "warning": "* Please type correct UK postal code",
+        },
+        Object {
+          "label": "House name",
+          "name": "houseName",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "House number",
+          "name": "houseNumber",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "Street",
+          "name": "street",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "District",
+          "name": "district",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "Town",
+          "name": "town",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "County",
+          "name": "county",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+      ]
+    }
+    selectHandler={[MockFunction]}
+    subTitle="Start typing your address and select the relevant option when it appears in the list below. If it is not found then click on the 'Enter address manually' link"
+  />
+</div>
+`;

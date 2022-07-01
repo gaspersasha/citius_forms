@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderItem /> Render OrderItem component 1`] = `
+<OrderItem
+  accountId="42114"
+  amount={199}
+  created="22/05/1988"
+  documentId="3"
+  status="Sent to recipient"
+  type="DEBIT"
+  vehicle={Object {}}
+>
+  <div
+    className="paymentItem"
+  >
+    <div
+      className="generalInformation"
+    >
+      <div
+        className="nomination column"
+      >
+        <div
+          className="paymentItemTitle"
+        >
+          Payment for
+        </div>
+        <div
+          className="paymentItemValue"
+        >
+          42114
+        </div>
+      </div>
+      <div
+        className="paidStatus column"
+      >
+        <div
+          className="paymentItemTitle"
+        >
+          Status
+        </div>
+        <div
+          className="paymentItemValue"
+        >
+          Sent to recipient
+        </div>
+      </div>
+      <div
+        className="balance column"
+      >
+        <div
+          className="paymentItemTitle"
+        >
+          Balance
+        </div>
+        <div
+          className="paymentItemValue"
+        >
+          £199
+        </div>
+      </div>
+      <div
+        className="type column"
+      >
+        <div
+          className="paymentItemTitle"
+        >
+          Type
+        </div>
+        <div
+          className="paymentItemValue"
+        >
+          debit
+        </div>
+      </div>
+      <div
+        className="date column"
+      >
+        <div
+          className="paymentItemTitle"
+        >
+          Date
+        </div>
+        <div
+          className="paymentItemValue"
+        >
+          22/05/1988
+        </div>
+      </div>
+      <Button
+        className="button"
+        disabled={false}
+        href="../order/viewOrder.jhtml?orderId=3&accountId=42114"
+        onClick={null}
+        selected={false}
+        styleType="secondary"
+      >
+        <a
+          className="buttonComponent secondary button"
+          disabled={false}
+          href="../order/viewOrder.jhtml?orderId=3&accountId=42114"
+          onClick={null}
+        >
+          View
+        </a>
+      </Button>
+    </div>
+  </div>
+</OrderItem>
+`;

@@ -1,0 +1,560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SoftCheck /> should match snapshot with campaign 1`] = `
+<Fragment>
+  <Seo
+    meta={
+      Object {
+        "description": "Buyacar online with no hussle",
+        "page_title": "BuyaCar: the easy way to get a great car deal",
+        "rights": "Autovia Group Limited, licensed by Felden",
+        "twitter": Object {
+          "card": "photo",
+          "site": "@buy_a_car",
+          "title": "BuyaCar: the easy way to get a great car deal",
+          "url": "https://website",
+        },
+      }
+    }
+  />
+  <div
+    className="form-container"
+    data-test="scc-form-container"
+  >
+    <form
+      className="form"
+      data-test="scc-form"
+      onSubmit={[Function]}
+    >
+      <h1
+        className="titleCampaign"
+      >
+        Get started with our finance eligibility checker
+      </h1>
+      <ul
+        className="listCampaign"
+      >
+        <li>
+          Find out your finance eligibility with no impact on your credit score
+        </li>
+        <li>
+          Finance options from just 6.9% APR, 7.9% APR representative
+        </li>
+        <li>
+          Then buy online from our selection of used cars, or opt for the finance-only option
+        </li>
+      </ul>
+      <p
+        className="subtitle"
+      >
+        Need more information about car finance options before you get started? Check out our handy 
+        <a
+          href="https://website/car-finance/1474/the-best-ways-to-finance-a-car"
+        >
+          finance guide
+        </a>
+      </p>
+      <TapButtons
+        dataTestAttr="scc-title"
+        defaultVal="MR"
+        label="What is your title?"
+        name="title"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "option": "Mr",
+              "value": "MR",
+            },
+            Object {
+              "option": "Mrs",
+              "value": "MRS",
+            },
+            Object {
+              "option": "Dr",
+              "value": "DR",
+            },
+            Object {
+              "option": "Ms",
+              "value": "MS",
+            },
+            Object {
+              "option": "Miss",
+              "value": "MISS",
+            },
+          ]
+        }
+        status="default"
+        subTitle="Select from the list below"
+        value="MR"
+      />
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          dataTestAttr="scc-first-name"
+          errorMessage="Please enter your first name as is it on your driving licence"
+          label="First name"
+          name="firstName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. James"
+          required={true}
+          status="default"
+          subTitle="First name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          dataTestAttr="scc-middle-name"
+          errorMessage=""
+          label="Middle name"
+          name="middleName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. Anderson"
+          required={false}
+          status="default"
+          subTitle="Middle name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          dataTestAttr="scc-last-name"
+          errorMessage="Please enter your last name as is it on your driving licence"
+          label="Last name"
+          name="lastName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. Balwin"
+          required={true}
+          status="default"
+          subTitle="Last name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div>
+        <InputEmail
+          className=""
+          customClasses=""
+          dataTestAttr="scc-email"
+          errorMessage="Please enter a valid email address"
+          label="Email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="e.g. email@email.com"
+          required={true}
+          status="default"
+          subTitle="Your email will be your username to login"
+          useErrorBorder={false}
+          value=""
+        />
+      </div>
+      <InputDate
+        className=""
+        dataTestAttr="scc-date"
+        errorMessage="Please enter your date of birth"
+        id="datepicker"
+        label="Date of birth"
+        name="dateOfBirth"
+        onChange={[Function]}
+        placeholder="14/12/1990"
+        required={true}
+        status="default"
+        subTitle="You must be over 18"
+        useErrorBorder={true}
+        value=""
+      />
+      <LoqateAddress
+        dataTestAttr="scc-address"
+        errorMessage="Please enter full current address"
+        formName="soft-check"
+        manualFields={
+          Array [
+            Object {
+              "label": "Postcode",
+              "name": "postCode",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "postCode",
+              "value": "",
+              "warning": "* Please type correct UK postal code",
+            },
+            Object {
+              "label": "House name",
+              "name": "houseName",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "House number",
+              "name": "houseNumber",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "Street",
+              "name": "street",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "",
+            },
+            Object {
+              "label": "District",
+              "name": "district",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "Town",
+              "name": "town",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "",
+            },
+            Object {
+              "label": "County",
+              "name": "county",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+          ]
+        }
+        selectHandler={[Function]}
+        subTitle="Start typing your address and select the relevant option when it appears in the list below. If it is not found then click on the 'Enter address manually' link"
+      />
+      <InputPhone
+        className=""
+        dataTestAttr="scc-phone"
+        errorMessage="Please enter a valid phone number"
+        label="Telephone number"
+        name="telephone"
+        onChange={[Function]}
+        onKeyPress={null}
+        placeholder="e.g. 07712345678"
+        required={false}
+        status="default"
+        subTitle="To keep you up to date with your purchase"
+        useErrorBorder={false}
+        value=""
+      />
+      <Button
+        className=""
+        data-test="scc-submit-button"
+        dataTestAttr={null}
+        disabled={false}
+        href=""
+        id="ssFinanceSoftCheckFormSubmit"
+        onClick={null}
+        selected={false}
+        styleType="primary"
+        type="submit"
+      >
+        Submit
+      </Button>
+      <p
+        className="ps"
+      >
+        Once submitted we'll do a 'soft search' with the credit reference agencies. You'll be able to see this on your credit rating, but no-one else will, so your credit rating won't be affected at all.
+      </p>
+    </form>
+    <PrivacyNotice
+      onChange={[Function]}
+      unsubscribe={false}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`<SoftCheck /> should match snapshot without campaign 1`] = `
+<Fragment>
+  <Seo
+    meta={
+      Object {
+        "description": "Buyacar online with no hussle",
+        "page_title": "BuyaCar: the easy way to get a great car deal",
+        "rights": "Autovia Group Limited, licensed by Felden",
+        "twitter": Object {
+          "card": "photo",
+          "site": "@buy_a_car",
+          "title": "BuyaCar: the easy way to get a great car deal",
+          "url": "https://website",
+        },
+      }
+    }
+  />
+  <div
+    className="form-container"
+  >
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <h1
+        className="title"
+      >
+        Your finance eligibility
+      </h1>
+      <p
+        className="subtitle"
+      >
+        Find out your finance eligibility, with no impact on your credit score
+      </p>
+      <TapButtons
+        defaultVal="MR"
+        label="What is your title?"
+        name="title"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "option": "Mr",
+              "value": "MR",
+            },
+            Object {
+              "option": "Mrs",
+              "value": "MRS",
+            },
+            Object {
+              "option": "Dr",
+              "value": "DR",
+            },
+            Object {
+              "option": "Ms",
+              "value": "MS",
+            },
+            Object {
+              "option": "Miss",
+              "value": "MISS",
+            },
+          ]
+        }
+        status="default"
+        subTitle="Select from the list below"
+        value="MR"
+      />
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          errorMessage="Please enter your first name as is it on your driving licence"
+          label="First name"
+          name="firstName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. James"
+          required={true}
+          status="default"
+          subTitle="First name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          errorMessage=""
+          label="Middle name"
+          name="middleName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. Anderson"
+          required={false}
+          status="default"
+          subTitle="Middle name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div
+        className={false}
+      >
+        <InputText
+          className=""
+          customClasses=""
+          errorMessage="Please enter your last name as is it on your driving licence"
+          label="Last name"
+          name="lastName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="e.g. Balwin"
+          required={true}
+          status="default"
+          subTitle="Last name as it is on your driving licence"
+          value=""
+        />
+      </div>
+      <div>
+        <InputEmail
+          className=""
+          customClasses=""
+          errorMessage="Please enter a valid email address"
+          label="Email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="e.g. email@email.com"
+          required={true}
+          status="default"
+          subTitle="Your email will be your username to login"
+          useErrorBorder={false}
+          value=""
+        />
+      </div>
+      <InputDate
+        className=""
+        errorMessage="Please enter your date of birth"
+        id="datepicker"
+        label="Date of birth"
+        name="dateOfBirth"
+        onChange={[Function]}
+        placeholder="14/12/1990"
+        required={true}
+        status="default"
+        subTitle="You must be over 18"
+        useErrorBorder={true}
+        value=""
+      />
+      <LoqateAddress
+        errorMessage="Please enter full current address"
+        formName="soft-check"
+        manualFields={
+          Array [
+            Object {
+              "label": "Postcode",
+              "name": "postCode",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "postCode",
+              "value": "",
+              "warning": "* Please type correct UK postal code",
+            },
+            Object {
+              "label": "House name",
+              "name": "houseName",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "House number",
+              "name": "houseNumber",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "Street",
+              "name": "street",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "",
+            },
+            Object {
+              "label": "District",
+              "name": "district",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+            Object {
+              "label": "Town",
+              "name": "town",
+              "onChange": [Function],
+              "required": true,
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "",
+            },
+            Object {
+              "label": "County",
+              "name": "county",
+              "onChange": [Function],
+              "status": "default",
+              "validationType": "none",
+              "value": "",
+            },
+          ]
+        }
+        selectHandler={[Function]}
+        subTitle="Start typing your address and select the relevant option when it appears in the list below. If it is not found then click on the 'Enter address manually' link"
+      />
+      <InputPhone
+        className=""
+        errorMessage="Please enter a valid phone number"
+        label="Telephone number"
+        name="telephone"
+        onChange={[Function]}
+        onKeyPress={null}
+        placeholder="e.g. 07712345678"
+        required={false}
+        status="default"
+        subTitle="To keep you up to date with your purchase"
+        useErrorBorder={false}
+        value=""
+      />
+      <Button
+        className=""
+        disabled={false}
+        href=""
+        onClick={null}
+        selected={false}
+        styleType="primary"
+        type="submit"
+      >
+        Submit
+      </Button>
+      <p
+        className="ps"
+      >
+        Once submitted we'll do a 'soft search' with the credit reference agencies. You'll be able to see this on your credit rating, but no-one else will, so your credit rating won't be affected at all.
+      </p>
+    </form>
+    <PrivacyNotice
+      onChange={[Function]}
+      unsubscribe={false}
+    />
+  </div>
+</Fragment>
+`;

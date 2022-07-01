@@ -1,0 +1,272 @@
+events {}
+http {
+  # Nginx will handle gzip compression of responses from the app server
+  gzip on;
+  gzip_proxied any;
+  gzip_types text/plain application/json;
+  gzip_min_length 1000;
+
+  server {
+    listen 80;
+
+    location /alb-status {
+      access_log off;
+      return 200;
+    }
+
+    location / {
+
+      proxy_set_header "X-Forwarded-For" $proxy_add_x_forwarded_for;
+      proxy_set_header Access-Control-Allow-Origin *;
+      proxy_pass https://${NEXT_PUBLIC_HOST}/;
+    }
+
+    location = /reservation {
+
+      proxy_pass http://${APP_HOST}:3000/goreserve;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /finance-eligibility {
+
+      proxy_pass http://${APP_HOST}:3000/finance-eligibility;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /finance {
+
+      proxy_pass http://${APP_HOST}:3000/gofinance;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /contact-dealer {
+
+      proxy_pass http://${APP_HOST}:3000/contact-dealer;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /contact-dealer/complete {
+
+      proxy_pass http://${APP_HOST}:3000/contact-dealer/complete;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account {
+
+      proxy_pass http://${APP_HOST}:3000/account;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account/orders {
+
+      proxy_pass http://${APP_HOST}:3000/account/orders;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account/my-cars {
+
+      proxy_pass http://${APP_HOST}:3000/account/my-cars;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account/vehicle-status {
+
+      proxy_pass http://${APP_HOST}:3000/account/vehicle-status;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account/part-exchange {
+
+      proxy_pass http://${APP_HOST}:3000/account/part-exchange;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /account/details {
+
+      proxy_pass http://${APP_HOST}:3000/account/details;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /terms {
+
+      proxy_pass http://${APP_HOST}:3000/terms;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /almost-done {
+
+      proxy_pass http://${APP_HOST}:3000/almost-done;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+    location = /finance-thank-you {
+
+      proxy_pass http://${APP_HOST}:3000/finance-thank-you;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /reserve-thank-you {
+
+      proxy_pass http://${APP_HOST}:3000/finance-thank-you;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /gofinance {
+
+      proxy_pass http://${APP_HOST}:3000/gofinance;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location = /part-ex {
+
+      proxy_pass http://${APP_HOST}:3000/part-ex;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location /_next/ {
+
+      proxy_pass http://${APP_HOST}:3000/_next/;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location /icons/pwa/ {
+
+      proxy_pass http://${APP_HOST}:3000/icons/pwa/;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location /images/ {
+
+      proxy_pass http://${APP_HOST}:3000/images/;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location /manifest.json {
+
+      proxy_pass http://${APP_HOST}:3000/manifest.json;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location /sw.js {
+
+      proxy_pass http://${APP_HOST}:3000/sw.js;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+    location ~ /workbox {
+
+      proxy_pass http://${APP_HOST}:3000$1;
+      proxy_pass_request_headers on;
+    }
+
+  }
+}

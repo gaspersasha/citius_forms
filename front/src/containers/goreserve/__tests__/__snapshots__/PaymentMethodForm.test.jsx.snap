@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentMethodForm /> should match snapshots 1`] = `
+<PaymentMethodForm
+  handleChange={[Function]}
+  onSubmit={[MockFunction]}
+  paymentMethod="cash"
+>
+  <TapButtons
+    label="How do you intend to purchase your car?"
+    name=""
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "option": "I will buy outright",
+          "value": "cash",
+        },
+        Object {
+          "option": "I will buy on finance",
+          "value": "finance",
+        },
+      ]
+    }
+    subTitle="Tell us if you’ll be buying your car outright or via finance after you pay your deposit"
+    value="cash"
+  >
+    <div
+      className="container"
+      data-id="options"
+    >
+      <div
+        className="title"
+      >
+        <div
+          className="tap-buttons-title__text"
+        >
+          How do you intend to purchase your car?
+        </div>
+        <div
+          className="subTitle"
+          data-id="tap-btns-subtitle"
+        >
+          Tell us if you’ll be buying your car outright or via finance after you pay your deposit
+        </div>
+      </div>
+      <div
+        className="list"
+      >
+        <TapButtonsList
+          defaultVal=""
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "option": "I will buy outright",
+                "value": "cash",
+              },
+              Object {
+                "option": "I will buy on finance",
+                "value": "finance",
+              },
+            ]
+          }
+          sectionName=""
+          status="default"
+          value="cash"
+        >
+          <div
+            className="item active"
+            key="cash"
+          >
+            <label
+              className="label"
+              htmlFor="I will buy outright"
+            >
+              <span
+                className="labelText"
+              >
+                I will buy outright
+              </span>
+              <input
+                checked={true}
+                className="input"
+                data-id="I will buy outright"
+                name=""
+                onChange={[Function]}
+                type="radio"
+                value="cash"
+              />
+              <span
+                className="checkmark"
+              />
+            </label>
+          </div>
+          <div
+            className="item"
+            key="finance"
+          >
+            <label
+              className="label"
+              htmlFor="I will buy on finance"
+            >
+              <span
+                className="labelText"
+              >
+                I will buy on finance
+              </span>
+              <input
+                checked={false}
+                className="input"
+                data-id="I will buy on finance"
+                name=""
+                onChange={[Function]}
+                type="radio"
+                value="finance"
+              />
+              <span
+                className="checkmark"
+              />
+            </label>
+          </div>
+        </TapButtonsList>
+      </div>
+    </div>
+  </TapButtons>
+  <div
+    className="form-submit align-center"
+  >
+    <Button
+      className="submitBtn"
+      disabled={false}
+      href=""
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      <button
+        className="buttonComponent primary submitBtn"
+        disabled={false}
+        href={null}
+        onClick={[Function]}
+        type="submit"
+      >
+        Next
+      </button>
+    </Button>
+  </div>
+</PaymentMethodForm>
+`;

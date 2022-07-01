@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Employment /> renders without errors 1`] = `
+<Employment
+  employments={
+    Object {
+      "annualSalary": "",
+      "building": "",
+      "buildingName": "",
+      "county": "",
+      "district": "",
+      "employer": "",
+      "employmentMonths": "0",
+      "employmentSector": "",
+      "employmentType": "",
+      "employmentYears": "0",
+      "grossAnnualIncome": "",
+      "jobTitle": "",
+      "postCode": "",
+      "street": "",
+      "town": "",
+    }
+  }
+  index={0}
+  isDataSending={false}
+  isLoading={false}
+  onSubmit={[MockFunction]}
+  step={2}
+  sumOfYearsInPrevForms={0}
+>
+  <div
+    className="formSectionWrapper"
+  >
+    <p
+      className="formPreamble employmentPreamble"
+    >
+      We also need your 
+      <b>
+        employment
+      </b>
+       details for the past three years
+    </p>
+    <AddressStep
+      address={
+        Object {
+          "buildingName": Object {
+            "status": "default",
+            "value": "",
+          },
+          "buildingNumber": Object {
+            "status": "default",
+            "value": "",
+          },
+          "county": Object {
+            "status": "default",
+            "value": "",
+          },
+          "district": Object {
+            "status": "default",
+            "value": "",
+          },
+          "postCode": Object {
+            "status": "default",
+            "step": 2,
+            "value": "",
+          },
+          "street": Object {
+            "status": "default",
+            "step": 2,
+            "value": "",
+          },
+          "town": Object {
+            "status": "default",
+            "step": 2,
+            "value": "",
+          },
+        }
+      }
+      changeAddressField={[Function]}
+      changePostcodeField={[Function]}
+      selectHandler={[Function]}
+    >
+      <div
+        className="addressFormWrapper"
+      >
+        <LoqateAddress
+          errorMessage=""
+          formName="employment"
+          key="loqate"
+          manualFields={
+            Array [
+              Object {
+                "id": "employmentPostcode",
+                "label": "Postcode",
+                "name": "postCode",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 2,
+                "value": "",
+                "warning": "* Please type correct UK postal code",
+              },
+              Object {
+                "id": "buildingName",
+                "label": "Building name",
+                "name": "buildingName",
+                "onChange": [Function],
+                "status": "default",
+                "value": "",
+              },
+              Object {
+                "id": "buildingNumber",
+                "label": "Building number",
+                "name": "buildingNumber",
+                "onChange": [Function],
+                "status": "default",
+                "value": "",
+              },
+              Object {
+                "id": "employmentStreet",
+                "label": "Street",
+                "name": "street",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 2,
+                "value": "",
+              },
+              Object {
+                "id": "employmentDistrict",
+                "label": "District",
+                "name": "district",
+                "onChange": [Function],
+                "status": "default",
+                "value": "",
+              },
+              Object {
+                "id": "employmentTown",
+                "label": "Town",
+                "name": "town",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 2,
+                "value": "",
+              },
+              Object {
+                "label": "County",
+                "name": "county",
+                "onChange": [Function],
+                "status": "default",
+                "value": "",
+              },
+            ]
+          }
+          selectHandler={[Function]}
+          subTitle="Please add your employment address details below"
+        >
+          <Spinner
+            className=""
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="loader"
+              />
+            </div>
+          </Spinner>
+        </LoqateAddress>
+      </div>
+    </AddressStep>
+    <Button
+      className="confirm"
+      disabled={false}
+      href=""
+      id="ssFinanceEmploymentAddressSubmit"
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      <button
+        className="buttonComponent primary confirm"
+        disabled={false}
+        href={null}
+        id="ssFinanceEmploymentAddressSubmit"
+        onClick={[Function]}
+        type="submit"
+      >
+        Next
+      </button>
+    </Button>
+  </div>
+</Employment>
+`;

@@ -1,0 +1,7 @@
+# 2020
+*.sass text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.snap text eol=lf
+*.svg text eol=lf

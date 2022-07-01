@@ -1,0 +1,501 @@
+<style type="text/css">
+  .fancybox-wrap,
+  .fancybox-wrap > div{
+    transition: all 0.5s;
+  }
+  .fancybox-skin {
+    background: white;
+    color: #333;
+    padding: 0px !important;
+    width: 340px !important;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .fancybox-overlay {
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .fancybox-inner{
+    width: 340px !important;
+    height: auto;
+    background: #FFFFFF;
+    font-family: 'sofia-pro';
+  }
+
+  .fancybox-item.fancybox-close{
+    display: none;
+  }
+
+  .preSearchPopup_title{
+    background-color: #1C1836;
+    padding: 15px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: 'sofia-pro';
+    font-weight: 700;
+    font-size: 21px;
+    box-sizing: border-box;
+  }
+
+  .preSearchPopup_content{
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+
+  #preSearchPopup_content_subtitle{
+    font-family: 'sofia-pro';
+    font-size: 16px;
+  }
+
+  .preSearchPopup_buttonContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .preSearchPopup_button{
+    border-radius: 4px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 11px 5px;
+    width: 148px;
+    font-family: 'sofia-pro';
+    font-size: 14px;
+    margin: 20px 0 0 0;
+  }
+
+  .preSearchPopup_button:nth-child(1),
+  .preSearchPopup_button:nth-child(2){
+    margin: 0;
+  }
+
+  .preSearchPopup_button:hover,
+  .preSearchPopup_button_active{
+    border-radius: 4px;
+    border: 1px solid #000000;
+    background-color: #1C1836;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .preSearchPopup_steps{
+    display: none;
+    border-top: 1px solid #70707026;
+    border-bottom: 1px solid #70707026;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8px 0;
+    font-weight: 700;
+    margin: 25px 0;
+  }
+
+  .preSearchPopup_generalButtonContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .preSearchPopup_button_icon{
+    width: 33%;
+    border: 0;
+    background: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #d0cfd5;
+    margin: 10px 0;
+  }
+
+  .preSearchPopup_button_icon svg{
+    margin: 0 auto 15px;
+    height: 26px;
+    width: auto;
+  }
+
+  .preSearchPopup_button_icon svg path{
+    fill:#d0cfd5;
+  }
+
+  .preSearchPopup_button_icon:hover{
+    color: #1c1836;
+    cursor: pointer;
+    background: none;
+  }
+  .preSearchPopup_button_icon_active{
+    color: #1c1836 !important ;
+    cursor: pointer;
+    background: none;
+  }
+
+  .preSearchPopup_button_icon:hover svg path{
+    fill: #1c1836;
+  }
+  .preSearchPopup_button_icon_active svg path{
+    fill: #1c1836 !important;
+  }
+
+  @media only screen and  (max-width: 600px) {
+    .preSearchPopup_button_icon:hover{
+      color: #d0cfd5;
+    }
+    .preSearchPopup_button_icon:hover svg path{
+      fill:#d0cfd5;
+    }
+  }
+
+  .preSearchPopup_generalButtonContainer .preSearchPopup_steps{
+    border: 0px;
+    margin: 0;
+    width: auto;
+    text-align: left;
+  }
+
+  #preSearchPopup_error_msg{
+    display: none;
+    color: #FE1A1F;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 25px 0 0;
+    text-align: center;
+  }
+  .preSearchPopup_button.skip{
+    border: 0;
+    background: none;
+  }
+
+  .preSearchPopup_button.skip:hover{
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .preSearchPopup_button.cta{
+    background: #4673D9;
+    border: 0px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .preSearchPopup_button.cta.error{
+    border: 1px solid #FE1A1F;
+  }
+</style>
+<div class="preSearchPopup" id="preSearchPopup">
+  <div class="preSearchPopup_title" id="preSearchPopup_title">Search for a car</div>
+  <div id="preSearchPopup_contentWrapper" class="preSearchPopup_content">
+      <p id="preSearchPopup_content_subtitle">Do you know what car you are looking for?</p>
+      <p id="preSearchPopup_content_text"></p>
+      <div class="preSearchPopup_buttonContainer" id="preSearchPopup_buttonContainer">
+          <button class="preSearchPopup_button" id="preSearchPopup_goToSearch">Yes I do</button>
+          <button class="preSearchPopup_button" id="preSearchPopup_needHelp">No, help me choose</button>
+      </div>
+      <div id="preSearchPopup_error_msg">Please select an option before continuing</div>
+      <div class="preSearchPopup_steps" id="preSearchPopup_steps"></div>
+      <div class="preSearchPopup_generalButtonContainer" id="preSearchPopup_generalButtonContainer"></div>
+  </div>
+</div>
+<script type="text/javascript">
+(function () {
+  let step = 0;
+  let search = {
+    finance: '',
+    condition: '',
+    timing: '',
+    bodyType: [],
+  };
+  let preSearchPopup_buttonContainer, preSearchPopup_generalButtonContainer;
+  let resizeEvent = new Event('resize');
+
+  const getById = document.getElementById.bind(document);
+
+  const markAsSelected = (e) => {
+    clearError();
+    document.querySelector('.preSearchPopup_button_active') &&
+        document.querySelector('.preSearchPopup_button_active').classList.toggle('preSearchPopup_button_active');
+    getById(e.target.id) && getById(e.target.id).classList.toggle('preSearchPopup_button_active');
+    switch(step){
+      case 1: search.finance = e.target.value; break;
+      case 2: search.condition = e.target.value; break;
+      case 3: search.timing = e.target.value; break;
+    }
+  }
+
+  const markAsSelectedIcon = (e) =>{
+    clearError();
+    let elem = getById(e.currentTarget.id);
+    elem.classList.toggle('preSearchPopup_button_icon_active');
+    if(!search.bodyType.find(el=>el == elem.value)){
+      search.bodyType.push(elem.value);
+    }else{
+      search.bodyType = search.bodyType.filter(e => e !== elem.value);
+    }
+    getById('preSearchPopup_pickedBodies').value = search.bodyType.join(' ,');
+  }
+
+  const gotoSearch = () => window.location.replace('https://website/cars');
+
+  const setInnerHTML = (id, html) =>getById(id).innerHTML = html;
+
+  const updStepLabel = () => setInnerHTML('preSearchPopup_steps', 'Step '+step+' from 4');
+
+  const clearError = () => {
+    getById('preSearchPopup_error_msg').style.display = 'none';
+    getById('preSearchPopup_goNext_step'+step) && getById('preSearchPopup_goNext_step'+step).classList.remove('error');
+  }
+  const handleError = (error) => {
+    if (error){
+      getById('preSearchPopup_error_msg').style.display = 'block';
+      if(step == 4) {getById('preSearchPopup_error_msg').style.margin = '25px 0';}
+      getById('preSearchPopup_goNext_step'+step).classList.add('error');
+    }else{
+      clearError();
+    }
+    return error;
+  }
+
+  const updMainBtns = () =>{
+    const actions = ['',preSearchPopup_goCarCondition, preSearchPopup_goTiming, preSearchPopup_goBodyTypes, gotoSearchWithParams];
+    const skipId = 'preSearchPopup_skip_step'+step;
+    const goId = 'preSearchPopup_goNext_step'+step;
+
+    setInnerHTML('preSearchPopup_generalButtonContainer', '');
+    if(step != 4){
+      const skip = document.createElement("button");
+      skip.classList.add('preSearchPopup_button');
+      skip.classList.add('skip');
+      skip.id = skipId;
+      skip.textContent = 'Skip to search page';
+      skip.onclick = gotoSearch;
+      getById('preSearchPopup_generalButtonContainer').appendChild(skip);
+    }else{
+      getById('preSearchPopup_generalButtonContainer').appendChild(getById('preSearchPopup_steps'));
+    }
+
+    const go = document.createElement("button");
+    go.classList.add('preSearchPopup_button');
+    go.classList.add('cta');
+    go.id = goId;
+    go.textContent = step !== 4 ? 'Continue' :  'Search cars';
+    go.onclick = actions[step];
+    getById('preSearchPopup_generalButtonContainer').appendChild(go);
+  }
+
+  const renderContentButtons = (buttons) =>{
+    setInnerHTML('preSearchPopup_buttonContainer', '');
+
+    buttons.forEach(({value, label}) =>{
+      const btn = document.createElement("button");
+      btn.classList.add('preSearchPopup_button');
+      btn.id = 'preSearchPopup_step'+step+'_'+value;
+      btn.value = value;
+      btn.textContent = label;
+      btn.onclick = markAsSelected;
+      getById('preSearchPopup_buttonContainer').appendChild(btn);
+    });
+
+  }
+
+  const needHelpHandler = () => {
+    step++ ;
+
+    setInnerHTML('preSearchPopup_title','Help me choose');
+    getById('preSearchPopup_content_subtitle').style.display = 'none';
+    setInnerHTML('preSearchPopup_content_text', 'How are you looking to fund your car?');
+    const buttons = [
+      {
+        value: 'full',
+        label: 'Buy in full'
+      },
+      {
+        value: 'finance',
+        label: 'Finance'
+      },
+      {
+        value: 'leased',
+        label: 'Leased'
+      },
+      {
+        value: 'any',
+        label: 'I don’t mind'
+      },
+    ];
+    renderContentButtons(buttons);
+
+
+    updStepLabel();
+    getById('preSearchPopup_steps').style.display = 'block';
+    updMainBtns();
+
+    window.dispatchEvent(resizeEvent);
+  }
+
+  const preSearchPopup_goCarCondition = () =>{
+    if(handleError(!search.finance || search.finance.length == 0)) return;
+
+    step++ ;
+    setInnerHTML('preSearchPopup_content_text', 'Are you looking for a new or used car?');
+
+    const buttons = [
+      {
+        value: 'new',
+        label: 'New car'
+      },
+      {
+        value: 'used',
+        label: 'Used car'
+      },
+      {
+        value: 'any',
+        label: 'I don’t mind'
+      },
+    ];
+    renderContentButtons(buttons);
+
+    updStepLabel();
+    updMainBtns();
+
+    window.dispatchEvent(resizeEvent);
+  }
+
+  const preSearchPopup_goTiming = () => {
+    if(handleError(!search.condition || search.condition.length == 0)) return;
+
+    step++ ;
+    setInnerHTML('preSearchPopup_content_text', 'When are you hoping to purchase your next car?');
+
+    const buttons = [
+      {
+        value: 'asap',
+        label: 'As soon as possible'
+      },
+      {
+        value: 'month',
+        label: 'Within a month'
+      },
+      {
+        value: 'few',
+        label: 'In 2-3 months'
+      },
+      {
+        value: 'six',
+        label: 'Within 6 months'
+      },
+      {
+        value: 'any',
+        label: 'No preference'
+      },
+    ];
+    renderContentButtons(buttons);
+
+    updStepLabel();
+    updMainBtns();
+
+    window.dispatchEvent(resizeEvent);
+  }
+
+  const gotoSearchWithParams = () =>{
+    if(handleError(!search.bodyType || search.bodyType.length == 0)) return;
+
+    let url = 'https://buyacar.co.uk/';
+
+    if(search.finance === 'leased'){
+      url += 'leasing';
+      window.location.replace(url);
+      return;
+    }
+    url += 'cars';
+    const bodyType = search.bodyType;
+    const length = bodyType.length;
+    if(length === 0 && search.condition === 'new'){ url += '/new-cars?order=asc&sortby=mileage';}
+    if(length > 0){
+      url += '?';
+      bodyType.forEach((type, typeIndex)=> url += 'f['+typeIndex+']=body:'+type+'&');
+      if(search.condition === 'new'){
+        url += 'f['+length+']=type:new&f['+(length+1)+']=vehicle_type:car&sortby=mileage&order=asc';
+      }else{
+        url += 'f['+length+']=vehicle_type:car';
+      }
+    }
+    window.location.replace(url);
+  }
+
+  const preSearchPopup_goBodyTypes = () => {
+    if(handleError(!search.timing || search.timing.length == 0)) return;
+
+    step++ ;
+    setInnerHTML('preSearchPopup_content_text', 'Please select your preferred body style:');
+    const bodyTypes = [
+      {
+        label:"Hatchback",
+        value:"hatchback",
+        svg: '<svg id="Group_109" data-name="Group 109" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73.193" height="25.96" viewBox="0 0 73.193 25.96"><defs><clipPath id="clip-path"><rect id="Rectangle_81" data-name="Rectangle 81" width="73.193" height="25.96" fill="#0e0950"/></clipPath></defs><g id="Group_108" data-name="Group 108" clip-path="url(#clip-path)"><path id="Path_44" data-name="Path 44" d="M72.666,14.394l-.108-.078a1.424,1.424,0,0,1-.587-1.076c-.04-.739.067-1.675.105-2.768a4.158,4.158,0,0,0-.428-2,22.049,22.049,0,0,0-6.512-7.321A3.2,3.2,0,0,0,63.4.494,151.628,151.628,0,0,0,38.719.507a21.839,21.839,0,0,0-5.5,1.27,53.047,53.047,0,0,0-9.83,5.237,14.108,14.108,0,0,1-5.462,2.063c-6.174.951-12.6,1.943-15.895,4.539A4.736,4.736,0,0,0,.4,16.1,19.765,19.765,0,0,0,.075,22.16a.542.542,0,0,0,.319.463,9.2,9.2,0,0,0,3.444.846H7.768a.27.27,0,0,0,.266-.321,15.559,15.559,0,0,1-.261-2.792,7.332,7.332,0,0,1,2.134-5.25,7.249,7.249,0,0,1,10.23,0,7.332,7.332,0,0,1,2.133,5.25A15.493,15.493,0,0,1,22,23.194a.23.23,0,0,0,.225.276H54.283a.23.23,0,0,0,.225-.276,15.5,15.5,0,0,1-.269-2.838,7.332,7.332,0,0,1,2.134-5.25,7.249,7.249,0,0,1,10.231,0,7.348,7.348,0,0,1,2.132,5.274c0,.468-.027.982-.079,1.511a.174.174,0,0,0,.213.187q1.286-.307,2.586-.657a2,2,0,0,0,1.473-1.8l.262-4.108a1.276,1.276,0,0,0-.525-1.115M42.944,1.934,41.288,8.824a.321.321,0,0,1-.3.245c-5.38.272-10.641.617-15.776,1.109a.3.3,0,0,1-.241-.5,35.82,35.82,0,0,1,8.1-6.158,8.39,8.39,0,0,1,1.4-.611,20.438,20.438,0,0,1,4.393-.926q1.854-.183,3.867-.3a.205.205,0,0,1,.212.252m17.094,6.1a.666.666,0,0,1-.537.3c-5.01.174-9.929.343-14.755.557a.216.216,0,0,1-.225-.234l.594-6.908a.2.2,0,0,1,.2-.187q2.295-.081,4.748-.081c2.1,0,4.31.045,6.622.134a2.9,2.9,0,0,1,2.409,1.459c1.059,1.854,1.57,4,.947,4.963" transform="translate(0 0)" fill="#1c1836"/><path id="Path_45" data-name="Path 45" d="M109.744,162.386a5.718,5.718,0,1,0,5.718,5.718,5.718,5.718,0,0,0-5.718-5.718m0,8.814a3.061,3.061,0,1,1,3.061-3.061,3.061,3.061,0,0,1-3.061,3.061" transform="translate(-94.722 -147.862)" fill="#1c1836"/><path id="Path_46" data-name="Path 46" d="M629.26,162.386a5.718,5.718,0,1,0,5.718,5.718,5.718,5.718,0,0,0-5.718-5.718m0,8.814a3.061,3.061,0,1,1,3.061-3.061,3.061,3.061,0,0,1-3.061,3.061" transform="translate(-567.771 -147.862)" fill="#1c1836"/></g></svg>',
+      },
+      {
+        label:"SUV",
+        value:"4x4/crossover",
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.889" height="25.96" viewBox="0 0 68.889 25.96"><defs><clipPath id="clip-path"><rect id="Rectangle_82" data-name="Rectangle 82" width="68.89" height="25.96" fill="#d0cfd5"/></clipPath></defs><g id="Group_110" data-name="Group 110" clip-path="url(#clip-path)"><path id="Path_47" data-name="Path 47" d="M68.708,15.857a1.845,1.845,0,0,1-.336-.929c-.1-1.805.2-4.781.014-6.366a3.54,3.54,0,0,0-1.108-1.578,85.432,85.432,0,0,0-6.828-5.9A1.862,1.862,0,0,0,59.422.7,235.783,235.783,0,0,0,32.035.225c-2.368.213-6.447,3-11.4,6.595a4.176,4.176,0,0,1-2.2.79C11.827,8.015,6.862,8.822,3.407,10a1.5,1.5,0,0,0-.667.454,17.129,17.129,0,0,0-1.715,2.659.81.81,0,0,1-.195.234,3.9,3.9,0,0,0-.528.516,1.235,1.235,0,0,0-.282.721,18.9,18.9,0,0,0,.813,6.165,1.028,1.028,0,0,0,.989.745H3.294a.387.387,0,0,0,.384-.428,7.273,7.273,0,1,1,14.463,0,.386.386,0,0,0,.384.428H47.052a.308.308,0,0,0,.3-.345,7.273,7.273,0,1,1,14.5-.857q0,.231-.015.458a.307.307,0,0,0,.35.322c1.721-.243,3.359-.518,4.89-.834a1.113,1.113,0,0,0,.592-.333,6.455,6.455,0,0,0,1.21-3.308,1.049,1.049,0,0,0-.171-.738M38.567,1.677,36.913,7.5a.294.294,0,0,1-.272.214c-5.359.212-9.318.393-14.284.686a.112.112,0,0,1-.08-.2c2.855-2.452,7.669-6.355,9.87-6.567,1.822-.12,3.911-.192,6.227-.214a.2.2,0,0,1,.193.252M52.308,7.226q-6.111.144-11.966.352a.273.273,0,0,1-.281-.3l.616-5.589a.3.3,0,0,1,.3-.266c2.615.014,5.483.082,8.643.2a.324.324,0,0,1,.278.18l2.568,5.163a.179.179,0,0,1-.156.258m9.8-.189q-3.871.058-7.646.14a.291.291,0,0,1-.267-.162L51.692,1.976a.179.179,0,0,1,.168-.258q2.608.117,5.473.28a1.376,1.376,0,0,1,.851.357,38.506,38.506,0,0,1,4.092,4.334.214.214,0,0,1-.165.348" transform="translate(0 0)" fill="#1c1836"/><path id="Path_48" data-name="Path 48" d="M76.931,198.864a5.671,5.671,0,1,0,5.671,5.671,5.671,5.671,0,0,0-5.671-5.671m0,8.31a2.639,2.639,0,1,1,2.639-2.639,2.639,2.639,0,0,1-2.639,2.639" transform="translate(-66.022 -184.245)" fill="#1c1836"/><path id="Path_49" data-name="Path 49" d="M670.19,198.864a5.671,5.671,0,1,0,5.671,5.671,5.671,5.671,0,0,0-5.671-5.671m0,8.31a2.639,2.639,0,1,1,2.639-2.639,2.639,2.639,0,0,1-2.639,2.639" transform="translate(-615.67 -184.245)" fill="#1c1836"/></g></svg>',
+      },
+      {
+        label:"City car",
+        value:"city-car",
+        svg: '<svg id="Group_113" data-name="Group 113" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.641" height="25.96" viewBox="0 0 59.641 25.96"><defs><clipPath id="clip-path"><rect id="Rectangle_83" data-name="Rectangle 83" width="59.641" height="25.96" fill="#d0cfd5"/></clipPath></defs><g id="Group_112" data-name="Group 112" clip-path="url(#clip-path)"><path id="Path_50" data-name="Path 50" d="M59.554,14.923a1.294,1.294,0,0,0-.3-.727,2.953,2.953,0,0,0-.482-.449.937.937,0,0,1-.352-.51,7.092,7.092,0,0,0-1.869-3.51,5.541,5.541,0,0,1-.742-.849A42.988,42.988,0,0,0,49.09,1.571a4.522,4.522,0,0,0-2.177-.9,84.007,84.007,0,0,0-16.127-.5,17.729,17.729,0,0,0-4.151.757,40.7,40.7,0,0,0-11.695,6.52,6.05,6.05,0,0,1-2.829,1.14C4.293,9.617-.093,13.064,0,19.2a2.718,2.718,0,0,0,1.952,2.574,13.807,13.807,0,0,0,2.719.443.32.32,0,0,0,.345-.343c-.027-.351-.047-.72-.047-1.092a6.4,6.4,0,1,1,12.794,0c0,.325-.033.836-.057,1.167a.3.3,0,0,0,.3.322H44.552a.4.4,0,0,0,.4-.431c-.026-.327-.056-.767-.056-1.058a6.4,6.4,0,1,1,12.794,0q0,.158-.008.314a.148.148,0,0,0,.219.138h0a3.3,3.3,0,0,0,1.678-2.666,22.566,22.566,0,0,0-.026-3.642m-23.57-7.07q-10.5.4-20.1,1.024a.137.137,0,0,1-.09-.246l0,0c4.4-3.279,7.983-5.282,11.268-6.305a16.3,16.3,0,0,1,3.811-.694c1.668-.106,3.342-.163,4.984-.172a.257.257,0,0,1,.258.252l.111,5.882a.257.257,0,0,1-.247.262m11.844-.38q-4.149.108-8.176.247a.2.2,0,0,1-.2-.171l-.827-5.827a.2.2,0,0,1,.2-.227c1.569.051,5.529.423,7.864,2.717a12.389,12.389,0,0,1,1.686,2.277.654.654,0,0,1-.546.985" transform="translate(0 0.001)" fill="#d0cfd5"/><path id="Path_51" data-name="Path 51" d="M76.87,180.732a5.179,5.179,0,1,0,5.179,5.179,5.179,5.179,0,0,0-5.179-5.179m0,7.733a2.555,2.555,0,1,1,2.555-2.555,2.555,2.555,0,0,1-2.555,2.555" transform="translate(-65.502 -165.129)" fill="#d0cfd5"/><path id="Path_52" data-name="Path 52" d="M539.32,180.732a5.179,5.179,0,1,0,5.179,5.179,5.179,5.179,0,0,0-5.179-5.179m0,7.733a2.555,2.555,0,1,1,2.555-2.555,2.555,2.555,0,0,1-2.555,2.555" transform="translate(-488.028 -165.129)" fill="#d0cfd5"/></g></svg>',
+      },
+      {
+        label:"Coupe",
+        value:"coupe",
+        svg: '<svg id="Group_115" data-name="Group 115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78.714" height="24.916" viewBox="0 0 78.714 24.916"><defs><clipPath id="clip-path"><rect id="Rectangle_84" data-name="Rectangle 84" width="78.714" height="24.916" fill="#d0cfd5"/></clipPath></defs><g id="Group_114" data-name="Group 114" clip-path="url(#clip-path)"><path id="Path_53" data-name="Path 53" d="M78.406,11.935q-.1-.069-.2-.141a1.8,1.8,0,0,1-.689-1.227,26.3,26.3,0,0,0-.714-4.338.944.944,0,0,0-.776-.647c-1.434-.188-4.987-.141-7.023-.5C65.727,4.452,61.384,2.04,56.215.759A26.441,26.441,0,0,0,49.973,0C46.525-.013,43.158.059,39.8.261a11.8,11.8,0,0,0-1.32.153c-3.718.649-7.728,2.523-11.928,5.195A16.814,16.814,0,0,1,19.33,8.144c-6.939.744-12.709,1.807-15.907,3.572A5.515,5.515,0,0,0,.962,14.551,17.721,17.721,0,0,0,0,20.427a1.073,1.073,0,0,0,.612,1A8.925,8.925,0,0,0,3.673,22a.416.416,0,0,0,.435-.479,14.637,14.637,0,0,1-.166-2.159,7.5,7.5,0,0,1,7.25-7.582,7.349,7.349,0,0,1,7.448,7.349,10.49,10.49,0,0,1-.258,2.471.362.362,0,0,0,.351.447c4.011,0,32.73,0,36.111,0a.225.225,0,0,0,.213-.3,9.906,9.906,0,0,1-.327-3.061,7.349,7.349,0,0,1,14.685.443,7.264,7.264,0,0,1-.04.754.129.129,0,0,0,.153.141l.852-.171,6.954-1.193a1.321,1.321,0,0,0,1.1-1.226l.285-4.915a.708.708,0,0,0-.308-.587M47.887,1.773,46.356,6.935a.3.3,0,0,1-.27.215c-5.633.353-11.319.759-17.143,1.225a6.153,6.153,0,0,1-2.335-.263l-.725-.228C30.96,4.463,35.2,2.494,38.8,1.878a10.058,10.058,0,0,1,1.083-.123c2.476-.149,5.039-.232,7.8-.253a.211.211,0,0,1,.2.271m11.6,3.462a2.223,2.223,0,0,1-.935,1.037,1.357,1.357,0,0,1-.673.215q-4.428.221-8.864.485a.157.157,0,0,1-.164-.186l.96-5.044a.22.22,0,0,1,.242-.177c.15.019.3.042.45.071,4.637.886,7.707,1.97,8.878,3.133a.441.441,0,0,1,.105.467" transform="translate(0 0)" fill="#d0cfd5"/><path id="Path_54" data-name="Path 54" d="M64.2,141.608a5.784,5.784,0,1,0,5.784,5.784,5.784,5.784,0,0,0-5.784-5.784m0,8.821a3.037,3.037,0,1,1,3.037-3.037,3.037,3.037,0,0,1-3.037,3.037" transform="translate(-52.909 -128.26)" fill="#d0cfd5"/><path id="Path_55" data-name="Path 55" d="M602.934,141.608a5.784,5.784,0,1,0,5.784,5.784,5.784,5.784,0,0,0-5.784-5.784m0,8.821a3.037,3.037,0,1,1,3.037-3.037,3.037,3.037,0,0,1-3.037,3.037" transform="translate(-540.864 -128.26)" fill="#d0cfd5"/></g></svg>',
+      },
+      {
+        label:"Estate",
+        value:"estate",
+        svg: '<svg id="Group_117" data-name="Group 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78.487" height="24.488" viewBox="0 0 78.487 24.488"><defs><clipPath id="clip-path"><rect id="Rectangle_85" data-name="Rectangle 85" width="78.487" height="24.488" fill="#d0cfd5"/></clipPath></defs><g id="Group_116" data-name="Group 116" clip-path="url(#clip-path)"><path id="Path_56" data-name="Path 56" d="M78.289,13.905c-.133-.177-.295-.33-.435-.486a1.457,1.457,0,0,1-.359-.763c-.133-.9-.063-2.47-.306-3.625a2.594,2.594,0,0,0-.934-1.5,101.271,101.271,0,0,0-8.611-6.222,3.37,3.37,0,0,0-1.466-.5A186.768,186.768,0,0,0,40.17.2a23.925,23.925,0,0,0-6.95,1.385,61.114,61.114,0,0,0-10.7,5.464,2.782,2.782,0,0,1-1.21.4C13.769,8.1,6.9,9.1,3.23,10.793A4.647,4.647,0,0,0,1.25,12.5C-.209,14.793.34,18.056.013,19.346a.409.409,0,0,0,.3.494A45.282,45.282,0,0,0,5.7,20.81a.2.2,0,0,0,.22-.219A16.216,16.216,0,0,1,5.8,18.869a7.151,7.151,0,0,1,14.3-.2c.016.595-.071,1.591-.111,2.011a.18.18,0,0,0,.179.2H55.729a.185.185,0,0,0,.184-.2,19.3,19.3,0,0,1-.12-2,7.151,7.151,0,0,1,14.3.187c0,.465-.023,1.024-.048,1.4a.14.14,0,0,0,.159.148,47.487,47.487,0,0,0,5.641-1.118,2.888,2.888,0,0,0,.709-.291,3.911,3.911,0,0,0,1.767-2.049,2.712,2.712,0,0,0,.166-.948V14.5a.99.99,0,0,0-.2-.594M44.114,1.676,42.291,7.2a.249.249,0,0,1-.229.17c-5.99.17-11.666.4-17.076.708a.1.1,0,0,1-.062-.193c2.8-1.774,5.516-3.737,8.809-4.924a22.581,22.581,0,0,1,6.562-1.3c1.206-.059,2.444-.1,3.7-.137a.116.116,0,0,1,.113.152m14.041,5.4q-6.662.063-12.849.211a.161.161,0,0,1-.163-.182l.716-5.469a.17.17,0,0,1,.166-.148q1.317-.019,2.66-.019c2.141,0,4.3.037,6.44.11a.353.353,0,0,1,.246.11,36.553,36.553,0,0,1,2.915,5.177.147.147,0,0,1-.131.211M68.4,7.024q-4.108,0-8.041.03a.289.289,0,0,1-.261-.159c-.855-1.691-1.787-3.369-2.782-5.008a.144.144,0,0,1,.13-.219q1.662.076,3.3.181a6.468,6.468,0,0,1,1.287.211q.289.079.575.165a8.707,8.707,0,0,1,1.741.742A25.765,25.765,0,0,1,68.786,6.01.58.58,0,0,1,68.4,7.024" transform="translate(0 -0.001)" fill="#d0cfd5"/><path id="Path_57" data-name="Path 57" d="M89.591,151.753a5.62,5.62,0,1,0,5.62,5.62,5.62,5.62,0,0,0-5.62-5.62m0,8.424a2.8,2.8,0,1,1,2.8-2.8,2.8,2.8,0,0,1-2.8,2.8" transform="translate(-76.64 -138.505)" fill="#d0cfd5"/><path id="Path_58" data-name="Path 58" d="M661.913,151.753a5.62,5.62,0,1,0,5.62,5.62,5.62,5.62,0,0,0-5.62-5.62m0,8.424a2.8,2.8,0,1,1,2.8-2.8,2.8,2.8,0,0,1-2.8,2.8" transform="translate(-598.999 -138.505)" fill="#d0cfd5"/></g></svg>',
+      },
+      {
+        label:"MPV",
+        value:"mpv",
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.556" height="26.915" viewBox="0 0 75.556 26.915"><defs><clipPath id="clip-path"><rect id="Rectangle_86" data-name="Rectangle 86" width="75.556" height="26.915" fill="#d0cfd5"/></clipPath></defs><g id="Group_119" data-name="Group 119" transform="translate(1.427)"><g id="Group_118" data-name="Group 118" transform="translate(-1.427)" clip-path="url(#clip-path)"><path id="Path_59" data-name="Path 59" d="M75.538,16.1a1.369,1.369,0,0,0-.364-.869,4.9,4.9,0,0,1-.428-.525,1.586,1.586,0,0,1-.247-1.221,18.442,18.442,0,0,0,.257-3.837,4.109,4.109,0,0,0-.329-1.55C73.442,5.8,71.2,3.373,67.912.839a2.42,2.42,0,0,0-1.387-.5C52.492-.18,41.508-.08,32.795.482a15.3,15.3,0,0,0-3.338.59C25.356,2.28,20.92,4.688,15.8,7.991a5.861,5.861,0,0,1-2.61.907C7.141,9.486,2.227,10.906,1.256,14.55a1.817,1.817,0,0,1-.37.7l-.535.636a1.492,1.492,0,0,0-.316,1.278A23.336,23.336,0,0,1,.6,21.034a1.693,1.693,0,0,1-.076.577l-.1.328a.452.452,0,0,0,.313.571,39.53,39.53,0,0,0,5.132.484.292.292,0,0,0,.291-.315c-.03-.379-.075-1.013-.072-1.409a7.048,7.048,0,0,1,14.095.059c0,.41-.053,1.086-.083,1.437a.211.211,0,0,0,.21.229H52.567a.167.167,0,0,0,.167-.175c-.018-.341-.054-1.1-.05-1.549a7.048,7.048,0,1,1,14.042.921.317.317,0,0,0,.362.353c2.053-.321,4.161-.763,6.317-1.313A2.524,2.524,0,0,0,75.141,19.7a9.112,9.112,0,0,0,.4-3.6M21.575,7.062l-.327,2.412a.241.241,0,0,1-.237.209q-1.257.008-2.2-.029a.438.438,0,0,1-.232-.8q1.465-1.023,2.8-1.917a.126.126,0,0,1,.2.122M35.95,2.054l-.4,6.8a.282.282,0,0,1-.268.265c-4.929.243-8.968.44-12.046.522a.224.224,0,0,1-.23-.235c.045-.925.117-2.418.162-3.467a.322.322,0,0,1,.151-.26,27.381,27.381,0,0,1,6.546-3.208,13.858,13.858,0,0,1,3.02-.534q1.36-.088,2.789-.159a.259.259,0,0,1,.272.274M53.573,8.289c-5.622.22-10.671.459-15.106.676a.289.289,0,0,1-.3-.283l-.132-6.769a.244.244,0,0,1,.234-.248c3.511-.136,7.289-.2,11.29-.2q1.261,0,2.564.009a.338.338,0,0,1,.328.268l1.325,6.295a.213.213,0,0,1-.2.256m15.29-1.012a1.5,1.5,0,0,1-1.133.552q-5.881.151-11.162.348a.337.337,0,0,1-.335-.238l-1.9-6.169a.213.213,0,0,1,.206-.276c3.18.041,6.522.12,10,.237a1.945,1.945,0,0,1,1.151.426c2.027,1.625,4.271,3.759,3.182,5.12" transform="translate(-0.001 0)" fill="#1c1836"/><path id="Path_60" data-name="Path 60" d="M107.892,213.567a5.587,5.587,0,1,0,5.587,5.587,5.587,5.587,0,0,0-5.587-5.587m0,8.028a2.441,2.441,0,1,1,2.441-2.441,2.441,2.441,0,0,1-2.441,2.441" transform="translate(-94.764 -197.826)" fill="#1c1836"/><path id="Path_61" data-name="Path 61" d="M740.162,213.567a5.587,5.587,0,1,0,5.587,5.587,5.587,5.587,0,0,0-5.587-5.587m0,8.028a2.441,2.441,0,1,1,2.441-2.441,2.441,2.441,0,0,1-2.441,2.441" transform="translate(-680.432 -197.826)" fill="#1c1836"/></g></g></svg>',
+      },
+      {
+        label:"Saloon",
+        value:"saloon",
+        svg: '<svg id="Group_121" data-name="Group 121" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.856" height="25.69" viewBox="0 0 85.856 25.69"><defs><clipPath id="clip-path"><rect id="Rectangle_87" data-name="Rectangle 87" width="85.856" height="25.69" fill="#d0cfd5"/></clipPath></defs><g id="Group_120" data-name="Group 120" clip-path="url(#clip-path)"><path id="Path_62" data-name="Path 62" d="M85.847,17.464l-.177-2.027a2.181,2.181,0,0,0-.52-1.232,2.962,2.962,0,0,1-.361-.521,2.46,2.46,0,0,1-.231-.623,14.687,14.687,0,0,0-2.022-5.04,1.5,1.5,0,0,0-1.075-.637c-1.982-.213-3.888-.434-5.348-.7a9.652,9.652,0,0,1-2.36-.764C69.531,3.923,66.4,2.036,62.108.864A15.582,15.582,0,0,0,59.029.349,104.118,104.118,0,0,0,41.375.4,10.808,10.808,0,0,0,40.23.583c-4.965,1.087-8.219,3.29-12.785,6.175a7.914,7.914,0,0,1-3.5,1.191c-10.981,1.011-21,2.307-22.406,4.241C0,14.4-.137,17.5.08,20.817a1.406,1.406,0,0,0,1.1,1.282,45.185,45.185,0,0,0,5.769.727.21.21,0,0,0,.225-.21,15.335,15.335,0,0,1-.35-2.694,7.325,7.325,0,1,1,14.65-.063,15.594,15.594,0,0,1-.275,2.878.21.21,0,0,0,.21.21H60.4a.21.21,0,0,0,.21-.21,24.089,24.089,0,0,1-.164-2.815,7.325,7.325,0,1,1,14.65-.063,18.98,18.98,0,0,1-.148,2.116.21.21,0,0,0,.245.208c4.1-.693,7.68-1.528,9.565-2.615a2.208,2.208,0,0,0,1.092-2.105M46.25,7.331a.321.321,0,0,1-.3.257q-2.867.171-5.654.39-5.589.334-11.3.741a.142.142,0,0,1-.1-.254c3.507-2.717,7.655-5.626,11.634-6.5a9.426,9.426,0,0,1,.994-.162c1.774-.193,3.67-.312,5.749-.361a.113.113,0,0,1,.114.135Zm3.347-.19V1.69a.269.269,0,0,1,.269-.27c2.727.008,5.7.122,9.069.345q.223.015.444.036a6.653,6.653,0,0,1,2.439.74A17.417,17.417,0,0,1,67.1,6.57a.205.205,0,0,1-.159.333c-5.854.063-11.568.211-17.091.477a.237.237,0,0,1-.249-.238" transform="translate(0.001 0)" fill="#d0cfd5"/><path id="Path_63" data-name="Path 63" d="M99.737,158.289a5.83,5.83,0,1,0,5.83,5.83,5.83,5.83,0,0,0-5.83-5.83m0,8.863a3.033,3.033,0,1,1,3.033-3.033,3.033,3.033,0,0,1-3.033,3.033" transform="translate(-85.584 -144.259)" fill="#d0cfd5"/><path id="Path_64" data-name="Path 64" d="M703.9,158.289a5.83,5.83,0,1,0,5.83,5.83,5.83,5.83,0,0,0-5.83-5.83m0,8.863a3.033,3.033,0,1,1,3.033-3.033,3.033,3.033,0,0,1-3.033,3.033" transform="translate(-636.195 -144.259)" fill="#d0cfd5"/></g></svg>',
+      },
+      {
+        label:"Convertible",
+        value:"sports",
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.78" height="22.604" viewBox="0 0 80.78 22.604"><defs><clipPath id="clip-path"><rect id="Rectangle_88" data-name="Rectangle 88" width="80.78" height="22.604" fill="#d0cfd5"/></clipPath></defs><g id="Group_123" data-name="Group 123" transform="translate(0 -1)"><g id="Group_122" data-name="Group 122" transform="translate(0 1)" clip-path="url(#clip-path)"><path id="Path_65" data-name="Path 65" d="M80.276,10.114a6.431,6.431,0,0,1-.986-3.687.9.9,0,0,0-.176-.6,3.246,3.246,0,0,0-.9-.864,1.087,1.087,0,0,0-.527-.156c-4.772-.185-10.048-.741-13.508-.889a11.094,11.094,0,0,0-2.725.217l-.4.08.126-.6a1.012,1.012,0,0,0-.78-1.2l-.02,0a1.011,1.011,0,0,0-1.2.78L58.892,4.57c-2.5.354-5.636.631-9.217.847l.3-1.406a1.012,1.012,0,0,0-.78-1.2l-.02,0a1.012,1.012,0,0,0-1.2.78l-.412,1.947c-4.83.249-10.353.4-16.2.5a.1.1,0,0,1-.057-.185,58.75,58.75,0,0,1,8.668-4.565.357.357,0,0,0,.063-.619A4.562,4.562,0,0,0,38.813.041a.832.832,0,0,0-.572.021C34.751,1.487,31.3,3.153,27.864,4.946a3.419,3.419,0,0,1-1.365.381c-11.143.709-20.3,2.107-25.3,5a1.8,1.8,0,0,0-.8.961,5.79,5.79,0,0,0,.375,5.035,1.6,1.6,0,0,1-.143,1.769c-.043.054-.085.109-.123.164a.412.412,0,0,0,.215.629,28.444,28.444,0,0,0,6.014,1.035.285.285,0,0,0,.305-.343A15.139,15.139,0,0,1,6.7,16.7a7.474,7.474,0,1,1,14.947,0,17.7,17.7,0,0,1-.416,2.972.246.246,0,0,0,.241.3H57.116a.222.222,0,0,0,.217-.267,18.025,18.025,0,0,1-.419-3,7.474,7.474,0,1,1,14.947,0c0,.485-.066,1.284-.1,1.651a.146.146,0,0,0,.174.156l6.421-1.284a1.969,1.969,0,0,0,.794-.354c1.552-1.162,1.615-2.85,1.628-4.91a3.96,3.96,0,0,0-.5-1.842" transform="translate(0 -0.001)" fill="#d0cfd5"/><path id="Path_66" data-name="Path 66" d="M105.177,129.555a5.908,5.908,0,1,0,5.908,5.908,5.907,5.907,0,0,0-5.908-5.908m0,8.756a2.849,2.849,0,1,1,2.849-2.849,2.849,2.849,0,0,1-2.849,2.849" transform="translate(-91.002 -118.766)" fill="#d0cfd5"/><path id="Path_67" data-name="Path 67" d="M707.784,129.555a5.908,5.908,0,1,0,5.908,5.908,5.907,5.907,0,0,0-5.908-5.908m0,8.756a2.849,2.849,0,1,1,2.849-2.849,2.849,2.849,0,0,1-2.849,2.849" transform="translate(-643.427 -118.766)" fill="#d0cfd5"/></g></g></svg>',
+      }
+    ];
+    setInnerHTML('preSearchPopup_buttonContainer', '');
+    bodyTypes.forEach(({value, label, svg})=> {
+      const btn = document.createElement("button");
+      btn.classList.add('preSearchPopup_button_icon');
+      btn.id = 'preSearchPopup_step'+step+'_'+value;
+      btn.value = value;
+      btn.onclick = markAsSelectedIcon;
+      getById('preSearchPopup_buttonContainer').appendChild(btn);
+      btn.innerHTML = svg + label;
+    });
+    getById('preSearchPopup_buttonContainer').style['justify-content'] = 'space-around';
+
+    const input = document.createElement("input");
+    input.id = 'preSearchPopup_pickedBodies';
+    input.type = 'hidden';
+    input.value = '';
+    getById('preSearchPopup_buttonContainer').appendChild(input);
+
+    updStepLabel();
+    updMainBtns();
+
+    window.dispatchEvent(resizeEvent);
+  }
+
+  getById('preSearchPopup_goToSearch').addEventListener('click', gotoSearch);
+  getById('preSearchPopup_needHelp').addEventListener('click', needHelpHandler);
+})();
+</script>

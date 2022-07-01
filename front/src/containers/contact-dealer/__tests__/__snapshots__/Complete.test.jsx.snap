@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Complete /> rendered without errors 1`] = `
+<div
+  className="container"
+>
+  <Typography
+    align="left"
+    className="title"
+    color="dark"
+    type="h2"
+  >
+    Thank you, the dealer will be in touch!
+  </Typography>
+  <div
+    className="intro_wrapper_title"
+  >
+    <Typography
+      align="left"
+      className="intro_title"
+      color="dark"
+      type="h2"
+    >
+      Finance with Buyacar
+    </Typography>
+    <ThanksYouPiggy
+      height="46"
+      viewBox="0 0 46 46"
+      width="46"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    />
+  </div>
+  <div
+    className="main_content"
+  >
+    <Typography
+      align="left"
+      className="main_content_text"
+      color="dark"
+      type="p"
+    >
+      Having your finance in place before you go to view your vehicle will give you the peace of mind that you are getting a great rate with Buyacar.
+    </Typography>
+  </div>
+</div>
+`;

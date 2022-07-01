@@ -1,0 +1,258 @@
+@import 'variables'
+@import 'mixins'
+
+.inputSelect
+  width: 100%
+  height: $input-height
+  font-size: $base-font-size
+  font-family: $base-font-family
+  color: $color-grey-nightrider
+  line-height: $input-height
+  border: 1px solid $color-grey-dark
+  padding: 0 calc(42px + 1.2em) 0 1.2em
+  background-color: $color-white
+  background-image: url('../../../assets/svg/arrow-down-blue.svg')
+  background-size: 12px 8px
+  background-position: calc(100% - 20px) 16px
+  background-repeat: no-repeat
+  border-radius: $input-border-radius
+  cursor: pointer
+  appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-tap-highlight-color: transparent
+
+  &:hover,
+  &:active
+    border-color: $color-tabs-active-border
+
+.formPreamble
+  margin: 15px 0
+  padding: 20px 8px
+  // border-radius: 5px
+  // font-size: 15px
+  text-align: center
+  @include mq($from: tablet)
+    padding: 20px 16px
+    padding-bottom: 38px
+    // font-size: $base-font-size
+  @include mq($from: desktop)
+    margin-bottom: $zen-gutter-third
+
+.promoBanner
+  width: 100vw
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  height: 68px
+  line-height: 15px
+  margin-left: 50%
+  padding: 12px
+  background-color: $color-promo-background
+  box-shadow: 2px 10px 9px -11px rgba(0, 0, 0, .4)
+  font-size: $smaller-font-size
+  font-weight: 700
+  color: $color-promo-green
+  transform: translateX(-50%)
+
+  .icon
+    margin-right: 5px
+
+  .autoconvert-inner &
+    top: -40px
+
+  .message-trustpilot
+    padding-left: 12px
+
+  .formFinance
+    background: $color-white
+    display: flex
+    flex-direction: column
+
+    > .link--button-forward
+      align-self: flex-end
+
+.confirmationBlock
+  text-align: center
+  margin-top: 50px
+
+.header
+  height: 31px
+  color: $color-grey-nightrider
+  font-size: 25px
+  font-weight: 600
+  letter-spacing: .54px
+  line-height: 39px
+  text-align: left
+  margin: 40px 0
+
+  +mq($from: desktop)
+    text-align: center
+
+.submitting
+  height: 67px
+  font-size: 14px
+  line-height: $h6-font-size
+  color: $color-light-text
+  text-align: center
+  letter-spacing: .3px
+
+  a
+    color: $secondary
+    text-decoration: underline
+
+  @include mq($from: tablet)
+    padding: 0 5%
+
+.lender
+  margin: 20px 0
+
+  +mq($from: desktop)
+      margin: 40px 0
+
+  form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    +mq($from: desktop)
+      padding: 0 30%
+
+.lenderTitle
+  font-size: 26px
+  letter-spacing: 0
+  line-height: 26px
+  font-weight: 700
+  text-align: left
+  color: $color-grey-nightrider
+  margin-bottom: 40px
+
+.stepContainer
+  display: inline-flex
+  flex-wrap: wrap
+  margin-bottom: 20px
+
+  +mq($from: desktop)
+      flex-wrap: nowrap
+      align-content: stretch
+      margin-bottom: 70px
+
+  .lenderText
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: 0
+    line-height: 26px
+    color: $purple-primary
+    padding: 100px 0 0 30px
+    margin: 0 0 30px
+    border-left: 10px solid $strong-cyan-lime-green
+    flex-grow: 1
+
+    +mq($from: desktop)
+      flex-grow: 0
+      width: 30%
+      padding: 45px 0 0 30px
+      margin: 0 5% 0 0
+
+    .number
+      font-size: 70px
+      font-weight: 700
+      letter-spacing: 0
+      line-height: 70px
+      color: $purple-darker
+      margin: 0 0 5px
+
+    .title
+      font-size: 20px
+      font-weight: 700
+      letter-spacing: 0
+      line-height: 20px
+      color: $purple-primary
+      margin: 5px 0
+
+.optionOne,
+.optionTwo
+  display: flex
+  margin-bottom: 40px
+
+  label
+    font-size: 16px
+    letter-spacing: 0
+    line-height: 25px
+
+input.confirmCheckbox
+  cursor: pointer
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  color: $blue-primary
+  width: 22px
+  height: 22px
+  line-height: 16px
+  background: $color-white
+  border: 1px solid $dark
+  display: flex
+  align-items: center
+  text-align: center
+  margin: 5px 15px 0 0
+  float: none
+  flex: none
+
+  &::before
+    font-family: 'icons'
+    content: '  '
+    font-style: normal
+    speak: none
+    display: inline-block
+    text-decoration: inherit
+    text-align: center
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    margin: 0
+
+  &:checked::before
+    content: '\2713'
+    width: 22px
+
+  &:checked,
+  &:focus,
+  &:focus:checked
+    background: none
+    box-shadow: none
+
+  &:disabled
+    cursor: default
+
+  &::-ms-expand
+    display: none
+
+.warning
+  font-size: $small-font-size
+  margin-top: 10px
+  padding: 5px 10px
+  color: $tertiary
+  text-align: left
+  border: 1px solid $tertiary
+
+.submitBtn
+  width: 100%
+
+.field
+  margin-bottom: .75em
+
+.confirm
+  width: 100%
+  max-width: 500px
+
+.confirm_margin
+  margin-top: 40px
+  margin-bottom: 20px
+
+.consentSubmit
+  margin-top: 20px
+  margin-bottom: -20px
+  color: $field-error-color

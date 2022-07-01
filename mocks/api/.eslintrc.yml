@@ -1,0 +1,27 @@
+extends:
+  - airbnb
+
+rules:
+  semi: off
+  object-curly-newline: off
+  object-curly-spacing: off
+  no-use-before-define: off # allows hoisting for functions
+  import/no-extraneous-dependencies: off # use json server for mock
+  import/extensions: off
+  no-param-reassign: off
+  import/no-cycle: off # to import app from index
+  no-underscore-dangle: off # mongo id
+  max-len: warn
+  no-shadow: off
+  arrow-parens: [error, as-needed]
+  global-require: off
+  consistent-return: off
+
+  # TODO under: remove when projects starts on and grows
+  no-unused-vars: off
+  import/prefer-default-export: off
+  no-new: off
+  prefer-promise-reject-errors: off
+
+env:
+  node: true

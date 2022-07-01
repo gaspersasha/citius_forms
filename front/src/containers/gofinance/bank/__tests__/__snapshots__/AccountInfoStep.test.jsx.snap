@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountInfoStep /> renders without errors 1`] = `
+<div
+  className="accountFormWrapper"
+>
+  <div
+    className="numberInputWrapper"
+  >
+    <InputNumber
+      className="inputNumber"
+      label="What is your account number?"
+      name="accountNumber"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      onFocus={[Function]}
+      onKeyPress={null}
+      placeholder=""
+      required={false}
+      status="valid"
+      subTitle="Your bank account number is 8 digits long and can usually be found on your debit card, cheque book or online banking service"
+      value="12345678"
+    />
+  </div>
+  <div>
+    <InputMaskText
+      className="inputMaskText"
+      label="What is your Sort Code?"
+      mask={
+        Array [
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+          "-",
+          /\\\\d/,
+          /\\\\d/,
+        ]
+      }
+      name="sortCode"
+      onBlur={[MockFunction]}
+      onChange={[MockFunction]}
+      onFocus={[Function]}
+      placeholder="Sort Code"
+      required={false}
+      status="valid"
+      subTitle="Your bank sort code is 6 digits long and can usually be found next to your account number"
+      type="tel"
+      value="123456"
+    />
+  </div>
+</div>
+`;

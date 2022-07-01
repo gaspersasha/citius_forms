@@ -1,0 +1,162 @@
+@import 'variables'
+@import 'mixins'
+
+$body-link-margin: 43px
+
+.container
+  width: 100%
+  height: auto
+  display: flex
+  flex-flow: column wrap
+  text-align: center
+  align-items: center
+  overflow: hidden
+
+.noCarWrapper
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  max-width: 680px
+  width: 100%
+  margin: auto
+
+.CTA_container
+  max-width: 340px
+  width: 100%
+  margin: 0 auto 40px
+
+.CTA_title
+  font-size: 1.1em
+  font-weight: 700
+  letter-spacing: .39px
+  line-height: 28px
+  margin-bottom: 20px
+
+.subtitle
+  width: 100%
+  text-align: left
+  font-size: 18px
+  font-weight: 600
+  margin-bottom: 20px
+
+.searchTagsWrapper
+  position: relative
+  width: 100%
+  margin-bottom: 40px
+
+  &::after
+    +mq($until: tablet)
+      content: ''
+      position: absolute
+      z-index: 1
+      right: 0
+      width: 37px
+      bottom: 0
+      top: -5px
+      background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0))
+
+.searchTags
+  justify-content: left
+  display: flex
+  flex-wrap: wrap
+
+  +mq($until: tablet)
+    flex-wrap: nowrap
+    overflow: scroll
+
+.searchTag
+  font-size: 1.1em
+  line-height: 1.2em
+  display: inline-flex
+  flex-shrink: 0
+  padding: 15px
+  color: $purple-primary
+  border: 1px solid $purple-primary
+  margin: 0 10px 10px 0
+
+.bodyLinksWrapper
+  display: flex
+  flex-wrap: wrap
+
+.bodyLink
+  flex-basis: calc(33.33% - #{$body-link-margin} * 2 / 3)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  height: 160px
+  padding: 14px
+  margin: 0 $body-link-margin $body-link-margin 0
+  box-shadow: 0 3px 6px rgb($color-black, .16)
+
+  +mq($until: tablet)
+    height: 134px
+    margin: 0 $body-link-margin/2 $body-link-margin/2 0
+    flex-basis: calc(50% - #{$body-link-margin/2} / 2)
+
+  &:nth-child( 3n )
+    margin-right: 0
+    +mq($until: tablet)
+      margin-right: $body-link-margin/2
+
+  &:nth-child( 2n )
+    +mq($until: tablet)
+      margin-right: 0
+
+  span
+    text-align: center
+    color: $text-dark
+    font-weight: 600
+    margin-top: 14px
+
+.noResultWrapper
+  display: flex
+  align-self: center
+  flex-wrap: wrap
+  justify-content: center
+  text-align: center
+  height: 100%
+  align-items: center
+
+.noResult
+  width: 100%
+  max-width: 680px
+  display: flex
+  flex-direction: column
+  align-self: center
+
+.noResultTitle
+  font-size: 25px
+  line-height: 1.4em
+  margin: 10px 0 42px
+  font-weight: 700
+
+.noResultDescription
+  text-align: center
+  margin: 0 auto 40px
+  max-width: 537px
+
+.media
+  width: 200px
+  margin: 0 auto 36px
+
+.unapproved
+  max-width: 537px
+
+.unapprTitle
+  margin: 40px 0
+  font-size: 25px
+  line-height: 32px
+  letter-spacing: .54px
+  +mq($from: desktop)
+    margin: 156px 0 40px
+
+.unapprHeading
+  font-size: 25px
+  margin-bottom: 20px
+
+.unapprTxt
+  margin-bottom: 40px
+
+.light
+  font-weight: 400

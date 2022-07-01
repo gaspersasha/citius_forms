@@ -1,0 +1,127 @@
+@import 'variables'
+@import 'mixins'
+
+.container
+  padding: 5px 20px
+  +mq($from: tablet)
+    padding: 0
+
+.wrapper
+  padding: 25px 15px
+  box-shadow: 2px 2px 14px 0 rgb(0, 0, 0, 8%)
+  +mq($from: desktop)
+    display: flex
+    justify-content: space-between
+    max-width: 900px
+    margin: 0 auto
+    padding: 40px 30px
+
+.carImage
+  width: 100%
+  min-height: 200px
+  +mq($from: desktop)
+    width: 420px
+
+  img
+    display: block
+    margin: 0 auto
+    width: 100%
+    max-width: 480px
+    +mq($from: desktop)
+      max-width: 420px
+
+.carDetails
+  width: 100%
+  max-width: 480px
+  margin: 0 auto
+  padding: 10px 0
+  +mq($from: desktop)
+    max-width: 380px
+    margin: 0
+    padding: 5px 0 0
+
+.heading
+  font-size: 18px
+  font-weight: 700
+  margin-bottom: 10px
+
+.reservationInfo
+  padding: 7px 10px
+  font-weight: 700
+  background-color: $color-blue-aliceblueligth
+  margin-bottom: 10px
+
+.carSpecsList
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  min-height: 70px
+  max-width: 480px
+  margin: 0 auto
+  padding: 10px
+  background-color: $color-white-whitesmoke
+  margin-bottom: 15px
+  +mq($from: desktop)
+    height: 100px
+
+.carSpecItem
+  width: 50%
+  min-height: 22px
+  height: fit-content
+  word-wrap: break-word
+
+  &:nth-child( even )
+    text-align: right
+
+  &:nth-child( -n + 2 )
+    +mq($until: desktop)
+      margin-bottom: 6px
+
+  +mq($from: desktop)
+    height: 50%
+    margin: 0
+    line-height: 40px
+
+.carPrice
+  font-size: 22px
+  text-align: right
+  font-weight: 700
+  margin-bottom: 30px
+  padding-right: 10px
+
+.carActionLink
+  display: block
+  margin: 0 auto
+  height: 52px
+  padding: 0 15px
+  text-decoration: none
+  text-align: center
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: 52px
+  cursor: pointer
+  max-width: 480px
+  color: $color-white
+  background-color: $secondary
+  transition: all .2s ease-in-out
+  border-left: 5px solid $blue-lighter
+
+  +mq($from: desktop)
+    border-left: 15px solid $blue-lighter
+
+  &:hover
+    background-color: $dark
+    border-left: 5px solid $dark
+
+    +mq($from: desktop)
+      border-left: 15px solid $dark
+
+.advertLink:link
+  display: block
+  margin: 10px auto 0 20px
+  width: 130px
+  color: $secondary
+  text-decoration: underline
+  margin-bottom: 30px
+  +mq($from: desktop)
+    margin: 10px auto 20px calc((100% - 900px)/2)

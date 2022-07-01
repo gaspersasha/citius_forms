@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Typography /> rendered without errors 1`] = `
+<p
+  className="typographyComponent txt-dark txt-left"
+>
+  Test
+</p>
+`;

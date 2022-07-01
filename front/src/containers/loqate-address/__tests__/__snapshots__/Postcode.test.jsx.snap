@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Postcode /> renders without errors (address not selected) 1`] = `
+<div
+  className="wrapper"
+  onBlur={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  <InputText
+    autoCapitalize="off"
+    autoComplete="off"
+    autoCorrect="off"
+    className=""
+    customClasses=""
+    errorMessage=""
+    label="Address"
+    name="loqateAddress"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Start typing your address to search"
+    required={true}
+    spellCheck="false"
+    status="default"
+    subTitle=""
+    value=""
+  />
+</div>
+`;
+
+exports[`<Postcode /> renders without errors (address selected) 1`] = `
+<div
+  className="wrapper"
+  onBlur={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  Your address
+  <div
+    className="result"
+  >
+    <LoqateResults
+      className={Array []}
+      lines={
+        Array [
+          undefined,
+          " test street",
+          "test town",
+          undefined,
+          "test postCode",
+        ]
+      }
+      status="default"
+    />
+    <div
+      className="link"
+      id="NotRightLink"
+    >
+      <CustomLink
+        data-id="clear-addres-link"
+        onClick={[Function]}
+        type=""
+        url=""
+      >
+        Not right? Change address
+      </CustomLink>
+    </div>
+  </div>
+</div>
+`;

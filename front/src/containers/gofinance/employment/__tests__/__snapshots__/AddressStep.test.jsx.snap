@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddressStep /> renders without errors 1`] = `
+<div
+  className="addressFormWrapper"
+>
+  <LoqateAddress
+    errorMessage=""
+    formName="employment"
+    key="loqate"
+    manualFields={
+      Array [
+        Object {
+          "id": "employmentPostcode",
+          "label": "Postcode",
+          "name": "postCode",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+          "warning": "* Please type correct UK postal code",
+        },
+        Object {
+          "id": "buildingName",
+          "label": "Building name",
+          "name": "buildingName",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "id": "buildingNumber",
+          "label": "Building number",
+          "name": "buildingNumber",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "id": "employmentStreet",
+          "label": "Street",
+          "name": "street",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "id": "employmentDistrict",
+          "label": "District",
+          "name": "district",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "id": "employmentTown",
+          "label": "Town",
+          "name": "town",
+          "onChange": [MockFunction],
+          "required": true,
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+        Object {
+          "label": "County",
+          "name": "county",
+          "onChange": [MockFunction],
+          "status": "valid",
+          "validationType": "none",
+          "value": "qwerty",
+        },
+      ]
+    }
+    selectHandler={[MockFunction]}
+    subTitle="Please add your employment address details below"
+  />
+</div>
+`;

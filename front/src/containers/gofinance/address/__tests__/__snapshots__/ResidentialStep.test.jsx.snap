@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResidentialStep /> renders without errors 1`] = `
+<div
+  className="residentialFormWrapper"
+>
+  <TapButtons
+    label="What is your residential status?"
+    name=""
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Home owner",
+          "value": "HOME_OWNER",
+        },
+        Object {
+          "option": "Council tenant",
+          "value": "COUNCIL_TENANT",
+        },
+        Object {
+          "option": "Housing association",
+          "value": "HOUSING_ASSOCIATION",
+        },
+        Object {
+          "option": "Living with family",
+          "value": "LIVING_WITH_FAMILY",
+        },
+        Object {
+          "option": "Private tenant",
+          "value": "PRIVATE_TENANT",
+        },
+        Object {
+          "option": "Student accommodation",
+          "value": "STUDENT_ACCOMMODATION",
+        },
+        Object {
+          "option": "Work accommodation",
+          "value": "WORK_ACCOMMODATION",
+        },
+        Object {
+          "option": "Military accommodation",
+          "value": "MILITARY_ACCOMMODATION",
+        },
+        Object {
+          "option": "Other",
+          "value": "OTHER",
+        },
+      ]
+    }
+    required={true}
+    status="valid"
+    subTitle="Select from the list below"
+    value="qwerty"
+  />
+</div>
+`;

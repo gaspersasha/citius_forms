@@ -1,0 +1,17 @@
+@import 'variables'
+@import 'mixins'
+
+$typography-colors: ('white': $color-white, 'black': $color-black, 'dark': $dark, 'green': $color-green-jade, 'red': $field-error-color)
+
+$aligns: ('left': left, 'right': right, 'center': center)
+
+.typographyComponent
+  font-family: $base-font-family
+
+@each $key, $value in $aligns
+  .txt-#{$key}
+    text-align: $value
+
+@each $key, $value in $typography-colors
+  .txt-#{$key}
+    color: $value

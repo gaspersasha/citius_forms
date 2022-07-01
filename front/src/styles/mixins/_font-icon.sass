@@ -1,0 +1,24 @@
+@import 'variables'
+
+@mixin createFontIcon($code, $size: '', $color: '', $lh: 1, $margin: '')
+  &:before
+    @content
+    content: '#{$code}'
+    font-family: $icon-font-family
+    font-style: normal
+    font-weight: normal
+    speak: none
+    text-decoration: inherit
+    text-align: center
+    font-variant: normal
+    text-transform: none
+    @if $size != ''
+      font-size: $size
+
+    @if $color != ''
+      color: $color
+
+      line-height: $lh
+
+    @if $margin != ''
+      margin: $margin

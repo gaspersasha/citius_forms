@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal container with overlay and close button Basic render of Modal 1`] = `
+<Modal
+  classModifier=""
+  closeBtnOuter={false}
+  isDark={false}
+  onClose={[MockFunction]}
+>
+  <div
+    className="modal_container__react"
+  >
+    <div
+      className="overlay"
+      data-id="overlay"
+      onClick={[MockFunction]}
+      role="dialog"
+    />
+    <div
+      className="modal"
+    >
+      <h4>
+        any component
+      </h4>
+      <div>
+        will have dark overlay and close button top right
+      </div>
+      <div>
+        clicking those fire a
+        <b>
+          onClose
+        </b>
+        prop
+      </div>
+      <ModalCloseButton
+        className="close_button"
+        data-id="close-button"
+        height="20"
+        onClick={[MockFunction]}
+        viewBox="0 0 21 20"
+        width="21"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <svg
+          className="close_button"
+          data-id="close-button"
+          height="20"
+          onClick={[MockFunction]}
+          viewBox="0 0 21 20"
+          width="21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            transform="translate(.95)"
+          >
+            <circle
+              cx="10"
+              cy="10"
+              fill="#03d39b"
+              fillOpacity=".776"
+              r="10"
+            />
+            <path
+              d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+              stroke="#000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </g>
+        </svg>
+      </ModalCloseButton>
+    </div>
+  </div>
+</Modal>
+`;
+
+exports[`Modal container with overlay and close button Render Modal with dark overlay 1`] = `
+<Modal
+  classModifier=""
+  closeBtnOuter={false}
+  dark={true}
+  isDark={false}
+  onClose={[MockFunction]}
+>
+  <div
+    className="modal_container__react"
+  >
+    <div
+      className="overlay"
+      data-id="overlay"
+      onClick={[MockFunction]}
+      role="dialog"
+    />
+    <div
+      className="modal"
+    >
+      <h4>
+        another title
+      </h4>
+      <div>
+        will have dark overlay and close button top right
+      </div>
+      <div>
+        clicking those fire a
+        <b>
+          onClose
+        </b>
+        prop
+      </div>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        CTA
+      </button>
+      <ModalCloseButton
+        className="close_button"
+        data-id="close-button"
+        height="20"
+        onClick={[MockFunction]}
+        viewBox="0 0 21 20"
+        width="21"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <svg
+          className="close_button"
+          data-id="close-button"
+          height="20"
+          onClick={[MockFunction]}
+          viewBox="0 0 21 20"
+          width="21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            transform="translate(.95)"
+          >
+            <circle
+              cx="10"
+              cy="10"
+              fill="#03d39b"
+              fillOpacity=".776"
+              r="10"
+            />
+            <path
+              d="M13.53 6.06l-7.06 7.273m0-7.272l7.06 7.272"
+              stroke="#000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </g>
+        </svg>
+      </ModalCloseButton>
+    </div>
+  </div>
+</Modal>
+`;

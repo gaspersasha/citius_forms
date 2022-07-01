@@ -1,0 +1,147 @@
+@import 'variables'
+@import 'mixins'
+
+.card
+  display: flex
+  flex: 0 1 auto
+  justify-content: center
+  padding: 40px 30px
+  margin: 40px auto
+  border-radius: 15px
+  box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, .08)
+  @include mq($until: tablet)
+    display: block
+    padding: 0
+
+.title
+  width: 100%
+  margin: 10px 0
+  font-weight: 700
+  font-size: 18px
+  line-height: 23px
+  text-align: left
+  color: $color-grey-nightrider
+  letter-spacing: .6px
+  @include mq($from: tablet)
+    font-size: 1.45em
+    margin: 0 0 10px
+
+  @include mq($from: desktop)
+    font-size: 30px
+    line-height: 34px
+
+.left
+  min-width: 250px
+  text-align: center
+  margin-left: auto
+  margin-right: auto
+  @include mq($from: tablet)
+    padding-right: 10px
+
+.img
+  display: block
+  width: 100%
+  max-width: 480px
+  margin: 0 auto
+  border-radius: $img-border-radius $img-border-radius 0 0
+  @include mq($from: tablet, $until: wide)
+    max-width: 320px
+
+  @include mq($from: tablet)
+    border-radius: $img-border-radius
+
+.right
+  display: flex
+  flex-direction: column
+  justify-content: center
+  max-width: 400px
+  margin: 0 auto
+  padding-left: $general-padding
+  @include mq($until: tablet)
+    text-align: center
+    padding-left: 0
+
+  .title
+    padding-left: 10px
+
+.price
+  display: block
+  margin-top: 15px
+  padding-right: 12px
+  font-weight: 700
+  font-size: 22px
+  line-height: 24px
+  letter-spacing: .5px
+  color: $color-grey-nightrider
+  text-align: right
+  @include mq($from: desktop)
+    padding-right: 8px
+
+.vehicleinfoCardGetstarted
+  font-weight: 700
+  font-size: $h1-font-size
+  line-height: 1.4
+  text-align: center
+
+.list
+  display: flex
+  flex: 0 1 auto
+  flex-wrap: wrap
+  max-width: 100%
+  padding-top: 10px
+  padding-right: 10px
+  margin-left: 3px
+  margin-right: 3px
+  text-align: left
+  color: $color-grey-nightrider
+  border-radius: 10px
+  background-color: $color-white-whitesmoke
+  @include mq($from: desktop)
+    padding-top: 20px
+    margin-left: 0
+    margin-right: 0
+
+  li
+    margin-bottom: 10px
+    padding-left: 10px
+    font-size: 16px
+    line-height: 20px
+    width: 50%
+
+    &:nth-child( 2n )
+      text-align: right
+    @include mq($from: desktop)
+      margin-bottom: 20px
+
+    span
+      font-weight: 700
+
+.text
+  width: auto
+  margin: 10px 3px 15px
+  padding: 7px 10px
+  font-weight: 700
+  font-size: 16px
+  line-height: 22px
+  text-align: left
+  border-radius: 10px
+  background-color: $color-blue-aliceblueligth
+
+  @include mq($from: tablet)
+    width: 100%
+    margin: 10px auto 15px
+
+.btn
+  width: auto
+  margin-left: 6px
+  margin-right: 6px
+  @include mq($from: tablet)
+    margin-left: 0
+    margin-right: 0
+
+  &.green
+    box-shadow: 2px 1px 14px 0 rgba(0, 182, 122, .26)
+    background: $color-green-jade
+
+    &:hover
+      background: $color-green-malachite

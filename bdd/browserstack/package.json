@@ -1,0 +1,35 @@
+{
+  "name": "buyacar_next_bdd",
+  "version": "0.6.0",
+  "description": "Buyacar Nextjs platform BDD tests",
+  "scripts": {
+    "test": "cucumber-js features/*/**.feature",
+    "test:local": "TARGET_URL=http://localhost UI=1 cucumber-js features/*/**.feature",
+    "test:tags": "cucumber-js --tags",
+    "test:s": "cucumber-js features/forms/scc_form.feature --format progress",
+    "test:p": "CONFIG_FILE=parallel ./scripts/cucumber-runner.js features/reservation.feature"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.2",
+    "chai": "^4.3.6",
+    "chromedriver": "^99.0.0",
+    "selenium-webdriver": "^4.1.1"
+  },
+  "homepage": "https://github.com/dennisinteractive/buyacar_fee/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennisinteractive/buyacar_fee.git"
+  },
+  "keywords": [
+    "buyacar",
+    "nextjs",
+    "bdd",
+    "selenium",
+    "gherkin"
+  ],
+  "author": "Oleksandr Pavlyshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennisinteractive/buyacar_fee/issues"
+  }
+}

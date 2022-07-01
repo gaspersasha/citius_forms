@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AmpImage /> renders without errors 1`] = `
+<img
+  alt="test"
+  className=""
+  src="test"
+/>
+`;

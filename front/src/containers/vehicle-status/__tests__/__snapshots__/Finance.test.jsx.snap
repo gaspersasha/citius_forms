@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Finance /> should match snapshot (applied case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Add a part exchange
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Pick up where your left off
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/part-ex?productAdvertId=3332415"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Continue your application
+  </Button>
+</Fragment>
+`;
+
+exports[`<Finance /> should match snapshot (px case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Add your terms
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Pick up where your left off
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/terms?productAdvertId=3332415"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Continue your application
+  </Button>
+</Fragment>
+`;
+
+exports[`<Finance /> should match snapshot (soft case) 1`] = `
+<FinanceSoft
+  financeQuoteId={3735215}
+  productAdvertId={3332415}
+  softCreditSearch={
+    Object {
+      "band": "B",
+      "score": 420,
+    }
+  }
+  typoProps={
+    Object {
+      "text": Object {
+        "align": "left",
+        "className": "",
+        "type": "p",
+      },
+      "title": Object {
+        "align": "left",
+        "className": "",
+        "type": "h3",
+      },
+    }
+  }
+/>
+`;

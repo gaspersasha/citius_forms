@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PartExchange /> PartExchange snapshot 1`] = `
+<Fragment>
+  <Seo
+    meta={
+      Object {
+        "description": "Buyacar online with no hussle",
+        "page_title": "BuyaCar: the easy way to get a great car deal",
+        "rights": "Autovia Group Limited, licensed by Felden",
+        "twitter": Object {
+          "card": "photo",
+          "site": "@buy_a_car",
+          "title": "BuyaCar: the easy way to get a great car deal",
+          "url": "https://website",
+        },
+      }
+    }
+  />
+  <div
+    className="form-container"
+  >
+    <div
+      className="controls"
+    >
+      <div
+        className="align-corner"
+      >
+        <button
+          className="back"
+          name="back"
+          onClick={[Function]}
+          type="button"
+        >
+          Back
+        </button>
+        <span
+          className="progress"
+        >
+          0% Completed
+        </span>
+      </div>
+      <ProgressBar
+        progress={0}
+      />
+      <Parts
+        part={2}
+        step={1}
+      />
+    </div>
+    <div
+      className="form"
+    >
+      <PlateForm
+        deleteEmptyUrlParams={[Function]}
+        leadgen="0"
+        payData={
+          Object {
+            "acceptPrivacy": false,
+            "colour": "",
+            "condition": "",
+            "engineSize": "",
+            "fuel": "",
+            "manufacturer": "",
+            "mileage": "",
+            "model": "",
+            "registration": "",
+            "serviceHistory": "",
+            "step": 0,
+            "transmission": "",
+            "unsubscribe": false,
+            "valuation": "",
+            "year": "",
+          }
+        }
+        productAdvertId="3362300"
+        scroll={[Function]}
+        setData={[Function]}
+        setIsLoading={[Function]}
+        setNextStep={[Function]}
+        urlParams={
+          Object {
+            "productAdvertId": "3362300",
+          }
+        }
+      />
+    </div>
+    <PrivacyNotice
+      onChange={[Function]}
+      unsubscribe={false}
+    />
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> renders without errors 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className="subheading subheadMargin"
+    color="dark"
+    type="p"
+  >
+    2. Date of birth and contact
+  </Typography>
+  <InputDate
+    className="input"
+    errorMessage=""
+    id="dateOfBirth"
+    label="Date of birth"
+    name="dateOfBirth"
+    onChange={[MockFunction]}
+    placeholder="DD/MM/YY"
+    required={true}
+    status="default"
+    subTitle="You must be at least 18 to apply for finance"
+    useErrorBorder={true}
+    value="11/11/2000"
+  />
+  <InputPhone
+    className="input"
+    errorMessage=""
+    id="phone"
+    label="Telephone number"
+    name="phone"
+    onChange={[MockFunction]}
+    onKeyPress={null}
+    placeholder="e.g 07712345678"
+    required={true}
+    status="default"
+    subTitle="To keep you updated on your purchase"
+    useErrorBorder={true}
+    value="02057685678"
+  />
+  <InputPhone
+    className="input"
+    errorMessage=""
+    id="alternativePhone"
+    label="Alternative telephone number"
+    name="alternativePhone"
+    onChange={[MockFunction]}
+    onKeyPress={null}
+    placeholder="e.g. 07898765432"
+    required={false}
+    status="default"
+    subTitle=""
+    useErrorBorder={true}
+    value="02057685678"
+  />
+</Fragment>
+`;

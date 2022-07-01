@@ -1,0 +1,19 @@
+.git/
+.next/
+
+nginx/
+bdd/
+docs/
+api/
+cms/
+docker/
+integr/
+
+node_modules/
+
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+.editorconfig
+# .eslintrc.yml

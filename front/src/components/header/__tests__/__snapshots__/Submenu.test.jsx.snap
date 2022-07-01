@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubMenu /> renders without errors 1`] = `
+<div
+  className="submenu"
+>
+  <button
+    aria-label="Toggle sub-menu"
+    className="submenuTumbler"
+    onClick={[Function]}
+    type="button"
+  />
+  <div
+    className="submenuInner"
+    data-id="submenu-inner"
+    style={
+      Object {
+        "maxHeight": "0px",
+      }
+    }
+  >
+    <div />
+  </div>
+</div>
+`;

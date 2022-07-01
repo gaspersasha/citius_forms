@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Composer /> renders without errors 1`] = `
+<Fragment>
+  <First>
+    <Second>
+      <div>
+        children
+      </div>
+    </Second>
+  </First>
+</Fragment>
+`;

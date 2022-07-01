@@ -1,0 +1,10 @@
+[
+  {
+    "resourceCounts": [
+      { "resourceType": "total", "budget": 10 }
+    ],
+    "resourceSizes": [
+      { "resourceType": "total", "budget": 100 }
+    ]
+  }
+]

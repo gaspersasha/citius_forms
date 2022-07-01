@@ -1,0 +1,32 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current",
+        "browsers": "last 2 versions",
+        "ie": "11"
+      }
+    }],
+
+    "@babel/preset-react"
+  ],
+
+  "plugins": [
+    "inline-react-svg",
+    ["module-resolver", {
+      "alias": {
+        "~": "./src",
+        "~assets": "./src/assets",
+        "~components": "./src/components",
+        "~containers": "./src/containers",
+        "~contexts": "./src/contexts",
+        "~constants": "./src/constants",
+        "~services": "./src/services",
+        "~utils": "./src/utils"
+      }
+    }],
+
+    ["@babel/plugin-transform-runtime"],
+    ["@babel/plugin-proposal-class-properties"]
+  ]
+}

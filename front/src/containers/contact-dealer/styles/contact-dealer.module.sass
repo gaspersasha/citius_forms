@@ -1,0 +1,147 @@
+@import 'variables'
+@import 'mixins'
+
+$padding: 20px
+$margin: 15px
+$color: #6e7379
+$font-size-normal: 14px
+$font-weight-semi-bold: 600
+$font-weight-light: 300
+$footer-bg-color: #f0f0f0
+$footer-border-color: #535066
+$footer-info-color: #33304a
+
+.wrapper
+  width: 100%
+
+  .small
+
+    > a
+      text-decoration: underline
+      color: $blue-primary
+
+.formBox
+  padding: 0 $padding
+  max-width: calc(500px + #{$padding} * 2)
+  margin: 0 auto
+
+.title
+  font-size: $h3-font-size
+  font-weight: $font-weight-semi-bold
+  letter-spacing: .6px
+  margin: 52px auto 26px
+  +mq($until: tablet)
+    margin: 58px auto 9px
+
+.subTitle
+  font-size: 16px
+  line-height: 18px
+  font-weight: $font-weight-light
+  margin-bottom: 35px
+
+.inputWrapper
+  margin-bottom: $margin
+
+.placeholder
+  font-size: $font-size-normal
+  font-weight: $font-weight-light
+  color: $color
+
+.textareaInnerBox
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .optional
+    font-weight: $font-weight-light
+    line-height: $font-size-normal
+    color: $purple-primary
+
+.textarea
+  width: 100%
+
+  span
+    display: block
+    margin-bottom: 10px
+    letter-spacing: .34px
+    line-height: 24px
+    color: $color-black
+
+  textarea
+    padding: 10px 20px
+    height: 90px
+    resize: none
+    font-size: 16px
+
+.button
+  width: 224px
+  margin: 30px 0 30px auto
+  min-height: 37px
+  height: 37px
+  font-size: $h4-font-size
+  letter-spacing: 0
+  +mq($until: tablet)
+    margin: 25px auto 26.5px
+
+.unsubscribe
+  display: flex
+  margin-top: $margin
+
+.footer
+  position: relative
+  padding: 34px 0 32px
+  border-top: 1px dashed $footer-border-color
+  background-color: $footer-bg-color
+
+  &::after
+    content: ''
+    position: absolute
+    z-index: 3
+    bottom: -26px
+    width: 100%
+    height: 26px
+    background-color: $footer-bg-color
+
+.info
+  font-style: italic
+  line-height: 20px
+  font-size: $font-size-normal
+  color: $footer-info-color
+
+.inputCheckbox
+  width: 20px
+  height: 20px
+
+.small
+  width: 468px
+  font-size: $font-size-normal
+  line-height: 20px
+
+.spinner
+  transform: scale(.5)
+
+.status
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 78px
+  padding: 0 20px
+  border: solid 3px $field-error-color
+  border-radius: 9px
+  font-weight: $font-weight-semi-bold
+  margin: 40px 0
+  fill: $field-error-color
+
+.icon
+  width: 35px
+  margin-right: 20px
+
+.close
+  position: absolute
+  top: 16px
+  right: 16px
+  width: 24px
+  height: 24px
+
+  +mq($from: tablet)
+    display: none

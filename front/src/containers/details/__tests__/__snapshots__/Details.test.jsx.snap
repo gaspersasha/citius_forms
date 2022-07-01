@@ -1,0 +1,826 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Details /> renders without errors 1`] = `
+<section
+  className="detailsWrapper"
+>
+  <Typography
+    align="center"
+    className="title"
+    color="dark"
+    type="h1"
+  >
+    Edit your personal details
+  </Typography>
+  <Typography
+    align="left"
+    className="subtitle"
+    color="dark"
+    type="h6"
+  >
+    These details control how you sign-in to your buycar.co.uk account. Your email address is the address we will use to send any email correspondence to, whether we are responding to your question or sending you an update on your order.
+  </Typography>
+  <div
+    className="formWrapper"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <SignIn
+        fields={
+          Object {
+            "alternativePhone": Object {
+              "status": "default",
+              "validationType": "altPhone",
+              "value": "02057685678",
+            },
+            "company": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "company",
+            },
+            "county": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "county",
+            },
+            "dateOfBirth": Object {
+              "status": "default",
+              "validationType": "date",
+              "value": "11/11/2000",
+            },
+            "dependants": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "1",
+            },
+            "district": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "district",
+            },
+            "drivingLicenceType": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "FULL",
+            },
+            "email": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "emailConfirm": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "firstName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "first",
+            },
+            "houseName": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "housename",
+            },
+            "houseNumber": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "100",
+            },
+            "lastName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "last",
+            },
+            "maritalStatus": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "SINGLE",
+            },
+            "middleName": Object {
+              "status": "default",
+              "validationType": "notRequiredText",
+              "value": "mid",
+            },
+            "password": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "passwordConfirm": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "phone": Object {
+              "status": "default",
+              "validationType": "phone",
+              "value": "02057685678",
+            },
+            "postcode": Object {
+              "status": "default",
+              "validationType": "postCode",
+              "value": "E11 1JD",
+            },
+            "street": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "street",
+            },
+            "subscribed": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+            "title": Object {
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "MR",
+            },
+            "town": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "town",
+            },
+            "validUKPassport": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+          }
+        }
+        handleChange={[Function]}
+        names={
+          Object {
+            "alternativePhone": "alternativePhone",
+            "company": "company",
+            "county": "county",
+            "dateOfBirth": "dateOfBirth",
+            "dependants": "dependants",
+            "district": "district",
+            "drivingLicenceType": "drivingLicenceType",
+            "email": "email",
+            "emailConfirm": "emailConfirm",
+            "firstName": "firstName",
+            "houseName": "houseName",
+            "houseNumber": "houseNumber",
+            "lastName": "lastName",
+            "maritalStatus": "maritalStatus",
+            "middleName": "middleName",
+            "password": "password",
+            "passwordConfirm": "passwordConfirm",
+            "phone": "phone",
+            "postcode": "postcode",
+            "street": "street",
+            "subscribed": "subscribed",
+            "title": "title",
+            "town": "town",
+            "validUKPassport": "validUKPassport",
+          }
+        }
+      />
+      <Typography
+        align="left"
+        className="heading"
+        color="dark"
+        type="h4"
+      >
+        Your profile information
+      </Typography>
+      <About
+        fields={
+          Object {
+            "alternativePhone": Object {
+              "status": "default",
+              "validationType": "altPhone",
+              "value": "02057685678",
+            },
+            "company": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "company",
+            },
+            "county": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "county",
+            },
+            "dateOfBirth": Object {
+              "status": "default",
+              "validationType": "date",
+              "value": "11/11/2000",
+            },
+            "dependants": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "1",
+            },
+            "district": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "district",
+            },
+            "drivingLicenceType": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "FULL",
+            },
+            "email": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "emailConfirm": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "firstName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "first",
+            },
+            "houseName": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "housename",
+            },
+            "houseNumber": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "100",
+            },
+            "lastName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "last",
+            },
+            "maritalStatus": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "SINGLE",
+            },
+            "middleName": Object {
+              "status": "default",
+              "validationType": "notRequiredText",
+              "value": "mid",
+            },
+            "password": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "passwordConfirm": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "phone": Object {
+              "status": "default",
+              "validationType": "phone",
+              "value": "02057685678",
+            },
+            "postcode": Object {
+              "status": "default",
+              "validationType": "postCode",
+              "value": "E11 1JD",
+            },
+            "street": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "street",
+            },
+            "subscribed": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+            "title": Object {
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "MR",
+            },
+            "town": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "town",
+            },
+            "validUKPassport": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+          }
+        }
+        handleChange={[Function]}
+        names={
+          Object {
+            "alternativePhone": "alternativePhone",
+            "company": "company",
+            "county": "county",
+            "dateOfBirth": "dateOfBirth",
+            "dependants": "dependants",
+            "district": "district",
+            "drivingLicenceType": "drivingLicenceType",
+            "email": "email",
+            "emailConfirm": "emailConfirm",
+            "firstName": "firstName",
+            "houseName": "houseName",
+            "houseNumber": "houseNumber",
+            "lastName": "lastName",
+            "maritalStatus": "maritalStatus",
+            "middleName": "middleName",
+            "password": "password",
+            "passwordConfirm": "passwordConfirm",
+            "phone": "phone",
+            "postcode": "postcode",
+            "street": "street",
+            "subscribed": "subscribed",
+            "title": "title",
+            "town": "town",
+            "validUKPassport": "validUKPassport",
+          }
+        }
+      />
+      <Contact
+        fields={
+          Object {
+            "alternativePhone": Object {
+              "status": "default",
+              "validationType": "altPhone",
+              "value": "02057685678",
+            },
+            "company": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "company",
+            },
+            "county": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "county",
+            },
+            "dateOfBirth": Object {
+              "status": "default",
+              "validationType": "date",
+              "value": "11/11/2000",
+            },
+            "dependants": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "1",
+            },
+            "district": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "district",
+            },
+            "drivingLicenceType": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "FULL",
+            },
+            "email": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "emailConfirm": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "firstName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "first",
+            },
+            "houseName": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "housename",
+            },
+            "houseNumber": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "100",
+            },
+            "lastName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "last",
+            },
+            "maritalStatus": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "SINGLE",
+            },
+            "middleName": Object {
+              "status": "default",
+              "validationType": "notRequiredText",
+              "value": "mid",
+            },
+            "password": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "passwordConfirm": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "phone": Object {
+              "status": "default",
+              "validationType": "phone",
+              "value": "02057685678",
+            },
+            "postcode": Object {
+              "status": "default",
+              "validationType": "postCode",
+              "value": "E11 1JD",
+            },
+            "street": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "street",
+            },
+            "subscribed": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+            "title": Object {
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "MR",
+            },
+            "town": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "town",
+            },
+            "validUKPassport": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+          }
+        }
+        handleChange={[Function]}
+        names={
+          Object {
+            "alternativePhone": "alternativePhone",
+            "company": "company",
+            "county": "county",
+            "dateOfBirth": "dateOfBirth",
+            "dependants": "dependants",
+            "district": "district",
+            "drivingLicenceType": "drivingLicenceType",
+            "email": "email",
+            "emailConfirm": "emailConfirm",
+            "firstName": "firstName",
+            "houseName": "houseName",
+            "houseNumber": "houseNumber",
+            "lastName": "lastName",
+            "maritalStatus": "maritalStatus",
+            "middleName": "middleName",
+            "password": "password",
+            "passwordConfirm": "passwordConfirm",
+            "phone": "phone",
+            "postcode": "postcode",
+            "street": "street",
+            "subscribed": "subscribed",
+            "title": "title",
+            "town": "town",
+            "validUKPassport": "validUKPassport",
+          }
+        }
+      />
+      <Address
+        fields={
+          Object {
+            "alternativePhone": Object {
+              "status": "default",
+              "validationType": "altPhone",
+              "value": "02057685678",
+            },
+            "company": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "company",
+            },
+            "county": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "county",
+            },
+            "dateOfBirth": Object {
+              "status": "default",
+              "validationType": "date",
+              "value": "11/11/2000",
+            },
+            "dependants": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "1",
+            },
+            "district": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "district",
+            },
+            "drivingLicenceType": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "FULL",
+            },
+            "email": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "emailConfirm": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "firstName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "first",
+            },
+            "houseName": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "housename",
+            },
+            "houseNumber": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "100",
+            },
+            "lastName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "last",
+            },
+            "maritalStatus": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "SINGLE",
+            },
+            "middleName": Object {
+              "status": "default",
+              "validationType": "notRequiredText",
+              "value": "mid",
+            },
+            "password": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "passwordConfirm": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "phone": Object {
+              "status": "default",
+              "validationType": "phone",
+              "value": "02057685678",
+            },
+            "postcode": Object {
+              "status": "default",
+              "validationType": "postCode",
+              "value": "E11 1JD",
+            },
+            "street": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "street",
+            },
+            "subscribed": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+            "title": Object {
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "MR",
+            },
+            "town": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "town",
+            },
+            "validUKPassport": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+          }
+        }
+        handleChange={[Function]}
+        names={
+          Object {
+            "alternativePhone": "alternativePhone",
+            "company": "company",
+            "county": "county",
+            "dateOfBirth": "dateOfBirth",
+            "dependants": "dependants",
+            "district": "district",
+            "drivingLicenceType": "drivingLicenceType",
+            "email": "email",
+            "emailConfirm": "emailConfirm",
+            "firstName": "firstName",
+            "houseName": "houseName",
+            "houseNumber": "houseNumber",
+            "lastName": "lastName",
+            "maritalStatus": "maritalStatus",
+            "middleName": "middleName",
+            "password": "password",
+            "passwordConfirm": "passwordConfirm",
+            "phone": "phone",
+            "postcode": "postcode",
+            "street": "street",
+            "subscribed": "subscribed",
+            "title": "title",
+            "town": "town",
+            "validUKPassport": "validUKPassport",
+          }
+        }
+      />
+      <Additional
+        fields={
+          Object {
+            "alternativePhone": Object {
+              "status": "default",
+              "validationType": "altPhone",
+              "value": "02057685678",
+            },
+            "company": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "company",
+            },
+            "county": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "county",
+            },
+            "dateOfBirth": Object {
+              "status": "default",
+              "validationType": "date",
+              "value": "11/11/2000",
+            },
+            "dependants": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "1",
+            },
+            "district": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "district",
+            },
+            "drivingLicenceType": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "FULL",
+            },
+            "email": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "emailConfirm": Object {
+              "status": "default",
+              "validationType": "email",
+              "value": "email@test.test",
+            },
+            "firstName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "first",
+            },
+            "houseName": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "housename",
+            },
+            "houseNumber": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "100",
+            },
+            "lastName": Object {
+              "status": "default",
+              "validationType": "name",
+              "value": "last",
+            },
+            "maritalStatus": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "SINGLE",
+            },
+            "middleName": Object {
+              "status": "default",
+              "validationType": "notRequiredText",
+              "value": "mid",
+            },
+            "password": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "passwordConfirm": Object {
+              "status": "default",
+              "validationType": "password",
+              "value": "",
+            },
+            "phone": Object {
+              "status": "default",
+              "validationType": "phone",
+              "value": "02057685678",
+            },
+            "postcode": Object {
+              "status": "default",
+              "validationType": "postCode",
+              "value": "E11 1JD",
+            },
+            "street": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "street",
+            },
+            "subscribed": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+            "title": Object {
+              "status": "default",
+              "validationType": "notEmpty",
+              "value": "MR",
+            },
+            "town": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": "town",
+            },
+            "validUKPassport": Object {
+              "status": "default",
+              "validationType": "none",
+              "value": false,
+            },
+          }
+        }
+        handleChange={[Function]}
+        names={
+          Object {
+            "alternativePhone": "alternativePhone",
+            "company": "company",
+            "county": "county",
+            "dateOfBirth": "dateOfBirth",
+            "dependants": "dependants",
+            "district": "district",
+            "drivingLicenceType": "drivingLicenceType",
+            "email": "email",
+            "emailConfirm": "emailConfirm",
+            "firstName": "firstName",
+            "houseName": "houseName",
+            "houseNumber": "houseNumber",
+            "lastName": "lastName",
+            "maritalStatus": "maritalStatus",
+            "middleName": "middleName",
+            "password": "password",
+            "passwordConfirm": "passwordConfirm",
+            "phone": "phone",
+            "postcode": "postcode",
+            "street": "street",
+            "subscribed": "subscribed",
+            "title": "title",
+            "town": "town",
+            "validUKPassport": "validUKPassport",
+          }
+        }
+      />
+      <Button
+        className="submit"
+        disabled={false}
+        href=""
+        onClick={null}
+        selected={false}
+        styleType="primary"
+        type="submit"
+      >
+        Save
+      </Button>
+    </form>
+  </div>
+</section>
+`;

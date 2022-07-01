@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderSummary /> OrderSummary render component 1`] = `
+<OrderSummary
+  details={
+    Object {
+      "amount": 199,
+      "created": "22/05/1988",
+      "fuelType": "Petrol",
+      "imageUrl": "/img/med/vauxhall_mokka_x_1_4_design_nav_s_s_5_door_hatchback_33726881.jpg",
+      "mileage": 34000,
+      "name": "Vauxhall MOKKA 1",
+      "regPlate": "DL67VFD",
+      "regYear": 2018,
+      "reservationAmount": 199,
+      "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+      "transmission": "Manual",
+      "vehicleId": 2898918,
+      "vehicleType": "car",
+    }
+  }
+>
+  <div
+    className="orderSummary"
+  >
+    <h3
+      className="title"
+    >
+      Order summary
+    </h3>
+    <div
+      className="cardSection"
+    >
+      <div
+        className="thumbnail"
+      >
+        <img
+          alt="car"
+          src="/img/med/vauxhall_mokka_x_1_4_design_nav_s_s_5_door_hatchback_33726881.jpg"
+        />
+      </div>
+      <div
+        className="details"
+      >
+        <div
+          className="name"
+        >
+          Vauxhall MOKKA 1
+        </div>
+        <div
+          className="amount"
+        >
+          You paid 
+          £199
+           to reserve this 
+          car
+           on 
+          22/05/1988
+        </div>
+        <div
+          className="specifications"
+        >
+          <div
+            className="specificationsRow"
+          >
+            <div
+              className="reag"
+            >
+              Reg year: 
+              <b>
+                2018
+              </b>
+            </div>
+            <div
+              className="fuel"
+            >
+              Fuel type: 
+              <b>
+                Petrol
+              </b>
+            </div>
+          </div>
+          <div
+            className="specificationsRow"
+          >
+            <div
+              className="mileage"
+            >
+              Mileage: 
+              <b>
+                34000
+              </b>
+            </div>
+            <div
+              className="trans"
+            >
+              Trans: 
+              <b>
+                Manual
+              </b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</OrderSummary>
+`;

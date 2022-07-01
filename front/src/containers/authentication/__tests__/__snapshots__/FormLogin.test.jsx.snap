@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormLogin /> should match snapshots 1`] = `
+<form
+  onSubmit={[MockFunction]}
+>
+  <div
+    className="wrapper"
+  >
+    <AuthForm
+      activeForm="login"
+      emailValue="test@email.com"
+      errorMessage=""
+      firstNameValue=""
+      isUserRemembered={true}
+      lastNameValue=""
+      onSubmit={[MockFunction]}
+      setFieldValue={[MockFunction]}
+      subTitle="Enter your email address and password"
+      title="Sign in to your BuyaCar account"
+    />
+    <div
+      className="row row__middleBottomSpace"
+    >
+      <span
+        className="typo typo__small forgotPassword"
+        onClick={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        Forgot password?
+      </span>
+    </div>
+    <p
+      className="typo typo__small link"
+    >
+      <span>
+        Don’t have an account? 
+      </span>
+      <b
+        data-id="link"
+        onClick={[Function]}
+        role="dialog"
+      >
+        Sign up
+      </b>
+    </p>
+  </div>
+</form>
+`;

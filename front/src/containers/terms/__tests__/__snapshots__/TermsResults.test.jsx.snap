@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TermsResults /> rendered without errors 1`] = `
+<Fragment>
+  <div
+    className="radioButtons"
+    id="PCP"
+    key="PCP"
+    onClick={[MockFunction]}
+    role="button"
+  >
+    <div
+      className="info"
+      id="PCP"
+    >
+      <TapButtons
+        label=""
+        name=""
+        onChange={[MockFunction]}
+        options={
+          Array [
+            Object {
+              "option": "PCP",
+              "value": "PCP",
+            },
+          ]
+        }
+        status="default"
+        subTitle=""
+        value=""
+      />
+      <button
+        className="infoModalBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        What is 
+        PCP
+        ?
+      </button>
+    </div>
+    <div
+      className="InfoMonthPayments"
+      id="PCP"
+    >
+      <p
+        id="PCP"
+      >
+        36
+          monthly payments of
+      </p>
+      <h2
+        id="PCP"
+      >
+        £152
+      </h2>
+    </div>
+    <hr
+      id="PCP"
+    />
+    <div
+      id="PCP"
+    >
+      <p
+        className="info"
+        id="PCP"
+      >
+        APR  
+        8.9
+        %
+      </p>
+      <div
+        className="info"
+        id="PCP"
+      >
+        <p
+          id="PCP"
+        >
+          Optional final payment
+        </p>
+        <p
+          id="PCP"
+        >
+          £3,173
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="radioButtons"
+    id="Hire Purchase"
+    key="Hire Purchase"
+    onClick={[MockFunction]}
+    role="button"
+  >
+    <div
+      className="info"
+      id="Hire Purchase"
+    >
+      <TapButtons
+        label=""
+        name=""
+        onChange={[MockFunction]}
+        options={
+          Array [
+            Object {
+              "option": "HP",
+              "value": "HP",
+            },
+          ]
+        }
+        status="default"
+        subTitle=""
+        value=""
+      />
+      <button
+        className="infoModalBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        What is 
+        Hire Purchase
+        ?
+      </button>
+    </div>
+    <div
+      className="InfoMonthPayments"
+      id="Hire Purchase"
+    >
+      <p
+        id="Hire Purchase"
+      >
+        36
+          monthly payments of
+      </p>
+      <h2
+        id="Hire Purchase"
+      >
+        £171
+      </h2>
+    </div>
+    <hr
+      id="Hire Purchase"
+    />
+    <p
+      className="info"
+      id="Hire Purchase"
+    >
+      APR  
+      8.9
+      %
+    </p>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Confirmation /> renders without errors 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="heading"
+  >
+    Your finance application has
+    <br />
+    been received
+  </h1>
+  <div
+    className="notice"
+  >
+    We are checking your eligibility and will get back to you in the  
+    <b>
+      next 24hrs
+    </b>
+     
+    call us on 648329576235
+  </div>
+  <a
+    className="actionLink"
+    data-id="confirmation-search-link"
+    href="/cars"
+  >
+    next best action
+  </a>
+</div>
+`;

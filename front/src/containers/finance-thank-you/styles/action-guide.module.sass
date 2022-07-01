@@ -1,0 +1,86 @@
+@import 'variables'
+@import 'mixins'
+
+.container
+  padding: 40px 0
+  width: 100vw
+  margin-left: calc( (100vw - 100%) / -2 )
+  +mq($from: desktop)
+    margin-bottom: 40px
+  +mq($from: wide)
+    margin-bottom: 50px
+
+.wrapper
+  background-color: $color-blue-aliceblueligth
+  +mq($from: desktop)
+    width: 60vw
+    max-width: 1100px
+    margin-left: 24vw
+    padding-left: 175px
+    position: relative
+  +mq($from: wide)
+    margin-left: 27.5vw
+    padding-left: 260px
+  +mq($from: 1900px)
+    margin-left: 31vw
+
+  &::before
+    +mq($from: desktop)
+      content: ''
+      position: absolute
+      bottom: -30px
+      left: -160px
+      height: 300px
+      width: 322px
+      background: url('../../../assets/png/checklist_finance.png')
+      background-size: contain
+    +mq($from: wide)
+      height: 400px
+      width: 428px
+      left: -175px
+      bottom: -40px
+
+.heading
+  padding: 20px 0 15px
+  font-size: 22px
+  font-weight: 700
+  text-align: center
+  +mq($from: desktop)
+    font-size: 25px
+    line-height: 42px
+    padding: 20px 40px 20px 0
+  +mq($from: wide)
+    padding: 20px 80px 20px 0
+
+.list
+  padding-bottom: 30px
+
+.listItem
+  padding: 14px 20px 14px 40px
+  font-size: $small-font-size
+  line-height: 19px
+  position: relative
+  +mq($from: wide)
+    padding: 14px 40px 14px 40px
+
+  &::before
+    content: ''
+    display: block
+    width: 18px
+    height: 18px
+    position: absolute
+    top: 14px
+    left: 16px
+    background-image: url('../../../assets/svg/checkmark-green.svg')
+    background-position: center
+    background-repeat: no-repeat
+
+  &:nth-child( n + 3 )
+
+    &::before
+      background-image: url('../../../assets/svg/checkmark-grey.svg')
+
+  .actionLink
+    color: $secondary
+    text-decoration: underline
+    font-weight: 700

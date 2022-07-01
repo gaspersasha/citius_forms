@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TypeStep /> renders without errors 1`] = `
+<div
+  className="typeFormWrapper"
+>
+  <TapButtons
+    label="What is your employment type?"
+    name=""
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Full time permanent",
+          "value": "FULL_TIME_PERMANENT",
+        },
+        Object {
+          "option": "Part time permanent",
+          "value": "PART_TIME_PERMANENT",
+        },
+        Object {
+          "option": "Armed services",
+          "value": "ARMED_SERVICES",
+        },
+        Object {
+          "option": "Self employed",
+          "value": "SELF_EMPLOYED",
+        },
+        Object {
+          "option": "Retired",
+          "value": "RETIRED",
+        },
+        Object {
+          "option": "Education",
+          "value": "EDUCATION",
+        },
+        Object {
+          "option": "Homemaker",
+          "value": "HOMEMAKER",
+        },
+        Object {
+          "option": "Carer",
+          "value": "CARER",
+        },
+        Object {
+          "option": "Benefits",
+          "value": "BENEFITS",
+        },
+        Object {
+          "option": "Unemployed",
+          "value": "UNEMPLOYED",
+        },
+        Object {
+          "option": "Temporary / Contract",
+          "value": "TEMPORARY_CONTRACT",
+        },
+      ]
+    }
+    required={true}
+    status="valid"
+    subTitle="Select from the list below"
+    value="FULL_TIME_PERMANENT"
+  />
+</div>
+`;

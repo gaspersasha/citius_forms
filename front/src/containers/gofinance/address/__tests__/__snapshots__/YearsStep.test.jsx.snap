@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<YearsStep /> renders without errors 1`] = `
+<div
+  className="yearsFormWrapper"
+>
+  <div
+    className="yearsInputWrapper"
+  >
+    <InputSelect
+      className="inputSelect"
+      data-id="How many years have you lived at this address?"
+      label="How many years have you lived at this address?"
+      name=""
+      onChange={[MockFunction]}
+      options={
+        Array [
+          Object {
+            "option": "0 Years",
+            "value": "0",
+          },
+          Object {
+            "option": "1 Year",
+            "value": "1",
+          },
+          Object {
+            "option": "2 Years",
+            "value": "2",
+          },
+          Object {
+            "option": "3+ Years",
+            "value": "3",
+          },
+        ]
+      }
+      placeholder=""
+      required={true}
+      status="valid"
+      subTitle="Please select from the options below"
+      value="qwerty"
+    />
+  </div>
+  <InputSelect
+    className="inputSelect"
+    data-id="How many months did you live at this address?"
+    label="How many months did you live at this address?"
+    name=""
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "0 Months",
+          "value": "0",
+        },
+        Object {
+          "option": "1 Month",
+          "value": "1",
+        },
+        Object {
+          "option": "2 Months",
+          "value": "2",
+        },
+        Object {
+          "option": "3 Months",
+          "value": "3",
+        },
+        Object {
+          "option": "4 Months",
+          "value": "4",
+        },
+        Object {
+          "option": "5 Months",
+          "value": "5",
+        },
+        Object {
+          "option": "6 Months",
+          "value": "6",
+        },
+        Object {
+          "option": "7 Months",
+          "value": "7",
+        },
+        Object {
+          "option": "8 Months",
+          "value": "8",
+        },
+        Object {
+          "option": "9 Months",
+          "value": "9",
+        },
+        Object {
+          "option": "10 Months",
+          "value": "10",
+        },
+        Object {
+          "option": "11 Months",
+          "value": "11",
+        },
+      ]
+    }
+    placeholder="-- Months lived at address --"
+    required={true}
+    status="valid"
+    subTitle="Please select from the options below"
+    value="qwerty"
+  />
+</div>
+`;

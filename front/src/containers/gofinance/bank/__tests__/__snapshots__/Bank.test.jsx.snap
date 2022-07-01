@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Bank /> renders without errors 1`] = `
+<Bank
+  bankDetails={
+    Object {
+      "accountNumber": "",
+      "monthAtBank": "0",
+      "sortCode": "",
+      "yearsAtBank": "0",
+    }
+  }
+  isDataSending={false}
+  isLoading={false}
+  onSubmit={[MockFunction]}
+  step={0}
+>
+  <div
+    className="formSectionWrapper"
+  >
+    <p
+      className="formPreamble bankPreamble"
+      data-bind="bankDetailform"
+    >
+      Some 
+      <b>
+        lenders require basic bank details
+      </b>
+      . Filling in the details below will get you a wider range of quotes
+    </p>
+    <AccountInfoStep
+      accountNumber={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validLength": 8,
+          "validationType": "accountNumber",
+          "value": "",
+        }
+      }
+      errors={Object {}}
+      onBlur={[Function]}
+      onChange={[Function]}
+      removeErrorForm={[Function]}
+      sortCode={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validLength": 8,
+          "validationType": "sortCode",
+          "value": "",
+        }
+      }
+    >
+      <div
+        className="accountFormWrapper"
+      >
+        <div
+          className="numberInputWrapper"
+        >
+          <InputNumber
+            className="inputNumber"
+            label="What is your account number?"
+            name="accountNumber"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyPress={null}
+            placeholder=""
+            required={false}
+            status="default"
+            subTitle="Your bank account number is 8 digits long and can usually be found on your debit card, cheque book or online banking service"
+            value=""
+          >
+            <Label
+              customClasses=""
+              name="accountNumber"
+              required={false}
+              status="default"
+              title="What is your account number?"
+              withSub={true}
+            >
+              <div
+                className="label"
+              >
+                <label
+                  data-id={false}
+                  htmlFor="accountNumber"
+                >
+                  <span
+                    className="title halfMargin"
+                    data-id="label-title"
+                  >
+                    What is your account number?
+                  </span>
+                  <span
+                    className="label-sub-title"
+                  >
+                    Your bank account number is 8 digits long and can usually be found on your debit card, cheque book or online banking service
+                  </span>
+                  <input
+                    className="inputNumber"
+                    name="accountNumber"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    placeholder="What is your account number?"
+                    type="number"
+                    value=""
+                  />
+                </label>
+              </div>
+            </Label>
+          </InputNumber>
+        </div>
+        <div>
+          <InputMaskText
+            className="inputMaskText"
+            label="What is your Sort Code?"
+            mask={
+              Array [
+                /\\\\d/,
+                /\\\\d/,
+                "-",
+                /\\\\d/,
+                /\\\\d/,
+                "-",
+                /\\\\d/,
+                /\\\\d/,
+              ]
+            }
+            name="sortCode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Sort Code"
+            required={false}
+            status="default"
+            subTitle="Your bank sort code is 6 digits long and can usually be found next to your account number"
+            type="tel"
+            value=""
+          >
+            <Label
+              customClasses=""
+              name="sortCode"
+              required={false}
+              status="default"
+              title="What is your Sort Code?"
+              withSub={true}
+            >
+              <div
+                className="label"
+              >
+                <label
+                  data-id={false}
+                  htmlFor="sortCode"
+                >
+                  <span
+                    className="title halfMargin"
+                    data-id="label-title"
+                  >
+                    What is your Sort Code?
+                  </span>
+                  <span
+                    className="label-sub-title"
+                  >
+                    Your bank sort code is 6 digits long and can usually be found next to your account number
+                  </span>
+                  <t
+                    className="inputMaskText"
+                    guide={false}
+                    mask={
+                      Array [
+                        /\\\\d/,
+                        /\\\\d/,
+                        "-",
+                        /\\\\d/,
+                        /\\\\d/,
+                        "-",
+                        /\\\\d/,
+                        /\\\\d/,
+                      ]
+                    }
+                    name="sortCode"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    placeholder="Sort Code"
+                    render={[Function]}
+                    type="tel"
+                    value=""
+                  >
+                    <input
+                      className="inputMaskText"
+                      defaultValue=""
+                      name="sortCode"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      placeholder="Sort Code"
+                      type="tel"
+                    />
+                  </t>
+                </label>
+              </div>
+            </Label>
+          </InputMaskText>
+        </div>
+      </div>
+    </AccountInfoStep>
+    <Button
+      className="confirm"
+      disabled={false}
+      href=""
+      id="ssFinanceBankDetails1Submit"
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      <button
+        className="buttonComponent primary confirm"
+        disabled={false}
+        href={null}
+        id="ssFinanceBankDetails1Submit"
+        onClick={[Function]}
+        type="submit"
+      >
+        Next
+      </button>
+    </Button>
+  </div>
+</Bank>
+`;

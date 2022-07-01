@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AuthLink /> should match snapshots 1`] = `
+<AuthenticationLink
+  className=""
+  dataId=""
+  openModal={[MockFunction]}
+  type="login"
+>
+  <li
+    className="leaf"
+  >
+    <span
+      className="link"
+      data-id=""
+      onClick={[MockFunction]}
+      role="button"
+      tabIndex={0}
+    >
+      Link
+    </span>
+  </li>
+</AuthenticationLink>
+`;

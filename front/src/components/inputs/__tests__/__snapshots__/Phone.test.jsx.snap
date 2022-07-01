@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputPhone /> renders without errors 1`] = `
+<Label
+  customClasses=""
+  name=""
+  required={false}
+  status=""
+  title=""
+  withSub={false}
+>
+  <input
+    className=""
+    name=""
+    onChange={[Function]}
+    onKeyPress={[MockFunction]}
+    placeholder=""
+    type="tel"
+  />
+</Label>
+`;

@@ -1,0 +1,501 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VehicleStatus /> should match snapshot (search) 1`] = `
+<VehicleStatus>
+  <div
+    className="wrapper"
+  >
+    <h1
+      className="page-title"
+    >
+      My Account
+    </h1>
+    <div
+      className="progressBar"
+    >
+      <ProgressBarSteps
+        currentStep="search"
+        progress={100}
+        steps={
+          Array [
+            Object {
+              "id": "order",
+              "text": "Order",
+            },
+            Object {
+              "id": "verify-prep",
+              "text": "Vehicle prep",
+            },
+            Object {
+              "id": "delivery",
+              "text": "Delivery",
+            },
+          ]
+        }
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="step future"
+              data-id="progress-bar-step"
+              key="order"
+            >
+              <div
+                className="icon"
+              >
+                <span
+                  className="stepNumber"
+                >
+                  1
+                </span>
+              </div>
+              <div
+                className="title"
+              >
+                Order
+              </div>
+            </div>
+            <div
+              className="step future"
+              data-id="progress-bar-step"
+              key="verify-prep"
+            >
+              <div
+                className="icon"
+              >
+                <span
+                  className="stepNumber"
+                >
+                  2
+                </span>
+              </div>
+              <div
+                className="title"
+              >
+                Vehicle prep
+              </div>
+            </div>
+            <div
+              className="step future"
+              data-id="progress-bar-step"
+              key="delivery"
+            >
+              <div
+                className="icon"
+              >
+                <span
+                  className="stepNumber"
+                >
+                  3
+                </span>
+              </div>
+              <div
+                className="title"
+              >
+                Delivery
+              </div>
+            </div>
+          </div>
+        </div>
+      </ProgressBarSteps>
+    </div>
+    <div
+      className="container form-container"
+    >
+      <div
+        className="subStep"
+      >
+        <Search
+          financeQuoteId={3735215}
+          make="vauxhall"
+          model="corsa hatchback special eds"
+          productAdvertId={1556200}
+          typoProps={
+            Object {
+              "subTitle": Object {
+                "align": "left",
+                "className": "subTitle",
+                "type": "p",
+              },
+              "text": Object {
+                "align": "left",
+                "className": "text",
+                "type": "p",
+              },
+              "title": Object {
+                "align": "left",
+                "className": "title",
+                "type": "h3",
+              },
+            }
+          }
+        >
+          <p
+            className="pretitle"
+          >
+            Let's get started!
+          </p>
+          <Typography
+            align="left"
+            className="title subStepTitleMargin"
+            color="dark"
+            type="h3"
+          >
+            <h3
+              className="typographyComponent txt-dark txt-left title subStepTitleMargin"
+            >
+              How do you intend to purchase your
+               Vauxhall Corsa hatchback special eds
+              ?
+            </h3>
+          </Typography>
+          <div
+            className="block"
+          >
+            <Typography
+              align="center"
+              className="title"
+              color="dark"
+              type="h3"
+            >
+              <h3
+                className="typographyComponent txt-dark txt-center title"
+              >
+                I want to purchase with finance
+              </h3>
+            </Typography>
+            <Typography
+              align="center"
+              className="text"
+              color="dark"
+              type="p"
+            >
+              <p
+                className="typographyComponent txt-dark txt-center text"
+              >
+                Pay for the car in monthly installments with a finance deal from one of the lenders on our panel.
+              </p>
+            </Typography>
+            <Typography
+              align="center"
+              className="text"
+              color="dark"
+              type="p"
+            >
+              <p
+                className="typographyComponent txt-dark txt-center text"
+              >
+                Find out more about 
+                <a
+                  className="link"
+                  href="/car-finance/198/buying-a-car-on-finance"
+                  target="_blank"
+                >
+                  car finance
+                </a>
+              </p>
+            </Typography>
+            <Button
+              className="btn"
+              disabled={false}
+              href="/finance-eligibility?productAdvertId=1556200&financeQuoteId=3735215"
+              onClick={null}
+              selected={false}
+              styleType="primary"
+              target="_blank"
+              type="submit"
+            >
+              <a
+                className="buttonComponent primary btn"
+                disabled={false}
+                href="/finance-eligibility?productAdvertId=1556200&financeQuoteId=3735215"
+                onClick={null}
+                target="_blank"
+                type="submit"
+              >
+                Pay monthly
+              </a>
+            </Button>
+          </div>
+          <div
+            className="block"
+          >
+            <Typography
+              align="center"
+              className="title"
+              color="dark"
+              type="h3"
+            >
+              <h3
+                className="typographyComponent txt-dark txt-center title"
+              >
+                I want to buy outright
+              </h3>
+            </Typography>
+            <Typography
+              align="center"
+              className="text"
+              color="dark"
+              type="p"
+            >
+              <p
+                className="typographyComponent txt-dark txt-center text"
+              >
+                Pay for the car upfront in full.
+                <br />
+                <br />
+                To begin, reserve your car for just
+                 £199 
+                and we'll get to work securing it for you. You will pay the remaining balance before delivery.
+              </p>
+            </Typography>
+            <Button
+              className="btn"
+              disabled={false}
+              href="/reservation?productAdvertId=1556200&financeQuoteId=3735215"
+              onClick={null}
+              selected={false}
+              styleType="primary"
+              target="_blank"
+            >
+              <a
+                className="buttonComponent primary btn"
+                disabled={false}
+                href="/reservation?productAdvertId=1556200&financeQuoteId=3735215"
+                onClick={null}
+                target="_blank"
+              >
+                Buy outright
+              </a>
+            </Button>
+          </div>
+        </Search>
+      </div>
+      <div
+        className="orderSummaryWrapper"
+      >
+        <DeviceContextProvider>
+          <OrderSummary
+            WITH_PX_CTA={true}
+            carDetails={
+              Object {
+                "name": null,
+                "price": null,
+                "year": null,
+              }
+            }
+            data={
+              Object {
+                "quoteDetails": Object {
+                  "customerFinanceTerms": Object {
+                    "financeQuoteId": 3735215,
+                  },
+                  "delivery": Object {
+                    "bookedDate": "Tue Sep 16 13:33:50 BST 2021",
+                  },
+                  "financeApplication": Object {},
+                  "lenderFinanceTerms": Object {},
+                  "order": Object {},
+                  "partex": Array [],
+                  "quote": Object {},
+                  "reservation": Object {},
+                  "softCreditSearch": Object {
+                    "band": "B",
+                    "score": 420,
+                  },
+                  "step": "search",
+                  "subStep": "start",
+                  "vehicle": Object {
+                    "advertId": 1556200,
+                    "make": "vauxhall",
+                    "model": "corsa hatchback special eds",
+                    "van": true,
+                    "year": 2010,
+                  },
+                  "verification": Object {},
+                },
+              }
+            }
+            withExpandingWrapper={false}
+          >
+            <Contents
+              WITH_PX_CTA={true}
+              carDetails={
+                Object {
+                  "name": null,
+                  "price": null,
+                  "year": null,
+                }
+              }
+              className="order-summary"
+              data={
+                Object {
+                  "quoteDetails": Object {
+                    "customerFinanceTerms": Object {
+                      "financeQuoteId": 3735215,
+                    },
+                    "delivery": Object {
+                      "bookedDate": "Tue Sep 16 13:33:50 BST 2021",
+                    },
+                    "financeApplication": Object {},
+                    "lenderFinanceTerms": Object {},
+                    "order": Object {},
+                    "partex": Array [],
+                    "quote": Object {},
+                    "reservation": Object {},
+                    "softCreditSearch": Object {
+                      "band": "B",
+                      "score": 420,
+                    },
+                    "step": "search",
+                    "subStep": "start",
+                    "vehicle": Object {
+                      "advertId": 1556200,
+                      "make": "vauxhall",
+                      "model": "corsa hatchback special eds",
+                      "van": true,
+                      "year": 2010,
+                    },
+                    "verification": Object {},
+                  },
+                }
+              }
+              isDesktopOnly={true}
+            >
+              <div
+                className="flSummary desktopOnly order-summary"
+              >
+                <div
+                  className="mainTitle"
+                >
+                  Order summary
+                </div>
+                <div
+                  className="vehicleDetailsBlock"
+                >
+                  <img
+                    alt="full-car"
+                    className="image"
+                    src="https://d13fze08x8d2oj.cloudfront.netundefined"
+                  />
+                  <div
+                    className="vehicleDetails"
+                  >
+                    <span
+                      className="make"
+                    >
+                      vauxhall corsa hatchback special eds
+                    </span>
+                    <span
+                      className="year"
+                    >
+                      2010
+                    </span>
+                    <span
+                      className="cashPrice"
+                    >
+                      cash price £0
+                    </span>
+                  </div>
+                </div>
+                <a
+                  className="advert"
+                  href="deal-1020046"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  View advert
+                </a>
+                <div
+                  className="separator"
+                />
+                <div
+                  className="partExchange"
+                  data-id="order-summary-part-exchange"
+                >
+                  <div
+                    className="addPartExchange"
+                  >
+                    <span>
+                      Add part exchange?
+                    </span>
+                    <span>
+                      See what you can get from our partners The Car Buying Group
+                    </span>
+                    <Button
+                      className=""
+                      disabled={false}
+                      href="part-exchange"
+                      onClick={null}
+                      selected={false}
+                      styleType="primary"
+                    >
+                      <a
+                        className="buttonComponent primary"
+                        disabled={false}
+                        href="part-exchange"
+                        onClick={null}
+                      >
+                        Add part exchange
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Contents>
+          </OrderSummary>
+        </DeviceContextProvider>
+      </div>
+    </div>
+  </div>
+  <DeviceContextProvider>
+    <OrderSummary
+      WITH_PX_CTA={true}
+      carDetails={
+        Object {
+          "name": null,
+          "price": null,
+          "year": null,
+        }
+      }
+      data={
+        Object {
+          "quoteDetails": Object {
+            "customerFinanceTerms": Object {
+              "financeQuoteId": 3735215,
+            },
+            "delivery": Object {
+              "bookedDate": "Tue Sep 16 13:33:50 BST 2021",
+            },
+            "financeApplication": Object {},
+            "lenderFinanceTerms": Object {},
+            "order": Object {},
+            "partex": Array [],
+            "quote": Object {},
+            "reservation": Object {},
+            "softCreditSearch": Object {
+              "band": "B",
+              "score": 420,
+            },
+            "step": "search",
+            "subStep": "start",
+            "vehicle": Object {
+              "advertId": 1556200,
+              "make": "vauxhall",
+              "model": "corsa hatchback special eds",
+              "van": true,
+              "year": 2010,
+            },
+            "verification": Object {},
+          },
+        }
+      }
+      withExpandingWrapper={true}
+    />
+  </DeviceContextProvider>
+</VehicleStatus>
+`;

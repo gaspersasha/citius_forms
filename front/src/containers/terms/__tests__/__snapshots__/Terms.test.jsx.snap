@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Terms /> rendered without errors 1`] = `
+<div
+  className="container"
+>
+  <Seo
+    meta={
+      Object {
+        "description": "Buyacar online with no hussle",
+        "page_title": "BuyaCar: the easy way to get a great car deal",
+        "rights": "Autovia Group Limited, licensed by Felden",
+        "twitter": Object {
+          "card": "photo",
+          "site": "@buy_a_car",
+          "title": "BuyaCar: the easy way to get a great car deal",
+          "url": "https://website",
+        },
+      }
+    }
+  />
+  <div
+    className="controls"
+  >
+    <div
+      className="align-corner"
+    >
+      <button
+        className="back"
+        type="button"
+      >
+        Back
+      </button>
+      <span
+        className="progress"
+      >
+        0% Completed
+      </span>
+    </div>
+    <ProgressBar
+      progress={0}
+    />
+    <Parts
+      part={2}
+      step={4}
+    />
+  </div>
+  <div
+    className="form-container"
+  >
+    <div
+      className="form"
+    >
+      <h1
+        className="title"
+      >
+        Choose your finance terms
+      </h1>
+      <p
+        className="subTitle"
+      >
+        Tailor your finance details to see how much you could be paying
+      </p>
+      <form
+        className="financeForm"
+        onSubmit={[Function]}
+      >
+        <TermsInputs
+          deliveryOptions={Array []}
+          disabledTrue={true}
+          fields={
+            Object {
+              "credit": Object {
+                "status": "default",
+                "validationType": "notEmpty",
+                "value": "",
+              },
+              "delivery": Object {
+                "status": "default",
+                "validationType": "number",
+                "value": 18,
+              },
+              "deposit": Object {
+                "status": "default",
+                "validationType": "number",
+                "value": "",
+              },
+              "finance": Object {
+                "status": "default",
+                "validationType": "notEmpty",
+                "value": "PCP",
+              },
+              "mileage": Object {
+                "status": "default",
+                "validationType": "number",
+                "value": "",
+              },
+              "terms": Object {
+                "status": "default",
+                "validationType": "number",
+                "value": "",
+              },
+            }
+          }
+          handleChange={[Function]}
+          isLeadGen={false}
+          maxFinanceDeposit={4400}
+        />
+        <div
+          className="financeType"
+        >
+          <h5>
+            Now select your finance type
+          </h5>
+          <TermsResults
+            apiError=""
+            disabledForm={[Function]}
+            fields={
+              Object {
+                "credit": Object {
+                  "status": "default",
+                  "validationType": "notEmpty",
+                  "value": "",
+                },
+                "delivery": Object {
+                  "status": "default",
+                  "validationType": "number",
+                  "value": 18,
+                },
+                "deposit": Object {
+                  "status": "default",
+                  "validationType": "number",
+                  "value": "",
+                },
+                "finance": Object {
+                  "status": "default",
+                  "validationType": "notEmpty",
+                  "value": "PCP",
+                },
+                "mileage": Object {
+                  "status": "default",
+                  "validationType": "number",
+                  "value": "",
+                },
+                "terms": Object {
+                  "status": "default",
+                  "validationType": "number",
+                  "value": "",
+                },
+              }
+            }
+            handleChange={[Function]}
+            quotes={Object {}}
+            showModal={[Function]}
+          />
+        </div>
+        <Button
+          className="submitBtn"
+          disabled={true}
+          href=""
+          onClick={null}
+          selected={false}
+          styleType="primary"
+          type="submit"
+        >
+          Next
+        </Button>
+      </form>
+      <div
+        className="descriptions"
+      >
+        <p>
+          Representative example when buying on PCP
+        </p>
+        <p>
+          Borrowing £9,500 over 48 months, zero deposit, on PCP, an annual mileage of 8,000pa, with a Representative APR of 9.9%, the amount payable would be £192 per month, an optional final payment of £2,923, with a total cost of credit of £2,426 and a total amount payable of £11,926 (** based on a Ford Fiesta Titanium hatchback)
+        </p>
+        <p>
+          Buyacar is a credit broker, not a lender. Our rates start from 6.9% APR. The rate you are offered will depend on your individual circumstances.
+        </p>
+      </div>
+    </div>
+    <PrivacyNotice
+      onChange={[Function]}
+      unsubscribe={false}
+    />
+  </div>
+</div>
+`;

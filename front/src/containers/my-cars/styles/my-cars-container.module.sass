@@ -1,0 +1,124 @@
+@import 'variables'
+@import 'mixins'
+
+.container
+  width: 100%
+  min-height: 100vh
+  max-width: 1295px
+  margin: auto
+
+.moreCars
+  margin-bottom: 37px
+
+.moreCarsTitle
+  color: $color-grey-tundora
+  font-size: 20px
+  margin-bottom: 20px
+  letter-spacing: .43px
+  line-height: 27px
+  text-align: center
+
+.link
+  display: block
+  margin: auto
+  box-sizing: border-box
+  text-align: center
+  padding: 11px 8px
+  width: 250px
+  color: $purple-primary
+  border: 1px solid $purple-primary
+
+  &:hover
+    background-color: $purple-primary
+    color: $color-white
+
+.footnote
+  text-align: center
+  padding: 20px 15px
+  line-height: 22px
+  font-size: $base-font-size
+  background-color: $color-promo-background
+  color: $color-grey-tundora
+  border-radius: 10px
+  letter-spacing: .34px
+  margin-bottom: 65px
+
+  +mq($from: tablet)
+    margin: 0 2% 50px
+
+.footnoteContainer
+  max-width: 1058px
+  margin: auto
+
+  p
+    margin-bottom: 0
+
+.noCars
+  display: flex
+  justify-content: center
+  color: $color-grey-nightrider
+  padding: 40px 15px 157px
+  flex-wrap: wrap
+
+  +mq($from: tablet)
+    flex-wrap: nowrap
+    padding: 200px 15px 150px
+
+.content
+  width: 100%
+  margin: 0 0 51px
+
+  +mq($from: tablet)
+    width: 450px
+    margin: 0 25px 0
+
+.noCarsTitle
+  color: $color-grey-nightrider
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: .43px
+  line-height: 27px
+  margin-bottom: 12px
+
+.noCarsSubtitle
+  font-size: $base-font-size
+  letter-spacing: .34px
+  line-height: 30px
+  margin-bottom: 8px
+
+.list
+  list-style: disc
+  font-size: $base-font-size
+  padding-left: 20px
+  margin-bottom: 15px
+
+.listItem
+  color: $color-grey-nightrider
+  letter-spacing: .34px
+  line-height: 30px
+  font-size: $base-font-size
+
+.media
+  width: 275px
+
+.icon
+  position: absolute
+  right: 9%
+  padding-top: 2px
+
+.CTA
+  display: block
+  position: relative
+  text-align: center
+  padding: 9px
+  font-size: 20px
+  line-height: 26px
+  color: $color-white
+  width: 100%
+  background-color: $blue-primary
+  border-left: 15px solid $blue-lighter
+  margin-bottom: 20px
+
+  &:hover
+    background-color: $purple-primary
+    border-color: $purple-primary

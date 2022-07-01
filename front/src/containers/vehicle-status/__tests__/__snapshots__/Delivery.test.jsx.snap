@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Delivery /> should match snapshot (booked case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your delivery date
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your
+    <span
+      className="capitalized"
+    >
+       2017   
+    </span>
+    will be delivered on
+     16th September 2021
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your new car arrives in
+  </Typography>
+  <Timer
+    className="timer"
+    date="Tue Sep 16 13:33:50 2021"
+  />
+</Fragment>
+`;
+
+exports[`<Delivery /> should match snapshot (confirmed case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your new  car has been delivered!
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    If you have any questions or issues please do not hesitate to contact our customer care team on 0800 050 2333
+  </Typography>
+</Fragment>
+`;
+
+exports[`<Delivery /> should match snapshot (to be booked case) 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your delivery
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="p"
+  >
+    Your
+    <span
+      className="capitalized"
+    >
+       2017   
+    </span>
+    has passed our rigerous checks and is ready for delivery! Our team will be in contact with a suggested delivery date
+  </Typography>
+</Fragment>
+`;

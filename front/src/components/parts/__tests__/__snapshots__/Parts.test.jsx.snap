@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Parts /> no part props 1`] = `
+<Parts
+  part={0}
+  step={5}
+>
+  <section
+    className="container"
+  >
+    <b>
+      Part 
+      1
+       of 
+      3
+    </b>
+     
+    Bank details
+  </section>
+</Parts>
+`;
+
+exports[`<Parts /> no step props 1`] = `
+<Parts
+  part={2}
+  step={0}
+>
+  <section
+    className="container"
+  >
+    <b>
+      Part 
+      2
+       of 
+      3
+    </b>
+     
+    Part exchange
+  </section>
+</Parts>
+`;
+
+exports[`<Parts /> part bigger than totalPartsCount const props 1`] = `
+<Parts
+  part={8}
+  step={3}
+>
+  <section
+    className="container"
+  >
+    <b>
+      Part 
+      3
+       of 
+      3
+    </b>
+     
+    Submit  application
+  </section>
+</Parts>
+`;
+
+exports[`<Parts /> part less than 1 props 1`] = `
+<Parts
+  part={-1}
+  step={3}
+>
+  <section
+    className="container"
+  >
+    <b>
+      Part 
+      1
+       of 
+      3
+    </b>
+     
+    Employment details
+  </section>
+</Parts>
+`;
+
+exports[`<Parts /> step less than 1 props 1`] = `
+<Parts
+  part={1}
+  step={0}
+>
+  <section
+    className="container"
+  >
+    <b>
+      Part 
+      1
+       of 
+      3
+    </b>
+     
+    Personal details
+  </section>
+</Parts>
+`;

@@ -1,0 +1,61 @@
+@import 'variables'
+@import 'mixins'
+
+.container
+  width: 100vw
+  margin: 0 -20px
+
+  +mq($from: tablet)
+    width: 550px
+    margin: 0 auto
+
+  h4
+    color: $purple-primary
+    font-size: 21px
+    text-align: center
+    font-weight: 600
+
+    &.headingLine
+      margin-top: 30px
+      background: $green-lighter
+      width: 100%
+      padding: 27px
+      text-align: left
+      background-image: url('../../../assets/svg/clock.svg')
+      background-repeat: no-repeat
+      background-position: 95% center
+
+  .list
+    border-left: 8px solid $blue-primary
+    background: $purple-primary
+    color: $color-white
+    padding: 20px 20px 20px 45px
+    list-style: auto
+    list-style-position: outside
+    font-size: 16px
+
+    +mq($from: tablet)
+      border-left-width: 4px
+
+    li
+      padding: 5px
+
+  .info
+    font-size: 16px
+    padding: 20px 20px 30px
+
+    +mq($from: tablet)
+      padding: 20px 0 140px
+
+    .subHeading
+      font-size: 18px
+      font-weight: 600
+      text-align: left
+
+    p
+      margin: 5px 0
+
+      .link
+        color: $blue-primary
+        text-decoration: underline
+        cursor: pointer

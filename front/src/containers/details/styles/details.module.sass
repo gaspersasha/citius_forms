@@ -1,0 +1,102 @@
+@import 'mixins'
+@import 'variables'
+
+.detailsWrapper
+  width: 100%
+  max-width: 1190px
+  margin: 0 auto
+  padding: 65px 20px
+
+.formWrapper
+  max-width: 600px
+  margin: 50px auto 0
+
+.title
+  font-weight: 600
+  margin-bottom: 65px
+
+.subtitle
+  font-size: 18px
+
+.heading
+  font-size: 22px
+  font-weight: 600
+
+.subheading
+  font-size: 16px
+  font-weight: 600
+
+.subheadMargin
+  margin: 50px 0 30px
+
+.unsubscribe
+  margin: 55px -20px 35px
+  padding: 20px
+  border-radius: 8px
+  background-color: lighten($color-white-whitesmoke, 1%)
+
+  @include mq($until: tablet)
+    border-radius: 0
+
+.unsubscribeTitle
+  margin-bottom: 15px
+
+.unsubscribeTxt
+  font-size: 14px
+  margin-top: 15px
+
+  a
+    text-decoration: underline !important // stylelint-disable-line
+    color: $secondary
+
+.inline
+  display: inline
+
+.mailCheckbox
+  vertical-align: baseline
+
+.submit
+  width: 290px
+  margin: 0 auto
+
+.status
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 78px
+  padding: 0 20px
+  border-width: 3px
+  border-style: solid
+  border-radius: 9px
+  font-weight: 600
+  margin: 40px 0
+
+.msg
+  border-color: $color-green-jade
+  fill: $color-green-jade
+
+.error
+  border-color: $field-error-color
+  fill: $field-error-color
+
+.icon
+  width: 35px
+  margin-right: 20px
+
+// to incapsulate input styles just for the details cont.
+/* stylelint-disable */
+.input
+  width: 100%
+  height: 44px !important
+  padding: 0 16px !important
+  border-radius: 3px !important
+  border: 1px solid $color-black !important
+  margin-bottom: 20px
+
+.select
+  border-radius: 3px
+  appearance: none
+  background-position: calc(100% - 22px) 15px
+  background-repeat: no-repeat
+  background-image: url('../../../assets/svg/select.svg')
+/* stylelint-enable */

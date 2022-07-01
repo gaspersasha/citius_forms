@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders without errors 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="nav"
+  >
+    <NavigationLink
+      absolute={true}
+      activeClassName="logoLinkActive"
+      activeTowardsRoot={false}
+      className="logoLink"
+      href="/"
+      onClick={null}
+    >
+      <Logo
+        className="logo"
+        viewBox="0 0 195 57.1"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+    </NavigationLink>
+    <div
+      className="linksBlock"
+      data-id="menu"
+      style={null}
+    >
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={true}
+        className="link margin"
+        href="/cars"
+        onClick={null}
+      >
+        Cars
+      </NavigationLink>
+      <SubMenu
+        recalculateHeight={[Function]}
+      >
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/cars"
+          key="/cars"
+          onClick={null}
+        >
+          Used Cars
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/cars/new-cars"
+          key="/cars/new-cars"
+          onClick={null}
+        >
+          New Cars in Stock
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/part-ex"
+          key="/part-ex"
+          onClick={null}
+        >
+          Sell my car
+        </NavigationLink>
+      </SubMenu>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={true}
+        className="link margin"
+        href="/goreserve"
+        onClick={null}
+      >
+        Reservation From
+      </NavigationLink>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={true}
+        className="link margin"
+        href="/part-ex"
+        onClick={null}
+      >
+        Part Ex Form
+      </NavigationLink>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={true}
+        className="link margin"
+        href="/motoring-services"
+        onClick={null}
+      >
+        Motoring Services
+      </NavigationLink>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={true}
+        className="link margin"
+        href="/how-it-works"
+        onClick={null}
+      >
+        How It Works
+      </NavigationLink>
+      <SubMenu
+        recalculateHeight={[Function]}
+      >
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works"
+          key="/how-it-works"
+          onClick={null}
+        >
+          Used Cars
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/finance-options"
+          key="/how-it-works/finance-options"
+          onClick={null}
+        >
+          Finance Options
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/warranty-insurance"
+          key="/how-it-works/warranty-insurance"
+          onClick={null}
+        >
+          Warranty & Insurance
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/part-exchange"
+          key="/how-it-works/part-exchange"
+          onClick={null}
+        >
+          Part Exchange
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/cancellation-returns"
+          key="/how-it-works/cancellation-returns"
+          onClick={null}
+        >
+          Cancellations & Returns
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/faq"
+          key="/how-it-works/faq"
+          onClick={null}
+        >
+          FAQ
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/about"
+          key="/how-it-works/about"
+          onClick={null}
+        >
+          About Us
+        </NavigationLink>
+        <NavigationLink
+          absolute={true}
+          activeClassName="sublinkActive"
+          activeTowardsRoot={false}
+          className="sublink"
+          href="/how-it-works/contact-us"
+          key="/how-it-works/contact-us"
+          onClick={null}
+        >
+          Contact us
+        </NavigationLink>
+      </SubMenu>
+      <div
+        className="rightLinks"
+        data-id="right-links"
+      >
+        <a
+          className="link tel align-corner"
+          href="tel:666"
+          title="666-999-1032"
+        >
+          <Call
+            className="callIcon"
+            viewBox="0 0 25.625 25.625"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          666-999-1032
+        </a>
+        <NavigationLink
+          absolute={true}
+          activeClassName="linkActive"
+          activeTowardsRoot={true}
+          className="link"
+          data-id="account-link"
+          href="/account/my-cars"
+          onClick={null}
+        >
+          My Account
+        </NavigationLink>
+        <SubMenu
+          data-id="acc-submenu"
+          recalculateHeight={[Function]}
+        >
+          <NavigationLink
+            absolute={true}
+            activeClassName="sublinkActive"
+            activeTowardsRoot={false}
+            className="sublink"
+            href="/account/my-cars"
+            key="/account/my-cars"
+            onClick={null}
+          >
+            My Cars
+          </NavigationLink>
+          <NavigationLink
+            absolute={true}
+            activeClassName="sublinkActive"
+            activeTowardsRoot={false}
+            className="sublink"
+            href="/account/details"
+            key="/account/details"
+            onClick={null}
+          >
+            My Details
+          </NavigationLink>
+          <NavigationLink
+            absolute={true}
+            activeClassName="sublinkActive"
+            activeTowardsRoot={false}
+            className="sublink"
+            href="/account/orders"
+            key="/account/orders"
+            onClick={null}
+          >
+            My Orders
+          </NavigationLink>
+          <NavigationLink
+            absolute={true}
+            activeClassName="sublinkActive"
+            activeTowardsRoot={false}
+            className="sublink"
+            href="/account/part-exchange"
+            key="/account/part-exchange"
+            onClick={null}
+          >
+            My Part-exchange
+          </NavigationLink>
+          <NavigationLink
+            absolute={true}
+            activeClassName=""
+            activeTowardsRoot={false}
+            className="sublink"
+            data-id="sign-out"
+            href="/"
+            onClick={[MockFunction]}
+          >
+            Sign out
+          </NavigationLink>
+        </SubMenu>
+      </div>
+    </div>
+    <button
+      className="menuBtn"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="burger"
+      >
+        <span
+          className="inner"
+        />
+      </div>
+      <span
+        className="menuStr"
+      >
+        menu
+      </span>
+    </button>
+  </nav>
+</header>
+`;

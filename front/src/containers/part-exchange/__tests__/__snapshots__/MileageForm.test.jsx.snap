@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MileageForm /> MileageForm snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h5
+    className="heading"
+  >
+    Add part exchange?
+  </h5>
+  <h5
+    className="description"
+  >
+    Enter your reg below to get your estimated part exchange price
+  </h5>
+  <div
+    className="icon"
+  >
+    <InputText
+      className="milegeFormPlate"
+      customClasses=""
+      disabled={true}
+      errorMessage=""
+      label=""
+      name="plate"
+      onChange={[Function]}
+      placeholder="e.g. AB12CDE"
+      required={false}
+      status="default"
+      subTitle=""
+    />
+  </div>
+  <div
+    className="carInfo"
+  >
+    <h5
+      className="descriptionReg"
+    >
+      Your reg details 
+    </h5>
+    <div
+      className="regDetails"
+    >
+      <div
+        className="row"
+      >
+        <span>
+          Make and model: 
+        </span>
+        <b>
+          undefined undefined
+        </b>
+      </div>
+      <div
+        className="row"
+      >
+        <span>
+          Engine: 
+        </span>
+        <b>
+          undefined undefined
+        </b>
+      </div>
+    </div>
+  </div>
+  <div
+    className="formInput"
+  >
+    <InputNumber
+      className=""
+      label="What is your mileage?"
+      name="miles"
+      onChange={[Function]}
+      onKeyPress={null}
+      placeholder="e.g. 20,000"
+      required={false}
+      status="default"
+      subTitle=""
+      value={false}
+    />
+    <InputSelect
+      className=""
+      label="What is the condition of your car?"
+      name="condition"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "option": "Great",
+            "value": "great",
+          },
+          Object {
+            "option": "Good",
+            "value": "good",
+          },
+          Object {
+            "option": "Fair",
+            "value": "fair",
+          },
+          Object {
+            "option": "Poor",
+            "value": "poor",
+          },
+        ]
+      }
+      placeholder="Select"
+      required={false}
+      status="default"
+      subTitle=""
+      value=""
+    />
+    <InputSelect
+      className=""
+      label="Do you have service history?"
+      name="serviceHistory"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "option": "Full",
+            "value": "full",
+          },
+          Object {
+            "option": "Part",
+            "value": "part",
+          },
+          Object {
+            "option": "Not due",
+            "value": "notdue",
+          },
+          Object {
+            "option": "None",
+            "value": "none",
+          },
+        ]
+      }
+      placeholder="Select"
+      required={false}
+      status="default"
+      subTitle=""
+      value=""
+    />
+  </div>
+  <h5>
+    Our benefits
+  </h5>
+  <div
+    className="benefits"
+  >
+    <div>
+      <span
+        className="tickGreen"
+      />
+      We Collect Your Car For 
+      <b>
+        FREE
+      </b>
+    </div>
+    <div>
+      <span
+        className="tickGreen"
+      />
+      No Fees
+    </div>
+    <div>
+      <span
+        className="tickGreen"
+      />
+      Immediate & Secure Payment
+    </div>
+  </div>
+  <div
+    className="valuationPrivacy"
+  >
+    <InputCheckbox
+      className=""
+      customClasses=""
+      label=""
+      name="acceptPrivacy"
+      onChange={[Function]}
+      status="default"
+    />
+    <p>
+      Please tick to show you agree to us sending your information to the car buying group. You can see their
+      <a
+        href="https://www.thecarbuyinggroup.co.uk/site/privacy"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+    </p>
+  </div>
+  <div
+    className="alignCenter"
+  >
+    <Button
+      className="link--button-forward"
+      disabled={false}
+      href=""
+      name="partex__submit-btn"
+      onClick={null}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      Next
+    </Button>
+  </div>
+</form>
+`;

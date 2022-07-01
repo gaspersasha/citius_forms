@@ -1,0 +1,1501 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Orders /> orders snapshot 1`] = `
+<Orders>
+  <section
+    className="accountWithOrders main-width-container"
+    data-id="account-orders"
+  >
+    <div
+      className="pageTitleWrapper"
+    >
+      <h1
+        className="pageTitle"
+      >
+        My Orders
+      </h1>
+    </div>
+    <div
+      className="ordersPage"
+    >
+      <div
+        className="title"
+      >
+        <h3
+          className="userName"
+        >
+          Account name:
+           MR Ajith Nair
+        </h3>
+        <div
+          className="userExplanation"
+        >
+          This is the summary of the activity in your account. From here you can view orders, invoices and payment history.
+        </div>
+      </div>
+      <OrdersList
+        orders={
+          Object {
+            "orderList": Array [
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "5",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "6",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "3",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "4",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "1",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "2",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+            ],
+            "orderSectionType": "financialSummary",
+          }
+        }
+      >
+        <div
+          className="ordersList"
+        >
+          <h1
+            className="title"
+          >
+            Financial summary
+          </h1>
+          <div
+            className="subtitle"
+          >
+            Deposit payments
+          </div>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="5"
+            key="5"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=5&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=5&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="6"
+            key="6"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=6&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=6&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="3"
+            key="3"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=3&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=3&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="4"
+            key="4"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=4&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=4&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="1"
+            key="1"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=1&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=1&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="2"
+            key="2"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=2&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=2&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+        </div>
+      </OrdersList>
+      <div
+        className="balance"
+      >
+        <div
+          className="balanceTitle"
+        >
+          Account balance
+        </div>
+        <div>
+          £1,889
+        </div>
+      </div>
+      <OrdersList
+        orders={
+          Object {
+            "orderList": Array [
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "9",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "10",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "7",
+                "status": "Sent to recipient",
+                "type": "DEBIT",
+                "vehicle": Object {
+                  "fuelType": "Petrol",
+                  "imageUrl": "https://www.racecar.com/racecarwebsite/Images/News/91908/a1.jpg?width=1200&height=800&mode=crop",
+                  "mileage": 34000,
+                  "name": "Vauxhall MOKKA 1",
+                  "regPlate": "DL67VFD",
+                  "regYear": 2018,
+                  "reservationAmount": 199,
+                  "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                  "transmission": "Manual",
+                  "vehicleId": 2898918,
+                  "vehicleType": "car",
+                },
+              },
+              Object {
+                "accountId": "42114",
+                "amount": 199,
+                "created": "22/05/1988",
+                "documentId": "8",
+                "status": "Sent to recipient - finance incomplete",
+                "type": "DEBIT",
+                "vehicle": Object {
+                  "fuelType": "Petrol",
+                  "imageUrl": "https://di-uploads-pod15.dealerinspire.com/capecoralchryslerdodgejeepram/uploads/2019/03/2019-dodge-challenger-srt-hellcat-redeye.jpg",
+                  "mileage": 34000,
+                  "name": "Vauxhall MOKKA 2",
+                  "regPlate": "DL67VFD",
+                  "regYear": 2018,
+                  "reservationAmount": 199,
+                  "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                  "transmission": "Manual",
+                  "vehicleId": 2898918,
+                  "vehicleType": "car",
+                },
+              },
+            ],
+            "orderSectionType": "yourOrders",
+          }
+        }
+      >
+        <div
+          className="ordersList"
+        >
+          <h1
+            className="title"
+          >
+            Your orders
+          </h1>
+          <div
+            className="subtitle"
+          >
+            Orders
+          </div>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="9"
+            key="9"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=9&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=9&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="10"
+            key="10"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={Object {}}
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Payment for
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    42114
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="balance column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Balance
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    £199
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=10&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=10&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="7"
+            key="7"
+            status="Sent to recipient"
+            type="DEBIT"
+            vehicle={
+              Object {
+                "fuelType": "Petrol",
+                "imageUrl": "https://www.racecar.com/racecarwebsite/Images/News/91908/a1.jpg?width=1200&height=800&mode=crop",
+                "mileage": 34000,
+                "name": "Vauxhall MOKKA 1",
+                "regPlate": "DL67VFD",
+                "regYear": 2018,
+                "reservationAmount": 199,
+                "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                "transmission": "Manual",
+                "vehicleId": 2898918,
+                "vehicleType": "car",
+              }
+            }
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Vehicle order
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    2018, 34000 miles
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=7&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=7&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+              <div
+                className="detailInformation"
+              >
+                <OrderSummary
+                  details={
+                    Object {
+                      "amount": 199,
+                      "created": "22/05/1988",
+                      "fuelType": "Petrol",
+                      "imageUrl": "https://www.racecar.com/racecarwebsite/Images/News/91908/a1.jpg?width=1200&height=800&mode=crop",
+                      "mileage": 34000,
+                      "name": "Vauxhall MOKKA 1",
+                      "regPlate": "DL67VFD",
+                      "regYear": 2018,
+                      "reservationAmount": 199,
+                      "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                      "transmission": "Manual",
+                      "vehicleId": 2898918,
+                      "vehicleType": "car",
+                    }
+                  }
+                >
+                  <div
+                    className="orderSummary"
+                  >
+                    <h3
+                      className="title"
+                    >
+                      Order summary
+                    </h3>
+                    <div
+                      className="cardSection"
+                    >
+                      <div
+                        className="thumbnail"
+                      >
+                        <img
+                          alt="car"
+                          src="https://www.racecar.com/racecarwebsite/Images/News/91908/a1.jpg?width=1200&height=800&mode=crop"
+                        />
+                      </div>
+                      <div
+                        className="details"
+                      >
+                        <div
+                          className="name"
+                        >
+                          Vauxhall MOKKA 1
+                        </div>
+                        <div
+                          className="amount"
+                        >
+                          You paid 
+                          £199
+                           to reserve this 
+                          car
+                           on 
+                          22/05/1988
+                        </div>
+                        <div
+                          className="specifications"
+                        >
+                          <div
+                            className="specificationsRow"
+                          >
+                            <div
+                              className="reag"
+                            >
+                              Reg year: 
+                              <b>
+                                2018
+                              </b>
+                            </div>
+                            <div
+                              className="fuel"
+                            >
+                              Fuel type: 
+                              <b>
+                                Petrol
+                              </b>
+                            </div>
+                          </div>
+                          <div
+                            className="specificationsRow"
+                          >
+                            <div
+                              className="mileage"
+                            >
+                              Mileage: 
+                              <b>
+                                34000
+                              </b>
+                            </div>
+                            <div
+                              className="trans"
+                            >
+                              Trans: 
+                              <b>
+                                Manual
+                              </b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </OrderSummary>
+              </div>
+            </div>
+          </OrderItem>
+          <OrderItem
+            accountId="42114"
+            amount={199}
+            created="22/05/1988"
+            documentId="8"
+            key="8"
+            status="Sent to recipient - finance incomplete"
+            type="DEBIT"
+            vehicle={
+              Object {
+                "fuelType": "Petrol",
+                "imageUrl": "https://di-uploads-pod15.dealerinspire.com/capecoralchryslerdodgejeepram/uploads/2019/03/2019-dodge-challenger-srt-hellcat-redeye.jpg",
+                "mileage": 34000,
+                "name": "Vauxhall MOKKA 2",
+                "regPlate": "DL67VFD",
+                "regYear": 2018,
+                "reservationAmount": 199,
+                "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                "transmission": "Manual",
+                "vehicleId": 2898918,
+                "vehicleType": "car",
+              }
+            }
+          >
+            <div
+              className="paymentItem"
+            >
+              <div
+                className="generalInformation"
+              >
+                <div
+                  className="nomination column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Vehicle order
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    2018, 34000 miles
+                  </div>
+                </div>
+                <div
+                  className="paidStatus column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Status
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    Sent to recipient - finance incomplete
+                  </div>
+                </div>
+                <div
+                  className="type column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Type
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    debit
+                  </div>
+                </div>
+                <div
+                  className="date column"
+                >
+                  <div
+                    className="paymentItemTitle"
+                  >
+                    Date
+                  </div>
+                  <div
+                    className="paymentItemValue"
+                  >
+                    22/05/1988
+                  </div>
+                </div>
+                <Button
+                  className="button"
+                  disabled={false}
+                  href="../order/viewOrder.jhtml?orderId=8&accountId=42114"
+                  onClick={null}
+                  selected={false}
+                  styleType="secondary"
+                >
+                  <a
+                    className="buttonComponent secondary button"
+                    disabled={false}
+                    href="../order/viewOrder.jhtml?orderId=8&accountId=42114"
+                    onClick={null}
+                  >
+                    View
+                  </a>
+                </Button>
+              </div>
+              <div
+                className="detailInformation"
+              >
+                <OrderSummary
+                  details={
+                    Object {
+                      "amount": 199,
+                      "created": "22/05/1988",
+                      "fuelType": "Petrol",
+                      "imageUrl": "https://di-uploads-pod15.dealerinspire.com/capecoralchryslerdodgejeepram/uploads/2019/03/2019-dodge-challenger-srt-hellcat-redeye.jpg",
+                      "mileage": 34000,
+                      "name": "Vauxhall MOKKA 2",
+                      "regPlate": "DL67VFD",
+                      "regYear": 2018,
+                      "reservationAmount": 199,
+                      "reservationDate": "Wed Jul 29 12:43:42 BST 2020",
+                      "transmission": "Manual",
+                      "vehicleId": 2898918,
+                      "vehicleType": "car",
+                    }
+                  }
+                >
+                  <div
+                    className="orderSummary"
+                  >
+                    <h3
+                      className="title"
+                    >
+                      Order summary
+                    </h3>
+                    <div
+                      className="cardSection"
+                    >
+                      <div
+                        className="thumbnail"
+                      >
+                        <img
+                          alt="car"
+                          src="https://di-uploads-pod15.dealerinspire.com/capecoralchryslerdodgejeepram/uploads/2019/03/2019-dodge-challenger-srt-hellcat-redeye.jpg"
+                        />
+                      </div>
+                      <div
+                        className="details"
+                      >
+                        <div
+                          className="name"
+                        >
+                          Vauxhall MOKKA 2
+                        </div>
+                        <div
+                          className="amount"
+                        >
+                          You paid 
+                          £199
+                           to reserve this 
+                          car
+                           on 
+                          22/05/1988
+                        </div>
+                        <div
+                          className="specifications"
+                        >
+                          <div
+                            className="specificationsRow"
+                          >
+                            <div
+                              className="reag"
+                            >
+                              Reg year: 
+                              <b>
+                                2018
+                              </b>
+                            </div>
+                            <div
+                              className="fuel"
+                            >
+                              Fuel type: 
+                              <b>
+                                Petrol
+                              </b>
+                            </div>
+                          </div>
+                          <div
+                            className="specificationsRow"
+                          >
+                            <div
+                              className="mileage"
+                            >
+                              Mileage: 
+                              <b>
+                                34000
+                              </b>
+                            </div>
+                            <div
+                              className="trans"
+                            >
+                              Trans: 
+                              <b>
+                                Manual
+                              </b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </OrderSummary>
+              </div>
+            </div>
+          </OrderItem>
+        </div>
+      </OrdersList>
+      <div
+        className="explanation"
+      >
+        <div
+          className="expTitle"
+        >
+          Your Account Summary explained
+        </div>
+        <div
+          className="expTxt"
+        >
+          There are two sections to your account summary. The first part is a financial summary of your account balance. This is a total of the outstanding balance of any invoices, the balance of the credit notes, and cleared deposit payments.
+          <br />
+          <br />
+          The outstanding balance of an invoice is made up of the amount due less any payments you have made, and therefore a zero balance would indicate that the invoice has been paid in full. To see the details of the invoice balance and how it is calculated click view and scroll down the document to the statement section.
+          <br />
+          <br />
+          The second section shows your orders and payments that are not yet cleared. These do not affect the account balance. The balance of order works in the same way but for the deposit due.
+        </div>
+      </div>
+    </div>
+  </section>
+</Orders>
+`;

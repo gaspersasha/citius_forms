@@ -1,0 +1,24 @@
+@import 'mixins'
+@import 'variables'
+
+.ordersList
+  margin: 40px 0
+
+.title
+  font-size: 25px
+  text-align: center
+  margin-bottom: 15px
+
+.subtitle
+  margin-bottom: 15px
+  font-size: 18px
+  color: $text-accent
+  text-align: center
+  padding-bottom: 20px
+  border-bottom: 1px solid $dark
+
+.title,
+.subtitle
+  font-family: $base-font-family
+  +mq($from: 650px)
+    text-align: left

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomLink /> renders without errors 1`] = `
+<div
+  className=""
+>
+  Test
+</div>
+`;

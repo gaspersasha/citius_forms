@@ -1,0 +1,26 @@
+export const breadcrumbTitles = {
+  '/cars': 'Cars for sale',
+  '/cars/new-cars': 'New Cars in Stock',
+  '/cars/part-exchange': 'Get A Quote For Your Car',
+  '/vans': 'Vans For Sale',
+  '/leasing': 'Cars To Lease',
+  '/motoring-services': 'Motoring Services',
+  '/how-it-works': 'How It Works',
+  '/how-it-works/finance-options': 'Finance Options',
+  '/how-it-works/warranty-insurance': 'Warranty & Insurance',
+  '/how-it-works/part-exchange': 'Part Exchange',
+  '/how-it-works/cancellation-returns': 'Cancellations & Returns',
+  '/how-it-works/faq': 'FAQ',
+  '/how-it-works/about': 'About Us',
+  '/how-it-works/contact-us': 'Contact us',
+  '/account': 'My Account',
+  '/account/my-cars': 'My Cars',
+  '/account/details': 'My Details',
+  '/account/orders': 'My Orders',
+  // TODO: Temporary duplicated for hidden routes
+  '/account/my-details': 'My Details',
+  '/account/my-orders': 'My Orders',
+  '/part-exchange': 'Your Current Cars',
+  '/finance-thank-you': 'Thank You',
+  // ...others
+};

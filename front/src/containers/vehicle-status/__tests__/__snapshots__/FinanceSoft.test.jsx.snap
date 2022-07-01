@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FinanceSoft /> should match snapshot 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    type="h3"
+  >
+    Your finance eligibility
+  </Typography>
+  <Typography
+    align="left"
+    className=""
+    color="dark"
+    data-id="probability-text"
+    type="p"
+  >
+    From your soft credit check we can see that you are
+     very likely 
+    to be approved for finance
+  </Typography>
+  <Button
+    className="btn"
+    disabled={false}
+    href="/finance?productAdvertId=3332415&financeQuoteId=3735215"
+    onClick={null}
+    selected={false}
+    styleType="primary"
+    target="_blank"
+  >
+    Continue your application
+  </Button>
+</Fragment>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResultScreen /> ResultScreen snapshot 1`] = `
+<div>
+  <h3
+    className="heading"
+  >
+    Here is your estimated valuation
+  </h3>
+  <div
+    className="valuationError"
+  >
+    <h1>
+      Error in valuation
+    </h1>
+    <p>
+      Please, check the mileage and personal contact details
+    </p>
+  </div>
+  <div
+    className="carBuyingGroup"
+  >
+    <div
+      className="image"
+    />
+    <p>
+      The Car Buying Group 
+    </p>
+  </div>
+  <h5
+    className="descriptionResult"
+  >
+    Someone from the car buying group will get in touch with your confirmed valuation. This is your estimated valuation.
+  </h5>
+  <div
+    className="alignCenter"
+  >
+    <Button
+      className=""
+      disabled={false}
+      href=""
+      name="partex__submit-btn"
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+    >
+      Next
+    </Button>
+  </div>
+</div>
+`;

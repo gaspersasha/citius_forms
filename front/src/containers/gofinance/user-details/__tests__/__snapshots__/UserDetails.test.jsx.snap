@@ -1,0 +1,612 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserDetails /> should component match snapshot 1`] = `
+<UserDetails
+  countryOfBirth=""
+  creditScore={null}
+  day=""
+  dependants={0}
+  drivingLicenceType="FULL"
+  email=""
+  emailAddress=""
+  firstName=""
+  isDataSending={false}
+  isLoggedIn={false}
+  lastName=""
+  maritalStatus="SINGLE"
+  middleName=""
+  mobile=""
+  month=""
+  onSubmit={[MockFunction]}
+  phone=""
+  step={0}
+  telephoneNumber=""
+  title=""
+  validUKPassport={true}
+  year=""
+>
+  <CreditScore
+    creditScore={null}
+    firstName=""
+  >
+    <div
+      className="align-left wrapper"
+    >
+      <div
+        className="img"
+      >
+        <CreditScore
+          height="50"
+          viewBox="0 0 50 50"
+          width="50"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <svg
+            height="50"
+            viewBox="0 0 50 50"
+            width="50"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <title>
+              2DADE5F5-400A-47D9-9154-6222ADE1DFAD
+            </title>
+            <defs>
+              <radialGradient
+                fx="50%"
+                fy="50%"
+                id="a"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#1CD7A1"
+                />
+                <stop
+                  offset="100%"
+                  stopColor="#03D397"
+                />
+              </radialGradient>
+              <path
+                d="M0 0h50v50H0z"
+                id="b"
+              />
+              <radialGradient
+                fx="50%"
+                fy="50%"
+                gradientTransform="matrix(1 0 0 .75627 0 .122)"
+                id="d"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#272440"
+                />
+                <stop
+                  offset="42.597%"
+                  stopColor="#1F1B39"
+                />
+                <stop
+                  offset="100%"
+                  stopColor="#1C1836"
+                />
+              </radialGradient>
+              <radialGradient
+                fx="50%"
+                fy="50%"
+                gradientTransform="matrix(1 0 0 .75627 0 .122)"
+                id="e"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#272440"
+                />
+                <stop
+                  offset="42.597%"
+                  stopColor="#1F1B39"
+                />
+                <stop
+                  offset="100%"
+                  stopColor="#1C1836"
+                />
+              </radialGradient>
+              <radialGradient
+                fx="50%"
+                fy="50%"
+                gradientTransform="matrix(1 0 0 .75627 0 .122)"
+                id="f"
+              >
+                <stop
+                  offset="0%"
+                  stopColor="#272440"
+                />
+                <stop
+                  offset="42.597%"
+                  stopColor="#1F1B39"
+                />
+                <stop
+                  offset="100%"
+                  stopColor="#1C1836"
+                />
+              </radialGradient>
+            </defs>
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0h50v50H0z"
+                fill="url(#a)"
+                fillRule="nonzero"
+              />
+              <g>
+                <mask
+                  fill="#fff"
+                  id="c"
+                >
+                  <use
+                    xlinkHref="#b"
+                  />
+                </mask>
+                <g
+                  fillRule="nonzero"
+                  mask="url(#c)"
+                >
+                  <path
+                    d="M41.56 20.724c-2.062 2.09-4.152 1.923-6.548.892-.446-.167-.892-.39-1.338-.613-2.34-1.198-3.53-1.56-4.812-.279h-.027c-1.31 1.31-3.26-.668-1.951-1.95 2.09-2.09 2.369-4.199 2.118-6.178h-2.536c-1.839 0-1.839-2.786 0-2.786h1.95c-.5-2.146-1.002-4.375.056-6.605C29.56.892 32.448-.195 35.012.03c2.87.25 5.573 2.117 5.573 5.6 0 1.84-2.786 1.84-2.786 0 0-1.671-1.31-2.563-2.787-2.786-1.533-.25-3.446.307-4.032 1.533-.668 1.449-.25 3.093.195 4.988.056.14.084.307.112.446h6.512c1.838 0 1.838 2.787 0 2.787h-6.01c.167 1.393.083 3.056-.53 4.588 1.282.196 2.666.808 3.697 1.31.028 0 .028.028.056.028 2.34 1.198 3.316 1.533 4.598.25 1.31-1.309 3.26.67 1.95 1.951z"
+                    fill="url(#d)"
+                    transform="translate(14.557 14.105)"
+                  />
+                  <path
+                    d="M22.492 21.163c-1.509 1.529-3.038 1.406-4.791.652a10.425 10.425 0 0 1-.979-.448c-1.712-.877-2.582-1.142-3.52-.204h-.02c-.958.958-2.386-.49-1.427-1.427 1.529-1.53 1.733-3.072 1.549-4.52h-1.855c-1.345 0-1.345-2.038 0-2.038h1.427c-.367-1.57-.734-3.2.04-4.832.796-1.692 2.91-2.487 4.785-2.324 2.1.184 4.077 1.55 4.077 4.098 0 1.345-2.039 1.345-2.039 0 0-1.223-.958-1.876-2.038-2.039-1.122-.183-2.521.224-2.95 1.121-.489 1.06-.183 2.263.143 3.65.04.102.061.224.082.326h4.763c1.346 0 1.346 2.039 0 2.039h-4.396c.122 1.019.06 2.235-.388 3.357.938.142 1.95.59 2.705.958.02 0 .02.02.04.02 1.713.877 2.427 1.121 3.365.184.958-.959 2.385.489 1.427 1.427z"
+                    fill="url(#e)"
+                    transform="translate(14.557 14.105)"
+                  />
+                  <path
+                    d="M8.004 21.564c-1.002 1.015-2.017.934-3.182.433a6.924 6.924 0 0 1-.65-.298c-1.137-.582-1.714-.758-2.337-.135H1.82c-.636.636-1.584-.325-.948-.948 1.016-1.015 1.151-2.04 1.03-3.001H.67c-.893 0-.893-1.354 0-1.354h.948c-.244-1.043-.487-2.126.027-3.21.528-1.123 1.932-1.651 3.177-1.543 1.395.122 2.708 1.03 2.708 2.722 0 .893-1.354.893-1.354 0 0-.813-.636-1.246-1.354-1.354-.744-.122-1.674.149-1.958.744-.325.705-.122 1.503.094 2.424.027.068.041.15.055.217h3.163c.894 0 .894 1.354 0 1.354h-2.92c.081.677.04 1.485-.257 2.23.623.094 1.295.392 1.796.636.014 0 .014.013.027.013 1.138.583 1.612.745 2.235.122.636-.636 1.584.325.947.948z"
+                    fill="url(#f)"
+                    transform="translate(14.557 14.105)"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </CreditScore>
+      </div>
+      <div>
+        <p>
+          Continue your finance application below. Once complete we can determine if you are likely to be approved.
+        </p>
+      </div>
+    </div>
+  </CreditScore>
+  <div
+    className="form-input"
+  >
+    <TapButtons
+      label="What is your title?"
+      name="title"
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "option": "Mr",
+            "value": "MR",
+          },
+          Object {
+            "option": "Mrs",
+            "value": "MRS",
+          },
+          Object {
+            "option": "Dr",
+            "value": "DR",
+          },
+          Object {
+            "option": "Ms",
+            "value": "MS",
+          },
+          Object {
+            "option": "Miss",
+            "value": "MISS",
+          },
+        ]
+      }
+      status="default"
+      subTitle="Select from the list below"
+      value="MR"
+    >
+      <div
+        className="container"
+        data-id="options"
+      >
+        <div
+          className="title"
+        >
+          <div
+            className="tap-buttons-title__text"
+          >
+            What is your title?
+          </div>
+          <div
+            className="subTitle"
+            data-id="tap-btns-subtitle"
+          >
+            Select from the list below
+          </div>
+        </div>
+        <div
+          className="list"
+        >
+          <TapButtonsList
+            defaultVal=""
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "option": "Mr",
+                  "value": "MR",
+                },
+                Object {
+                  "option": "Mrs",
+                  "value": "MRS",
+                },
+                Object {
+                  "option": "Dr",
+                  "value": "DR",
+                },
+                Object {
+                  "option": "Ms",
+                  "value": "MS",
+                },
+                Object {
+                  "option": "Miss",
+                  "value": "MISS",
+                },
+              ]
+            }
+            sectionName="title"
+            status="default"
+            value="MR"
+          >
+            <div
+              className="item active"
+              key="MR"
+            >
+              <label
+                className="label"
+                htmlFor="Mr"
+              >
+                <span
+                  className="labelText"
+                >
+                  Mr
+                </span>
+                <input
+                  checked={true}
+                  className="input"
+                  data-id="Mr"
+                  name="title"
+                  onChange={[Function]}
+                  type="radio"
+                  value="MR"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              className="item"
+              key="MRS"
+            >
+              <label
+                className="label"
+                htmlFor="Mrs"
+              >
+                <span
+                  className="labelText"
+                >
+                  Mrs
+                </span>
+                <input
+                  checked={false}
+                  className="input"
+                  data-id="Mrs"
+                  name="title"
+                  onChange={[Function]}
+                  type="radio"
+                  value="MRS"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              className="item"
+              key="DR"
+            >
+              <label
+                className="label"
+                htmlFor="Dr"
+              >
+                <span
+                  className="labelText"
+                >
+                  Dr
+                </span>
+                <input
+                  checked={false}
+                  className="input"
+                  data-id="Dr"
+                  name="title"
+                  onChange={[Function]}
+                  type="radio"
+                  value="DR"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              className="item"
+              key="MS"
+            >
+              <label
+                className="label"
+                htmlFor="Ms"
+              >
+                <span
+                  className="labelText"
+                >
+                  Ms
+                </span>
+                <input
+                  checked={false}
+                  className="input"
+                  data-id="Ms"
+                  name="title"
+                  onChange={[Function]}
+                  type="radio"
+                  value="MS"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              className="item"
+              key="MISS"
+            >
+              <label
+                className="label"
+                htmlFor="Miss"
+              >
+                <span
+                  className="labelText"
+                >
+                  Miss
+                </span>
+                <input
+                  checked={false}
+                  className="input"
+                  data-id="Miss"
+                  name="title"
+                  onChange={[Function]}
+                  type="radio"
+                  value="MISS"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+          </TapButtonsList>
+        </div>
+      </div>
+    </TapButtons>
+  </div>
+  <div
+    className="form-input"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="What is your first name"
+      name="firstName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="First name as it is on your driving licence"
+      required={true}
+      status="default"
+      subTitle="First name as it is on your driving licence"
+      value=""
+    >
+      <Label
+        customClasses=""
+        name="firstName"
+        required={true}
+        status="default"
+        title="What is your first name"
+        withSub={true}
+      >
+        <div
+          className="label"
+        >
+          <label
+            data-id={false}
+            htmlFor="firstName"
+          >
+            <span
+              className="title halfMargin"
+              data-id="label-title"
+            >
+              What is your first name
+            </span>
+            <span
+              className="label-sub-title"
+              data-id="input-text-sub"
+            >
+              First name as it is on your driving licence
+            </span>
+            <input
+              className=""
+              name="firstName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="First name as it is on your driving licence"
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </Label>
+    </InputText>
+  </div>
+  <div
+    className="form-input"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="What is your middle name"
+      name="middleName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Middle name as it is on your driving licence"
+      required={true}
+      status="default"
+      subTitle="Middle name as it is on your driving licence"
+      value=""
+    >
+      <Label
+        customClasses=""
+        name="middleName"
+        required={true}
+        status="default"
+        title="What is your middle name"
+        withSub={true}
+      >
+        <div
+          className="label"
+        >
+          <label
+            data-id={false}
+            htmlFor="middleName"
+          >
+            <span
+              className="title halfMargin"
+              data-id="label-title"
+            >
+              What is your middle name
+            </span>
+            <span
+              className="label-sub-title"
+              data-id="input-text-sub"
+            >
+              Middle name as it is on your driving licence
+            </span>
+            <input
+              className=""
+              name="middleName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Middle name as it is on your driving licence"
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </Label>
+    </InputText>
+  </div>
+  <div
+    className="form-input"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label="What is your last name"
+      name="lastName"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Last name as it is on your driving licence"
+      required={true}
+      status="default"
+      subTitle="Last name as it is on your driving licence"
+      value=""
+    >
+      <Label
+        customClasses=""
+        name="lastName"
+        required={true}
+        status="default"
+        title="What is your last name"
+        withSub={true}
+      >
+        <div
+          className="label"
+        >
+          <label
+            data-id={false}
+            htmlFor="lastName"
+          >
+            <span
+              className="title halfMargin"
+              data-id="label-title"
+            >
+              What is your last name
+            </span>
+            <span
+              className="label-sub-title"
+              data-id="input-text-sub"
+            >
+              Last name as it is on your driving licence
+            </span>
+            <input
+              className=""
+              name="lastName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Last name as it is on your driving licence"
+              type="text"
+              value=""
+            />
+          </label>
+        </div>
+      </Label>
+    </InputText>
+  </div>
+  <Button
+    className="confirm"
+    disabled={false}
+    href=""
+    id={null}
+    onClick={[Function]}
+    selected={false}
+    styleType="primary"
+    type="submit"
+  >
+    <button
+      className="buttonComponent primary confirm"
+      disabled={false}
+      href={null}
+      id={null}
+      onClick={[Function]}
+      type="submit"
+    >
+      Next
+    </button>
+  </Button>
+</UserDetails>
+`;

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignIn /> renders without errors 1`] = `
+<div
+  className="signin"
+>
+  <div
+    className="signinInner"
+  >
+    <Typography
+      align="left"
+      className="signinHead heading"
+      color="dark"
+      type="h4"
+    >
+      Your sign in details
+    </Typography>
+    <InputEmail
+      className="input"
+      customClasses=""
+      errorMessage="The email address you entered is not valid, please try again"
+      id="email"
+      label="Email"
+      name="email"
+      onChange={[MockFunction]}
+      placeholder="Your email will be your user name"
+      required={true}
+      status="default"
+      subTitle=""
+      useErrorBorder={true}
+      value="email@test.test"
+    />
+    <div
+      className="form-input"
+    >
+      <InputEmail
+        className="input"
+        customClasses=""
+        errorMessage="The email address you entered is not valid, please try again"
+        id="emailConfirm"
+        label="Confirm email"
+        name="emailConfirm"
+        onChange={[MockFunction]}
+        placeholder=""
+        required={true}
+        status="default"
+        subTitle=""
+        useErrorBorder={true}
+        value="email@test.test"
+      />
+    </div>
+    <Typography
+      align="left"
+      className="signinHint"
+      color="dark"
+      type="p"
+    >
+      If you wish to change your password enter the new one here, otherwise leave it blank to keep your current password.
+    </Typography>
+    <InputPassword
+      autoComplete="off"
+      className="input"
+      customClasses=""
+      id="password"
+      label="Password"
+      name="password"
+      onChange={[MockFunction]}
+      required={false}
+      status="default"
+      subTitle=""
+      type="password"
+      value=""
+    />
+    <div
+      className="form-input"
+    >
+      <InputPassword
+        autoComplete="off"
+        className="input"
+        customClasses=""
+        id="passwordConfirm"
+        label="Confirm password"
+        name="passwordConfirm"
+        onChange={[MockFunction]}
+        required={false}
+        status="default"
+        subTitle=""
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

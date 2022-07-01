@@ -1,0 +1,56 @@
+@import 'variables'
+
+.base-icon
+  font-family: $icon-font-family
+  font-style: normal
+  font-weight: 400
+  speak: none
+  text-decoration: inherit
+  text-align: center
+  font-variant: normal
+  text-transform: none
+
+.font-icon
+  display: inline-block
+  $margin: 0 .2em 0 0
+  @extend .base-icon
+
+  &-exclamation::after
+    content: '\E84B'
+    width: 1em
+
+.icon
+  @extend .base-icon
+
+.icon--promo-trustpilot
+  height: 60px
+  width: 220px
+  margin-left: -35px
+  margin-right: -10px
+  background-size: 114px 56px
+  background-image: url('../../assets/png/trustpilot.png')
+  background-position: center center
+  background-repeat: no-repeat
+
+.icon--promo-car
+  height: 50px
+  width: 46px
+  background-size: 42px 42px
+  background-image: url('../../assets/svg/hpicheck.svg')
+  background-position: center center
+  background-repeat: no-repeat
+
+.icon--tick::before
+  content: '\2713'
+
+.icon--circle::before
+  border: $border-width solid currentColor
+  border-radius: 100%
+  height: 2em
+  width: 2em
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
+.icon--green::before
+  color: $green-darker

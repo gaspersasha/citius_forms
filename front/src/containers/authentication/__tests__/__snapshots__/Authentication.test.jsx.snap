@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Authentication /> should match snapshots 1`] = `
+<Authentication>
+  <AuthWrapper>
+    <ul
+      className="authButtonsWrapper"
+    >
+      <AuthenticationLink
+        className=""
+        dataId="button-login"
+        openModal={[Function]}
+      >
+        <li
+          className="leaf"
+        >
+          <span
+            className="link"
+            data-id="button-login"
+            onClick={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Login
+          </span>
+        </li>
+      </AuthenticationLink>
+      <AuthenticationLink
+        className=""
+        dataId="button-signup"
+        openModal={[Function]}
+      >
+        <li
+          className="leaf"
+        >
+          <span
+            className="link"
+            data-id="button-signup"
+            onClick={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Sign Up
+          </span>
+        </li>
+      </AuthenticationLink>
+    </ul>
+  </AuthWrapper>
+</Authentication>
+`;

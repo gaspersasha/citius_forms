@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AmpLink /> renders without errors 1`] = `
+<Fragment>
+  <a
+    href="test"
+  >
+    test
+  </a>
+</Fragment>
+`;

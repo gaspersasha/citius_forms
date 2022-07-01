@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservation helpers Card 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="cardImage"
+    style={
+      Object {
+        "backgroundImage": "url(/img_url)",
+      }
+    }
+  />
+  <div
+    className="cardText"
+  >
+    img text
+  </div>
+</div>
+`;
+
+exports[`Reservation helpers ConfirmationMessagePrimary 1`] = `
+<Fragment>
+  <Icon
+    classes={
+      Array [
+        "icon",
+      ]
+    }
+    type={
+      Array [
+        "tick",
+        "circle",
+        "green",
+      ]
+    }
+  />
+  <h2>
+    <b>
+      Title
+    </b>
+  </h2>
+  <div
+    className="highlight-box"
+  >
+    woot
+  </div>
+  <p>
+    doh
+  </p>
+</Fragment>
+`;
+
+exports[`Reservation helpers ConfirmationMessageSecondary 1`] = `
+<div
+  className="confirmation"
+>
+  <div>
+    <Icon
+      classes={
+        Array [
+          "icon",
+        ]
+      }
+      type={
+        Array [
+          "tick",
+          "circle",
+          "green",
+        ]
+      }
+    />
+    <h4>
+      TITLE
+    </h4>
+  </div>
+  <div />
+</div>
+`;
+
+exports[`Reservation helpers MotoreasyBanner 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="image"
+  >
+    <span
+      className="logo"
+    />
+    <span
+      className="bg"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="typo"
+    >
+      test
+    </div>
+    <CustomLink
+      target="_blank"
+      type="button"
+      url="/redirect"
+    >
+      button_Text
+    </CustomLink>
+  </div>
+</div>
+`;
+
+exports[`Reservation helpers NextBestAction 1`] = `
+<Fragment>
+  <h4>
+    <b>
+      title
+    </b>
+  </h4>
+  <CustomLink
+    type="button-forward"
+    url="/button_url"
+  >
+    button text
+  </CustomLink>
+</Fragment>
+`;
+
+exports[`Reservation helpers ReservationDetails 1`] = `
+<div
+  className="details"
+>
+  <div>
+    <b>
+      Details: 
+      100
+    </b>
+     paid on 
+    <b>
+      12.07.2021
+    </b>
+     at
+     
+    14:05
+  </div>
+  <div>
+    <b>
+      Reference:
+    </b>
+     
+    ref_num
+  </div>
+</div>
+`;

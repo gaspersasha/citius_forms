@@ -1,0 +1,239 @@
+@import 'variables'
+@import 'mixins'
+
+$icons-height: 20px
+$icons-height-smaller: 18px
+
+.footer
+  flex-shrink: 0
+
+.topBlock
+  background-color: $green-light
+  +mq($from: wide)
+    width: 100vw
+    margin: 0 calc(50% - 50vw) -1px
+    background: linear-gradient(to right, $green-light 25%, $green-darker 25%)
+
+.topBlockContainer
+  padding-top: 14px
+  +mq($from: wide)
+    display: flex
+    align-items: center
+
+.logoLinkContainer
+  width: 100%
+  margin: 0 auto
+  +mq($from: wide)
+    width: 25%
+    padding-left: 5.7%
+
+.logoLink
+  display: flex
+  justify-content: center
+  width: 200px
+  margin: 0 auto
+  cursor: pointer
+  +mq($from: wide)
+    margin: 0
+    width: 152px
+
+.logo
+  height: 40px
+
+.contacts
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  font-size: 16px
+  color: $text-dark
+  text-align: center
+  padding: 20px
+  +mq($from: desktop)
+    font-size: 12px
+  +mq($from: wide)
+    flex-direction: row
+    justify-content: start
+    width: 60%
+    padding: 0 0 0 35px
+
+  .phone, .emailLink
+    color: $text-dark
+    margin-bottom: 10px
+    line-height: 26px
+    +mq($from: 990px)
+      line-height: 18px
+    +mq($from: wide)
+      margin: 0
+      margin-right: 32px
+
+  .phone
+    font-size: 19px
+    +createFontIcon('\E824', 20.4px, $text-dark, 1, 0 10px 0 0)
+    +mq($from: desktop)
+      font-size: 16px
+
+.socials,
+.socialsSmallScreens
+  display: none
+  +mq($from: wide)
+    display: flex
+    justify-content: flex-end
+    margin: 0
+    width: 20%
+    padding-right: 5%
+
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 42px
+    width: 42px
+    border-radius: 3px
+    margin-right: 5px
+    min-height: 25px
+    min-width: 25px
+    +mq($from: wide)
+      height: 25px
+      width: 25px
+
+    &:hover
+      filter: brightness(85%)
+      transition: filter .2s ease-in-out
+
+.socialsSmallScreens
+  width: 100%
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  padding: 0 20px 20px
+  +mq($from: wide)
+    display: none
+
+.facebook
+  background-color: #3b5b98
+  +createFontIcon('\F09A', $icons-height, $color-white)
+  +mq($from: wide)
+    +createFontIcon('\F09A', $icons-height-smaller, $color-white)
+
+.linkedin
+  background-color: $color-blue-pelorous
+  +createFontIcon('\F0E1', $icons-height, $color-white)
+  +mq($from: wide)
+    +createFontIcon('\F0E1', $icons-height-smaller, $color-white)
+
+.twitter
+  background-color: #55acee
+  +createFontIcon('\F099', $icons-height, $color-white)
+  +mq($from: wide)
+    +createFontIcon('\F099', $icons-height-smaller, $color-white)
+
+.email
+  background-color: #7397b9
+  +createFontIcon('\E825', $icons-height, $color-white)
+  +mq($from: wide)
+    +createFontIcon('\E825', $icons-height-smaller, $color-white)
+
+.instagram
+  background-color: $color-blue-pelorous
+  +createFontIcon('\F16D', $icons-height, $color-white)
+  +mq($from: wide)
+    +createFontIcon('\F16D', $icons-height-smaller, $color-white)
+
+.mainBlock
+  background-color: $green-darker
+  +mq($from: wide)
+    width: 100vw
+    margin: 0 calc(50% - 50vw)
+    padding-top: 15px
+    background: linear-gradient(to right, $green-light 25%, $green-darker 25%)
+
+.mainBlockContainer
+  +mq($from: wide)
+    display: flex
+    flex-direction: row-reverse
+
+.siteLinksList
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr))
+  grid-auto-flow: column
+  grid-template-rows: repeat(23, minmax(30px, 1fr))
+  justify-content: center
+  padding: 20px 20px 20px 25%
+  margin-bottom: 20px
+  +mq($from: 560px)
+    grid-template-rows: repeat(12, minmax(30px, 1fr))
+    padding-left: 15%
+  +mq($from: 790px)
+    grid-template-rows: repeat(8, minmax(30px, 1fr))
+    padding-left: calc(15% + 35px)
+  +mq($from: wide)
+    width: 100%
+    grid-template-rows: repeat(6, minmax(35px, 1fr))
+    padding: 10px 0 20px 35px
+    margin-bottom: 0
+
+  .siteLink
+    display: block
+    width: 95%
+    height: 100%
+    color: $text-dark
+    text-decoration: none
+    cursor: pointer
+
+.siteLinksListItem
+  margin-bottom: 15px
+  font-size: 16px
+  white-space: nowrap
+  +mq($from: 790px)
+    font-size: 16px
+  +mq($from: 990px)
+    font-size: 12px
+  +mq($from: wide)
+    font-size: 12px
+    line-height: 21px
+
+.tpWrapper
+  +mq($until: wide)
+    padding: 60px 20px 20px
+    background-color: $color-white
+
+  +mq($from: wide)
+    display: flex
+    align-items: center
+    padding-top: 25px
+    padding-left: calc(6% - 25px)
+    width: 32%
+
+.copyright
+  width: 100vw
+  margin: 0 calc(50% - 50vw)
+
+.copyrightContainer
+  padding: 20px
+  color: $text-dark
+  font-size: 13px
+  line-height: 26px
+  text-align: center
+
+  a
+    color: $secondary
+
+  +mq($from: desktop)
+    font-size: 9px
+    line-height: 16px
+  +mq($from: wide)
+    padding: 20px 0
+    font-size: 9.3px
+    line-height: 20px
+
+.bvrlaLogo
+  display: block
+  width: 120px
+  margin: 0 auto
+  margin-bottom: 30px
+
+.copyrightContainer
+  +mq($from: wide)
+    max-width: 1200px
+    margin: 0 auto

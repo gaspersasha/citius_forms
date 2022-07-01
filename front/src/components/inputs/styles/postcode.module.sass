@@ -1,0 +1,178 @@
+@import 'variables'
+
+.postcode
+  position: relative
+  margin-bottom: 20px
+
+.input
+  margin: 0
+  width: calc(100% - 145px) !important // stylelint-disable-line
+
+.noMargin
+  margin-bottom: 0 !important // stylelint-disable-line
+
+.btn
+  position: absolute
+  min-height: 44px !important // stylelint-disable-line
+  font-size: 16px !important // stylelint-disable-line
+  right: 0
+  bottom: 0
+  width: 135px
+
+.list
+  position: absolute
+  background: $color-white
+  border-radius: 5px
+  border: 1px solid $color-grey-very-light
+  box-shadow: 1px 1px 3px rgba($color-black, .3)
+  width: calc(100% - 145px)
+  padding: 10px
+  z-index: 10
+  top: 100%
+
+  li
+    border-bottom: 1px solid $input-border-shadow
+    cursor: pointer
+    overflow: hidden
+    padding: 8px 0
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  li:hover
+    cursor: pointer
+    background-color: $color-blue-bluewhale
+    color: $color-white
+    -webkit-appearance: none
+
+  .dropdown-address
+    position: absolute
+    padding: 10px
+    margin-top: -1px
+    margin-left: 4px
+    background: $color-white
+    border: 1px solid $color-grey-suvagrey
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3)
+    max-width: 100%
+    z-index: 10
+
+    li
+      border-bottom: 1px solid rgba(0, 0, 0, .3)
+      cursor: pointer
+      overflow: hidden
+      padding: 8px 0
+      text-overflow: ellipsis
+      white-space: nowrap
+
+    li:hover
+      cursor: pointer
+      background-color: $color-blue-bluewhale
+      color: $color-white
+      margin: 0 -10px
+      padding-left: 10px
+      padding-right: 10px
+      width: calc(100% + 20px)
+
+.loqate-address
+
+  &-wrapper
+    position: relative
+    outline: none
+
+  &-link
+    display: flex
+    margin-bottom: .3em
+
+    & .link--arrow-forward,
+    & .link--arrow-back
+      cursor: pointer
+      text-decoration: underline
+      font-weight: 400
+
+      &::before,
+      &::after
+        display: inline-block
+        text-decoration: none
+
+    &__text
+      text-decoration: underline
+
+      &:hover
+        cursor: pointer
+
+  &-list
+    overflow: auto
+
+    &__wrapper
+      width: 100%
+      position: absolute
+      z-index: 10
+      background: $color-white
+      border-radius: $input-border-radius
+      border: 1px solid $color-grey-very-light
+      overflow-x: hidden
+      max-height: 18.75em
+
+      & .container-block--spinner
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 3em 0
+
+        & .block--spinner
+          width: 50px
+          height: 50px
+          background-size: 50px 50px
+
+    &__item
+      cursor: pointer
+      padding: .5em 1em
+
+      &:hover
+        cursor: pointer
+        background-color: $color-blue-bluewhale
+        color: $color-white
+
+      &_code
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+
+      &_error
+
+        &:hover
+          cursor: default
+          background-color: $color-white
+          color: $color-grey-nightrider
+
+      &-text
+        margin-bottom: 0
+
+      &-arrow
+        margin-bottom: 0
+
+        &::after
+          content: '>'
+          position: absolute
+          right: 1em
+          top: 50%
+          transform: translateY(-50%)
+
+  &-address
+
+    &__block
+      padding-bottom: 8px
+
+      &-result
+        border-radius: $input-border-radius
+        border: 1px solid $color-grey-very-light
+        padding: 0 1em
+
+      & > p
+        margin-bottom: 0
+
+        &:first-child
+          padding-top: $zen-gutter-one-eighth
+
+        &:last-child
+          padding: 0

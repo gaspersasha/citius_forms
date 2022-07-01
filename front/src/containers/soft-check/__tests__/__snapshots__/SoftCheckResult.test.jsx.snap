@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SoftCheckResult /> should match snapshot 1`] = `
+<div
+  className="container main-width-container"
+>
+  <h1
+    className="page-title"
+  >
+    Your finance eligibility
+  </h1>
+  <SpeedoAnimation
+    creditSearch={
+      Object {
+        "band": "B",
+        "message": "You have an good credit profile and are likely to be accepted",
+        "name": "Good",
+        "score": 420,
+      }
+    }
+    data-id="speedo-animation"
+  />
+  <div
+    className="CTA_container"
+  >
+    <p
+      className="CTA_title"
+    >
+      Now, apply for finance
+    </p>
+    <a
+      className="buttonComponent primary button"
+      onClick={[Function]}
+      role="link"
+      tabIndex={0}
+    >
+      Start finance application
+    </a>
+  </div>
+</div>
+`;

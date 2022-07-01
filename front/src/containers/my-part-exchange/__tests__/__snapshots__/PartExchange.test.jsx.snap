@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PartExchange /> rendered without errors 1`] = `
+<PartExchange
+  cms={Object {}}
+>
+  <Spinner
+    className=""
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="loader"
+      />
+    </div>
+  </Spinner>
+</PartExchange>
+`;

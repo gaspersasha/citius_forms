@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactDealer /> renders without errors 1`] = `
+<div
+  className="wrapper"
+>
+  <Close
+    className="close"
+    onClick={[Function]}
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  />
+  <Typography
+    align="center"
+    className="formBox title"
+    color="dark"
+    type="h1"
+  >
+    Contact dealership
+  </Typography>
+  <Typography
+    align="center"
+    className="formBox subTitle"
+    color="dark"
+    type="h6"
+  >
+    Your enquiry will be sent direct to the dealership. During opening hours the usual response time is within 4 hours.
+  </Typography>
+  <form
+    className="formBox"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inputWrapper"
+    >
+      <InputText
+        className="input"
+        customClasses=""
+        errorMessage="Please enter your first name as it is on your driving licence"
+        id="firstName"
+        label="First name"
+        name="firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder=" "
+        required={true}
+        status="default"
+        subTitle="First name as it is on your driving licence"
+        value=""
+      />
+      <span
+        className="placeholder"
+      >
+        (e.g.James)
+      </span>
+    </div>
+    <div
+      className="inputWrapper"
+    >
+      <InputText
+        className="input"
+        customClasses=""
+        errorMessage="Please enter your last name as it is on your driving licence"
+        id="lastName"
+        label="Last name"
+        name="lastName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder=" "
+        required={true}
+        status="default"
+        subTitle="Last name as it is on your driving licence"
+        value=""
+      />
+      <span
+        className="placeholder"
+      >
+        (e.g. Smith)
+      </span>
+    </div>
+    <div
+      className="inputWrapper"
+    >
+      <InputPhone
+        className="input"
+        errorMessage="Please enter a valid phone number"
+        id="phone"
+        label="Telephone number"
+        name="phone"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onKeyPress={null}
+        placeholder=" "
+        required={true}
+        status="default"
+        subTitle="We'll pass this number to the dealership so they can contact you"
+        useErrorBorder={true}
+        value=""
+      />
+      <span
+        className="placeholder"
+      >
+        (e.g. 07772123456)
+      </span>
+    </div>
+    <div
+      className="inputWrapper"
+    >
+      <InputEmail
+        className="input"
+        customClasses=""
+        errorMessage="Please enter a valid email address"
+        id="email"
+        label="Email"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder=" "
+        required={true}
+        status="default"
+        subTitle="We'll send you a confirmation email"
+        useErrorBorder={true}
+        value=""
+      />
+      <span
+        className="placeholder"
+      >
+        (e.g. john.smith@gmail.com)
+      </span>
+    </div>
+    <div
+      className="inputWrapper"
+    >
+      <InputText
+        className="input"
+        customClasses=""
+        errorMessage="Please enter a valid UK postal code"
+        id="postcode"
+        label="Postcode"
+        name="postcode"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder=" "
+        required={true}
+        status="default"
+        subTitle="So we know which dealership to connect you with"
+        value=""
+      />
+      <span
+        className="placeholder"
+      >
+        (e.g. HX63BS)
+      </span>
+    </div>
+    <label
+      className="textarea"
+      htmlFor="message"
+    >
+      <div
+        className="textareaInnerBox"
+      >
+        <span>
+          Message for the dealer
+        </span>
+        <span
+          className="placeholder optional"
+        >
+          (optional)
+        </span>
+      </div>
+      <textarea
+        className="input"
+        id="message"
+        name="message"
+        onChange={[Function]}
+        placeholder="e.g. Can I test drive the car?"
+        value=""
+      />
+    </label>
+    <Button
+      className="button"
+      disabled={false}
+      href=""
+      onClick={null}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      Send to the dealer
+    </Button>
+  </form>
+  <div
+    className="footer"
+  >
+    <div
+      className="formBox"
+    >
+      <Typography
+        align="left"
+        className="info"
+        color="dark"
+        type="p"
+      >
+        By submitting your details below you agree that BuyaCar may share the information you provide with the dealership selling the vehicle so that they may contact you to manage your enquiry and to provide you with information on similar products and services.
+      </Typography>
+      <div
+        className="unsubscribe"
+      >
+        <InputCheckbox
+          checked={false}
+          className="inputCheckbox"
+          customClasses="contact-dealer"
+          id="unsubscribe"
+          label=""
+          name="unsubscribe"
+          onChange={[Function]}
+          status=""
+        />
+        <Typography
+          align="left"
+          className="small"
+          color="dark"
+          type="p"
+        >
+          We (BuyaCar and Autovia Group) may also use your information to contact you about similar products and services which may be of interest to you. You can find out more about how we use your information at  
+          <a
+            href="https://www.autovia.co.uk/privacy-policy"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Autovia Privacy Policy. 
+          </a>
+          If you would prefer not to receive these offers from us please tick here.
+        </Typography>
+      </div>
+    </div>
+  </div>
+</div>
+`;

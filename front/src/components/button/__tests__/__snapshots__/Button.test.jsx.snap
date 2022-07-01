@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered without errors 1`] = `
+<button
+  className="buttonComponent primary"
+  disabled={false}
+  href={null}
+  onClick={null}
+>
+  Test
+</button>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumbs /> should match snapshot (double level and more pathname) 1`] = `
+<nav
+  className="container"
+>
+  <ul>
+    <li>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={false}
+        className="link"
+        href="/"
+        onClick={null}
+      >
+        Home
+      </NavigationLink>
+    </li>
+    <li
+      key="/account"
+    >
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={false}
+        className="link"
+        href="/account"
+        onClick={null}
+      >
+        My Account
+      </NavigationLink>
+    </li>
+    <li
+      key="/account/details"
+    >
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={false}
+        className="link"
+        href="/account/details"
+        onClick={null}
+      >
+        My Details
+      </NavigationLink>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`<Breadcrumbs /> should match snapshot (one level pathname) 1`] = `
+<nav
+  className="container"
+>
+  <ul>
+    <li>
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={false}
+        className="link"
+        href="/"
+        onClick={null}
+      >
+        Home
+      </NavigationLink>
+    </li>
+    <li
+      key="/account"
+    >
+      <NavigationLink
+        absolute={true}
+        activeClassName="linkActive"
+        activeTowardsRoot={false}
+        className="link"
+        href="/account"
+        onClick={null}
+      >
+        My Account
+      </NavigationLink>
+    </li>
+  </ul>
+</nav>
+`;

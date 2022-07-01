@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Trustpilot /> rendered without errors 1`] = `
+<Trustpilot
+  options={
+    Object {
+      "accountLink": "https://uk.trustpilot.com/review/website",
+      "businessUnitId": "4bdcd9ad000064000505fa5a",
+      "isBigTemplate": false,
+      "locale": "UA",
+      "scriptPath": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js",
+      "stars": "15",
+      "styleHeight": "33%",
+      "styleWidth": "77%",
+      "theme": "light",
+    }
+  }
+>
+  <div
+    data-businessunit-id="4bdcd9ad000064000505fa5a"
+    data-locale="UA"
+    data-stars="15"
+    data-style-width="77%"
+    data-theme="light"
+  >
+    <a
+      href="https://uk.trustpilot.com/review/website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Trustpilot
+    </a>
+  </div>
+</Trustpilot>
+`;

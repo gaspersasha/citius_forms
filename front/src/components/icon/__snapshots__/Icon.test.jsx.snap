@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon doesn't get rendered without type 1`] = `
+<Icon
+  classes={Array []}
+  type={Array []}
+/>
+`;
+
+exports[`Icon info alert 1`] = `
+<Icon
+  classes={Array []}
+  type={
+    Array [
+      "exclamation",
+    ]
+  }
+>
+  <span
+    className="icon icon--exclamation "
+  />
+</Icon>
+`;
+
+exports[`Icon info icon 1`] = `
+<Icon
+  classes={Array []}
+  type={
+    Array [
+      "info",
+    ]
+  }
+>
+  <span
+    className="icon icon--info "
+  />
+</Icon>
+`;

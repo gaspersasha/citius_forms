@@ -1,0 +1,61 @@
+@import 'variables'
+
+.wrapper
+  display: inline-block
+  vertical-align: middle
+  padding-left: .25em
+
+.inlineFlex
+  display: inline-flex
+  margin-bottom: 35px
+
+  input[type='checkbox']
+    display: inline-block
+    margin: 0 10px 0 0
+    width: 1.25em
+    height: 1.25em
+    line-height: 10px
+    overflow: hidden
+    padding: 0
+    background-color: $color-white
+    border: 1px solid $dark
+    color: $secondary
+    align-items: center
+    text-align: center
+    cursor: pointer
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+    &::before
+      display: inline-block
+      content: ''
+
+    &:checked::before
+      width: 1em
+      line-height: 1
+      margin: 0
+      content: '\2713'
+      font-family: $icon-font-family
+      font-style: normal
+      font-weight: 400
+      speak: none
+      text-decoration: inherit
+      text-align: center
+      font-variant: normal
+      text-transform: none
+
+.auth
+  flex: 1
+  display: flex
+  align-items: center
+  padding-left: 0
+
+.sign-ups
+  display: inline-block
+  padding-left: 5px
+  vertical-align: middle
+
+.contact-dealer
+  margin: 3px 16px 0 0
+  padding-left: 0

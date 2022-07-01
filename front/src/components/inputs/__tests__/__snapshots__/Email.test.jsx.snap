@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputEmail /> renders without errors 1`] = `
+<Label
+  customClasses=""
+  name=""
+  required={false}
+  status=""
+  title=""
+  withSub={false}
+>
+  <input
+    className=""
+    name=""
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    placeholder="Enter your email address"
+    type="email"
+  />
+</Label>
+`;

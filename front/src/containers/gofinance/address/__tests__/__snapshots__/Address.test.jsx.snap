@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Address /> renders without errors 1`] = `
+<Address
+  address={
+    Object {
+      "buildingName": "",
+      "buildingNumber": "",
+      "county": "",
+      "district": "",
+      "houseName": "",
+      "houseNumber": "",
+      "postCode": "",
+      "residenceMonths": "0",
+      "residenceYears": "",
+      "residentialStatus": "",
+      "street": "",
+      "town": "",
+    }
+  }
+  index={0}
+  isDataSending={false}
+  isLoading={false}
+  onSubmit={[MockFunction]}
+  step={0}
+  sumOfYearsInPrevForms={0}
+  vehicleKeptAtAddress={false}
+>
+  <div
+    className="formSectionWrapper"
+  >
+    <div
+      className="formPreamble addressPreamble"
+    >
+      We need your 
+      <b>
+        UK address
+      </b>
+       details for the past three years.
+      <br />
+      Add your address from the past 3 years below
+    </div>
+    <PostCodeStep
+      changeAddressField={[Function]}
+      changePostcodeField={[Function]}
+      county={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "none",
+          "value": "",
+        }
+      }
+      district={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "none",
+          "value": "",
+        }
+      }
+      houseName={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "none",
+          "value": "",
+        }
+      }
+      houseNumber={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "none",
+          "value": "",
+        }
+      }
+      postCode={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "postCode",
+          "value": "",
+        }
+      }
+      selectAddressHandler={[Function]}
+      street={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "notEmpty",
+          "value": "",
+        }
+      }
+      town={
+        Object {
+          "status": "default",
+          "step": 0,
+          "validationType": "notEmpty",
+          "value": "",
+        }
+      }
+    >
+      <div
+        className="addressFormWrapper"
+      >
+        <LoqateAddress
+          errorMessage=""
+          formName="address"
+          manualFields={
+            Array [
+              Object {
+                "label": "Postcode",
+                "name": "postCode",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 0,
+                "validationType": "postCode",
+                "value": "",
+                "warning": "* Please type correct UK postal code",
+              },
+              Object {
+                "label": "House name",
+                "name": "houseName",
+                "onChange": [Function],
+                "status": "default",
+                "step": 0,
+                "validationType": "none",
+                "value": "",
+              },
+              Object {
+                "label": "House number",
+                "name": "houseNumber",
+                "onChange": [Function],
+                "status": "default",
+                "step": 0,
+                "validationType": "none",
+                "value": "",
+              },
+              Object {
+                "label": "Street",
+                "name": "street",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 0,
+                "validationType": "notEmpty",
+                "value": "",
+              },
+              Object {
+                "label": "District",
+                "name": "district",
+                "onChange": [Function],
+                "status": "default",
+                "step": 0,
+                "validationType": "none",
+                "value": "",
+              },
+              Object {
+                "label": "Town",
+                "name": "town",
+                "onChange": [Function],
+                "required": true,
+                "status": "default",
+                "step": 0,
+                "validationType": "notEmpty",
+                "value": "",
+              },
+              Object {
+                "label": "County",
+                "name": "county",
+                "onChange": [Function],
+                "status": "default",
+                "step": 0,
+                "validationType": "none",
+                "value": "",
+              },
+            ]
+          }
+          selectHandler={[Function]}
+          subTitle="Start typing your address and select the relevant option when it appears in the list below. If it is not found then click on the 'Enter address manually' link"
+        >
+          <Spinner
+            className=""
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="loader"
+              />
+            </div>
+          </Spinner>
+        </LoqateAddress>
+      </div>
+    </PostCodeStep>
+    <InputCheckbox
+      checked={false}
+      className=""
+      customClasses="inlineFlex"
+      data-id="I confirm the vehicle will be kept at this address"
+      label="I confirm the vehicle will be kept at this address"
+      name="I confirm the vehicle will be kept at this address"
+      onChange={[Function]}
+      status=""
+    >
+      <div
+        className="wrapper inlineFlex"
+      >
+        <input
+          checked={false}
+          className=""
+          data-id="I confirm the vehicle will be kept at this address"
+          name="I confirm the vehicle will be kept at this address"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <Label
+          customClasses="inlineFlex"
+          name="I confirm the vehicle will be kept at this address"
+          status=""
+          title="I confirm the vehicle will be kept at this address"
+          withSub={false}
+        >
+          <div
+            className="label inlineFlex"
+          >
+            <label
+              data-id={false}
+              htmlFor="I confirm the vehicle will be kept at this address"
+            >
+              <span
+                className="title"
+                data-id="label-title"
+              >
+                I confirm the vehicle will be kept at this address
+              </span>
+            </label>
+          </div>
+        </Label>
+      </div>
+    </InputCheckbox>
+    <Button
+      className="confirm"
+      disabled={false}
+      href=""
+      id="ssFinanceHomeAddressSubmit"
+      onClick={[Function]}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      <button
+        className="buttonComponent primary confirm"
+        disabled={false}
+        href={null}
+        id="ssFinanceHomeAddressSubmit"
+        onClick={[Function]}
+        type="submit"
+      >
+        Next
+      </button>
+    </Button>
+  </div>
+</Address>
+`;

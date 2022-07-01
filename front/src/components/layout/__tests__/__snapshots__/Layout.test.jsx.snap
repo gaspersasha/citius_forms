@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> rendered without errors 1`] = `
+<Fragment>
+  <DeviceContextProvider>
+    <Header
+      clickableLogo={false}
+      isEmpty={false}
+    />
+  </DeviceContextProvider>
+  <div
+    className="content"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+  <Footer />
+  <GlobalBody
+    pageType="/"
+  />
+</Fragment>
+`;

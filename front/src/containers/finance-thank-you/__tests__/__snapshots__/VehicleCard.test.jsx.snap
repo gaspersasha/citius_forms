@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VehicleCard /> renders without errors 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="carImage"
+      >
+        <img
+          alt="vehicle"
+          src="https://images.buyacar.co.uk/image/opel"
+        />
+      </div>
+      <div
+        className="carDetails"
+      >
+        <h3
+          className="heading"
+        >
+          Vaxhaul Corsa hatchback special eds
+        </h3>
+        <div
+          className="reservationInfo"
+          data-id="card-reservation-info"
+        >
+          You paid £199 to reserve this car on 13.06.18
+        </div>
+        <div
+          className="carSpecsList"
+        >
+          <div
+            className="carSpecItem"
+          >
+            Reg year: 
+            <b />
+          </div>
+          <div
+            className="carSpecItem"
+          >
+            Fuel type: 
+            <b>
+              petrol
+            </b>
+          </div>
+          <div
+            className="carSpecItem"
+          >
+            Mileage: 
+            <b>
+              94356
+            </b>
+          </div>
+          <div
+            className="carSpecItem"
+          >
+            Trans: 
+            <b>
+              auto
+            </b>
+          </div>
+        </div>
+        <div
+          className="carPrice"
+        >
+          £5,990
+        </div>
+        <a
+          className="carActionLink"
+          data-id="card-action-link"
+          href="/action"
+        >
+          action
+        </a>
+      </div>
+    </div>
+  </div>
+  <a
+    className="advertLink"
+    href="2943561 "
+  >
+    Back to advert
+  </a>
+</Fragment>
+`;

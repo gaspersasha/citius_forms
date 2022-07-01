@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VehiclePrep /> should match snapshot 1`] = `
+<ConditionReportSubStep
+  typoProps={
+    Object {
+      "text": Object {
+        "align": "left",
+        "className": "",
+        "type": "p",
+      },
+      "title": Object {
+        "align": "left",
+        "className": "",
+        "type": "h3",
+      },
+    }
+  }
+/>
+`;

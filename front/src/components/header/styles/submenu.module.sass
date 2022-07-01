@@ -1,0 +1,45 @@
+@import 'variables'
+@import 'mixins'
+
+.submenu
+  position: relative
+  background-color: $color-white
+  +mq($from: desktop)
+    display: none
+
+.submenuInner
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  overflow: hidden
+  padding-left: 20px
+  transition: max-height .3s
+
+.submenuTumbler
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 50px
+  height: 50px
+  cursor: pointer
+  top: -50px
+  right: 5px
+  background-color: transparent
+  outline: none
+  border: none
+
+  &::before
+    content: ''
+    width: 8px
+    height: 8px
+    border: 3px solid $dark
+    border-bottom: 0
+    border-left: 0
+    transform: rotate(135deg)
+    transition: transform .2s
+
+.tumblerRotate
+
+  &::before
+    transform: rotate(-45deg)

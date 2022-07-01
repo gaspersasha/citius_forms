@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> render 1`] = `
+<div>
+  <div
+    className="overlay"
+    onClick={[Function]}
+    role="dialog"
+  />
+  <div
+    className="container open"
+  >
+    <div
+      className="modal"
+    >
+      <h4>
+        Welcome back
+      </h4>
+      <h5>
+        From your email address it looks like you already have an account with us.
+      </h5>
+      <form
+        className="form"
+      >
+        <InputEmail
+          className="valid"
+          customClasses=""
+          errorMessage="The email address you entered is not valid, please try again"
+          label="Email"
+          name=""
+          onChange={[Function]}
+          placeholder=""
+          required={true}
+          status=""
+          subTitle=""
+          useErrorBorder={true}
+          value="test@test.test"
+        />
+        <InputPassword
+          autoFocus={true}
+          className="invalid"
+          customClasses=""
+          label="Password"
+          name=""
+          onChange={[Function]}
+          required={true}
+          status=""
+          subTitle=""
+          type="password"
+          value=""
+        />
+        <div
+          className="footer"
+        >
+          <Button
+            className="loginButton"
+            disabled={false}
+            href=""
+            onClick={[Function]}
+            selected={false}
+            styleType="primary"
+            type="button"
+          >
+            Login
+          </Button>
+        </div>
+      </form>
+      <a
+        data-id="forgot-pass-link"
+        href="/mybuyacar/forgottenPassword.jhtml"
+        onClick={[Function]}
+        target="_blank"
+      >
+        Forgotten your password?
+      </a>
+      <Button
+        className="buttonSkip"
+        data-id="login-cancel"
+        disabled={false}
+        href=""
+        onClick={[Function]}
+        selected={false}
+        styleType="cancel"
+        type="button"
+      >
+        Use an alternative email
+      </Button>
+    </div>
+  </div>
+</div>
+`;

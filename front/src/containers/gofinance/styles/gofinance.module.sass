@@ -1,0 +1,78 @@
+@import 'variables'
+@import 'mixins'
+
+.inner
+  width: 80%
+  padding: 0 10px
+  background-color: $color-white
+
+/* stylelint-disable */
+.preamble
+  width: 100%
+  margin: auto
+  padding: 1em
+  background: transparent  //expecting comments for redesign
+  color: $color-grey-nightrider
+  text-align: center
+/* stylelint-enable */
+
+.controls
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin-top: 1em
+  margin-bottom: 1.5em
+
+.back
+  border: none
+  @include button-back(#{$color-blue-darkerwhale}, rgba(0, 0, 0, 0))
+    font-family: $base-font-family
+    font-weight: 700
+
+.progress
+  display: block
+  text-align: right
+  color: $dark
+  font-size: .75em
+
+.form
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  padding: 40px
+  background-color: $color-white
+
+  > *
+    width: 100%
+
+  @include mq($from: tablet)
+    padding: 0 5.5em
+    padding-top: 10px
+
+  @include mq($from: desktop)
+    padding: 10px 8.5em 30px 8.5em
+
+.landingTitle
+  font-weight: 700
+  font-size: 30px
+  line-height: 38px
+  margin: 40px auto
+  padding: 0 10px
+  text-align: center
+  letter-spacing: .6px
+
+.btnForward
+  width: 100%
+  max-width: $inputs-max-width
+  height: 52px
+  line-height: 42px
+  font-weight: 400
+  margin: 20px 0 0
+  min-width: 25%
+  @include arrow-link($direction: forward)
+  @include mq($from: desktop)
+    margin: 20px 0
+
+.btnBack
+  @include arrow-link($direction: backwards)

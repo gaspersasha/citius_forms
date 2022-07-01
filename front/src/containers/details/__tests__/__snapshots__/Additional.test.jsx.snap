@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Additional /> renders without errors 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className="subheading subheadMargin"
+    color="dark"
+    type="p"
+  >
+    4. Additional details
+  </Typography>
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="company"
+    label="Сompany"
+    name="company"
+    onChange={[MockFunction]}
+    placeholder="e.g. BuyaCar"
+    required={false}
+    status="default"
+    subTitle=""
+    value="company"
+  />
+  <InputSelect
+    className="input select"
+    id="maritalStatus"
+    label="Marital status"
+    name="maritalStatus"
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Single",
+          "value": "SINGLE",
+        },
+        Object {
+          "option": "Married",
+          "value": "MARRIED",
+        },
+        Object {
+          "option": "Common Law",
+          "value": "COMMON_LAW",
+        },
+        Object {
+          "option": "Separated",
+          "value": "SEPARATED",
+        },
+        Object {
+          "option": "Divorced",
+          "value": "DIVORCED",
+        },
+        Object {
+          "option": "Widowed",
+          "value": "WIDOWED",
+        },
+        Object {
+          "option": "Civil partnership",
+          "value": "CIVIL_PARTNERSHIP",
+        },
+        Object {
+          "option": "Dissolved civil partnership",
+          "value": "DISSOLVED_CIVIL_PARTNERSHIP",
+        },
+        Object {
+          "option": "Co-habiting",
+          "value": "COHABITING",
+        },
+      ]
+    }
+    placeholder="Select from dropdown"
+    required={false}
+    status="default"
+    subTitle=""
+    value="SINGLE"
+  />
+  <InputNumber
+    className="input"
+    id="dependants"
+    label="Number of dependants"
+    name="dependants"
+    onChange={[MockFunction]}
+    onKeyPress={null}
+    placeholder=""
+    required={false}
+    status="default"
+    subTitle="How many people rely on your for financial support? Such as children"
+    value="1"
+  />
+  <InputSelect
+    className="input select"
+    id="drivingLicenceType"
+    label="Driving licence"
+    name="drivingLicenceType"
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Full UK",
+          "value": "FULL",
+        },
+        Object {
+          "option": "European",
+          "value": "EUROPEAN",
+        },
+        Object {
+          "option": "Provisional",
+          "value": "PROVISIONAL",
+        },
+        Object {
+          "option": "International",
+          "value": "INTERNATIONAL",
+        },
+        Object {
+          "option": "None",
+          "value": "NONE",
+        },
+      ]
+    }
+    placeholder="Select from dropdown"
+    required={false}
+    status="default"
+    subTitle=""
+    value="FULL"
+  />
+  <InputSelect
+    className="input select"
+    id="validUKPassport"
+    label="Valid UK passport"
+    name="validUKPassport"
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "option": "Yes",
+          "value": "Yes",
+        },
+        Object {
+          "option": "No",
+          "value": "No",
+        },
+      ]
+    }
+    placeholder="Select from dropdown"
+    required={false}
+    status="default"
+    subTitle="Please select if you have a valid British passport"
+    value="No"
+  />
+  <div
+    className="unsubscribe"
+  >
+    <Typography
+      align="left"
+      className="subheading unsubscribeTitle"
+      color="dark"
+      type="p"
+    >
+      Unsubscribe
+    </Typography>
+    <Typography
+      align="left"
+      className="unsubscribeTxt inline"
+      color="dark"
+      type="p"
+    >
+      As described in our Privacy Policy we will use the information you have shared to send you communications about such products and services. If you do not wish to receive these communications from us then please check here and you will be unsubscribed from this activity.
+    </Typography>
+    <InputCheckbox
+      checked={true}
+      className="mailCheckbox"
+      customClasses=""
+      id="subscribed"
+      label=""
+      name="subscribed"
+      onChange={[MockFunction]}
+      status=""
+    />
+    <Typography
+      align="left"
+      className="unsubscribeTxt"
+      color="dark"
+      type="p"
+    >
+      If you’d like to know more about how your details are stored, please view our 
+      <a
+        href="/buy_a_car_help/about_buyacar/article_buyacar_terms_and_conditions_2680.jhtml"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        terms and conditions
+      </a>
+       and 
+      <a
+        href="https://www.autovia.co.uk/privacy-policy/#vehicle-purchase-or-enquiry"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        privacy policy
+      </a>
+    </Typography>
+  </div>
+</Fragment>
+`;

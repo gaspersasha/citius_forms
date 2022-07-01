@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Address /> renders without errors 1`] = `
+<Fragment>
+  <Typography
+    align="left"
+    className="subheading subheadMargin"
+    color="dark"
+    type="p"
+  >
+    3. Address details
+  </Typography>
+  <InputPostcode
+    className="input"
+    id="postcode"
+    name="postcode"
+    onChange={[MockFunction]}
+    required={true}
+    status="default"
+    value="E11 1JD"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="houseName"
+    label="House name"
+    name="houseName"
+    onChange={[MockFunction]}
+    placeholder="e.g. house name"
+    required={false}
+    status="default"
+    subTitle=""
+    value="housename"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="houseNumber"
+    label="House number"
+    name="houseNumber"
+    onChange={[MockFunction]}
+    placeholder="e.g. 11"
+    required={false}
+    status="default"
+    subTitle=""
+    value="100"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="street"
+    label="Street"
+    name="street"
+    onChange={[MockFunction]}
+    placeholder="e.g. Rover street"
+    required={false}
+    status="default"
+    subTitle=""
+    value="street"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="district"
+    label="District"
+    name="district"
+    onChange={[MockFunction]}
+    placeholder="e.g. Hackney"
+    required={false}
+    status="default"
+    subTitle=""
+    value="district"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="town"
+    label="Town"
+    name="town"
+    onChange={[MockFunction]}
+    placeholder="e.g. London"
+    required={false}
+    status="default"
+    subTitle=""
+    value="town"
+  />
+  <InputText
+    className="input"
+    customClasses=""
+    errorMessage=""
+    id="county"
+    label="Сounty"
+    name="county"
+    onChange={[MockFunction]}
+    placeholder="e.g. Middlesex"
+    required={false}
+    status="default"
+    subTitle=""
+    value="county"
+  />
+</Fragment>
+`;

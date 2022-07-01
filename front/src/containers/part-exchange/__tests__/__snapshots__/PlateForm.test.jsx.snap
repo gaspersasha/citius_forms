@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlateForm /> PlateForm snapshot 1`] = `
+<form
+  data-id="plate-form"
+  onSubmit={[Function]}
+>
+  <h5
+    className="heading"
+  >
+    Add part exchange?
+  </h5>
+  <h5
+    className="description"
+  >
+    Enter your reg below to get your estimated part exchange price
+  </h5>
+  <div
+    className="plate"
+  >
+    <InputText
+      className=""
+      customClasses=""
+      errorMessage=""
+      label=""
+      name="plate"
+      onChange={[Function]}
+      placeholder="e.g. AB12CDE"
+      required={false}
+      status="default"
+      subTitle=""
+    />
+  </div>
+  <p
+    className="infoBox"
+  >
+    By using this service, you agree that your vehicle registration details will be passed to a third party, in order to look up the vehicle details.
+  </p>
+  <div
+    className="alignCenter"
+  >
+    <Button
+      className=""
+      disabled={false}
+      href=""
+      name="partex__submit-btn"
+      onClick={null}
+      selected={false}
+      styleType="primary"
+      type="submit"
+    >
+      Next
+    </Button>
+    <span
+      className="skipPX"
+      onClick={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Skip part exchange
+    </span>
+  </div>
+</form>
+`;

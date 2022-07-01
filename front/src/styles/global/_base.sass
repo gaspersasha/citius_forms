@@ -1,0 +1,75 @@
+@import 'variables'
+@import 'mixins'
+
+*,
+::before,
+::after
+  box-sizing: border-box
+
+*:focus
+  outline: none
+
+html,
+body
+  // Don't assign a 100% height here,
+  // it will break a scroll up/down functionality.
+  overflow-x: hidden
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: $text-dark
+
+body
+
+  /* space for mobile order-summary panel */
+
+  &.padding-bottom
+    +mq($until: desktop)
+      padding-bottom: 70px
+
+  /* TODO: Temp. workaround to hide the gtm generated quotes in body */
+
+  &::after
+    content: ''
+    position: relative
+    z-index: 1
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 22px
+    background-color: $color-white
+    display: block
+    margin-top: -22px
+
+h1
+  font-size: $h1-font-size
+  line-height: $title-line-height
+
+h2
+  font-size: $h2-font-size
+
+h3
+  font-size: $h3-font-size
+
+h4
+  font-size: $h4-font-size
+
+.container
+  display: block
+
+b
+  font-weight: 700
+
+/* stylelint-disable selector-max-id */
+
+#__next
+  // Styles to stick a footer down and
+  // for a scroll up/down functionality.
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+/* stylelint-enable selector-max-id */
+
+.prevent-scrolling
+  overflow: hidden

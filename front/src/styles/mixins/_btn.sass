@@ -1,0 +1,58 @@
+// Not really usefull mixins
+// Can be replaced by using a universal Button component
+
+@import 'variables'
+
+@mixin btn($color: #{$color-white}, $bg-color: #{$color-red-razzmatazz}, $font-size: #{$base-font-size})
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  min-height: calc(#{$font-size} + 1.5em)
+  padding: 0 1em
+  background: $bg-color
+  font-family: $base-font-family
+  font-size: $font-size
+  color: $color
+  cursor: pointer
+  &:visited
+    color: $color
+  &:disabled
+    opacity: 0.4
+    cursor: default
+  &:hover:not(:disabled)
+    // background: lighten(#{$bg-color}, 6%) // some troubles here
+    color: $color
+  @content
+
+@mixin arrow-link ($color: $color-white, $bg-color: $blue-primary, $font-size: $base-font-size, $direction: forward)
+  @include btn($color: $color, $bg-color: $bg-color, $font-size: $font-size)
+  &:after, &:before
+    font-family: $icon-font-family
+  @if $direction == forward
+    &:after
+      content: "\E823"
+      margin-left: 12px
+  @else if $direction == backwards
+    &:before
+      content: "\E845"
+      margin-right: 12px
+
+@mixin button-forward($color: #{$color-white}, $bg-color: #{$blue-primary}, $font-size: #{$base-font-size})
+  @include btn(#{$color}, #{$bg-color}, #{$font-size})
+    &::after
+      content: "\E823"
+      margin-left: 0.75em
+      font-size: 0.75em
+      font-family: $icon-font-family
+    @content
+
+@mixin button-back($color: #{$color-white}, $bg-color: #{$color-red-razzmatazz}, $font-size: #{$base-font-size})
+  @include btn(#{$color}, #{$bg-color}, #{$font-size})
+    &::before
+      content: "\E845"
+      margin-right: 0.75em
+      font-size: 0.75em
+      font-family: $icon-font-family
+    @content
+
+

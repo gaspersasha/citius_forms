@@ -1,0 +1,31 @@
+@import 'variables'
+@import 'mixins'
+
+.formSectionWrapper
+  max-width: $inputs-max-width
+  margin: 0 auto
+
+.bankPreamble
+  background: transparent  //expecting comments for redesign
+
+.yearsFormWrapper,
+.accountFormWrapper
+  margin-bottom: 40px
+
+.yearsInputWrapper,
+.numberInputWrapper
+  margin-bottom: 35px
+
+.inputNumber
+  color: $color-grey-nightrider
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: textfield
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+.inputMaskText
+  color: $color-grey-nightrider

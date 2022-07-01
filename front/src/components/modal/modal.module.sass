@@ -1,0 +1,81 @@
+@import 'mixins'
+@import 'variables'
+@import 'keyframes'
+
+.modal_container__react
+
+  .overlay
+    position: fixed
+    z-index: 11
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 100%
+    background-color: rgba($color-white, .8)
+    opacity: 1
+    animation-duration: .2s
+    animation-fill-mode: forwards
+
+    /* stylelint-disable-next-line */
+    animation-name: finance_existing_user_modal
+    cursor: pointer
+
+    &__dark
+      background-color: rgba($color-black, .8)
+
+  .modal
+    position: fixed
+    z-index: 12
+    top: 50%
+    left: 50%
+    max-width: calc(100% - 40px)
+    max-height: 90%
+    background-color: $color-white
+    transform: translate(-50%, -50%)
+    width: 100%
+    overflow: visible
+    padding: 20px
+
+    +mq($from: tablet)
+      max-width: 80%
+      width: auto
+
+    +mq($from: desktop)
+      max-width: 60%
+
+  .modal__closeBtnOuter
+    overflow: inherit
+
+    .close_button
+      top: -10px
+      right: -10px
+
+  .close_button
+    position: absolute
+    top: -10px
+    right: -10px
+    width: 29px
+    height: 29px
+    padding: 3px
+    border: 0
+    border-radius: 50%
+    background-color: $green-primary
+    cursor: pointer
+
+.modal__auth
+
+  .modal
+    padding: 0
+
+    +mq($from: desktop)
+      max-width: 375px
+      top: 10%
+      transform: translate(-50%, 0)
+
+.softCheckModal
+  text-align: left
+
+  .modal
+    +mq($from: tablet)
+      max-width: 375px

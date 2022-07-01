@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoqateResults /> renders without errors 1`] = `
+<div
+  className="border"
+  data-id="loqate-results"
+>
+  <p
+    key="test0"
+  >
+    test0
+  </p>
+  <p
+    key="test1"
+  >
+    test1
+  </p>
+</div>
+`;

@@ -1,0 +1,39 @@
+@import 'variables'
+
+.container
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  max-width: 1190px
+  margin: 0 auto
+  padding: 12px 20px
+  font-size: 12px
+
+  &::before
+    content: '\E800'
+    padding-right: 10px
+    font-family: 'Icons'
+
+  ul
+    display: flex
+
+    li
+
+      &::after
+        content: '\203a'
+        padding: 0 10px
+        font-family: 'Icons'
+
+      &:last-of-type
+
+        &::after
+          content: ''
+
+.link
+  color: $blue-primary
+  font-size: 12.4px
+
+.linkActive
+  color: $purple-primary
+  pointer-events: none
